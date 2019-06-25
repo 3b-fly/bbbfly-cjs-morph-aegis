@@ -1,0 +1,34 @@
+{
+  "Lib": "bbbfly-cjs-morph-aegis",
+  "Version": "1.0.0",
+  "Name": "3b-fly's 'bbbfly-cjs-morph' skin theme",
+  "Copyright": "Jan Nejedly",
+  "RequiredLibraries": {
+    "bbbfly-cjs": "2.0.0",
+    "bbbfly-cjs-morph": "1.0.0"
+  },
+  "Packages": {
+    "medium": {
+      "DebugFiles": [
+        "debug/medium/morph-medium.js",
+        "debug/medium/css/morph-medium.css"
+      ],
+      "ReleaseFiles": [
+        "release/medium/morph-medium.js",
+        "release/medium/css/morph-medium.css"
+      ],
+      "Libraries": {
+        "bbbfly-cjs": {
+          "Packages": [
+            "crossbrowser"
+          ]
+        },
+        "bbbfly-cjs-morph": {
+          "Packages": [
+            "core"
+          ]
+        }
+      }
+    }
+  }
+}
