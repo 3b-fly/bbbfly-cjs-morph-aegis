@@ -21,15 +21,15 @@
 }*/
 /*light|dark*/
 /*disabled*/
-/* ContentPanel, ContentFrame, GridFrame, WrapperFrame ************************/
+/* ContentPanel, ContentFrame, ContentGrid, ContentWrapper ********************/
 .aegis-ContentPanel > .ControlsPanel,
 .aegis-ContentPanelLight > .ControlsPanel,
 .aegis-ContentFrame > .ControlsPanel,
 .aegis-ContentFrameLight > .ControlsPanel,
-.aegis-GridFrame > .ControlsPanel,
-.aegis-GridFrameLight > .ControlsPanel,
-.aegis-WrapperFrame > .ControlsPanel,
-.aegis-WrapperFrameLight > .ControlsPanel {
+.aegis-ContentGrid > .ControlsPanel,
+.aegis-ContentGridLight > .ControlsPanel,
+.aegis-ContentWrapper > .ControlsPanel,
+.aegis-ContentWrapperLight > .ControlsPanel {
   background-color: #768d87;
   color: #111111;
 }
@@ -37,24 +37,24 @@
 .aegis-ContentPanelLight [D='1'] > .ControlsPanel,
 .aegis-ContentFrame [D='1'] > .ControlsPanel,
 .aegis-ContentFrameLight [D='1'] > .ControlsPanel,
-.aegis-GridFrame [D='1'] > .ControlsPanel,
-.aegis-GridFrameLight [D='1'] > .ControlsPanel,
-.aegis-WrapperFrame [D='1'] > .ControlsPanel,
-.aegis-WrapperFrameLight [D='1'] > .ControlsPanel {
+.aegis-ContentGrid [D='1'] > .ControlsPanel,
+.aegis-ContentGridLight [D='1'] > .ControlsPanel,
+.aegis-ContentWrapper [D='1'] > .ControlsPanel,
+.aegis-ContentWrapperLight [D='1'] > .ControlsPanel {
   background-color: #768d87;
   color: #808080;
 }
 .aegis-ContentPanelDark > .ControlsPanel,
 .aegis-ContentFrameDark > .ControlsPanel,
-.aegis-GridFrameDark > .ControlsPanel,
-.aegis-WrapperFrameDark > .ControlsPanel {
+.aegis-ContentGridDark > .ControlsPanel,
+.aegis-ContentWrapperDark > .ControlsPanel {
   background-color: #566963;
   color: #dddddd;
 }
 .aegis-ContentPanelDark [D='1'] > .ControlsPanel,
 .aegis-ContentFrameDark [D='1'] > .ControlsPanel,
-.aegis-GridFrameDark [D='1'] > .ControlsPanel,
-.aegis-WrapperFrameDark [D='1'] > .ControlsPanel {
+.aegis-ContentGridDark [D='1'] > .ControlsPanel,
+.aegis-ContentWrapperDark [D='1'] > .ControlsPanel {
   background-color: #566963;
   color: #dddddd;
 }

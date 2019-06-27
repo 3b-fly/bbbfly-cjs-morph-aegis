@@ -22,6 +22,12 @@ bbbfly.morph.aegis.medium._onCreateControl = function(def){
     case 'bbbfly.morph.ContentSeparator':
       bbbfly.morph.aegis.medium.ContentSeparator(def,imgs);
     break;
+    case 'bbbfly.morph.ContentGrid':
+      bbbfly.morph.aegis.medium.ContentGrid(def,imgs);
+    break;
+    case 'bbbfly.morph.ContentWrapper':
+      bbbfly.morph.aegis.medium.ContentWrapper(def,imgs);
+    break;
   }
 };
 bbbfly.morph.aegis.medium.ContentFrame = function(def,imgs){
@@ -45,6 +51,22 @@ bbbfly.morph.aegis.medium.ContentSeparator = function(def,imgs){
     Data: {
       Shade: bbbfly.Morph.shade.light,
       Frame: imgs.Line.Inner
+    }
+  });
+};
+bbbfly.morph.aegis.medium.ContentGrid = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      Frame: imgs.Frame.Outer
+    }
+  });
+};
+bbbfly.morph.aegis.medium.ContentWrapper = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      Frame: imgs.Frame.Outer
     }
   });
 };
