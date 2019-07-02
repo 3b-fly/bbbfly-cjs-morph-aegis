@@ -76,54 +76,54 @@ bbbfly.morph.aegis.Medium = {
   Prefix: 'aegis-',
 
   Images: [
-    'medium/png/morph-medium.png?4',
-    'medium/png/morph-medium_h.png?4',
-    'medium/png/morph-medium_v.png?4'
+    'medium/png/morph-medium-frame.png?4',
+    'medium/png/morph-medium-frame_h.png?4',
+    'medium/png/morph-medium-frame_v.png?4'
   ],
   ImageDefs: {
     Frame: {
       Outer: {
         Light: {
-          LeftTop: { L:0, DL:60, T:0, W:2, H:2, Src:0 },
-          Top: { L:0, T:0, DT:60, H:2, Src:1 },
-          RightTop: { L:26, DL:86, T:0, W:2, H:2, Src:0 },
-          Left: { L:0, DL:60, T:0, W:2, Src:2 },
-          Right: { L:26, DL:86, T:0, W:2, Src:2 },
-          LeftBottom: { L:0, DL:60, T:26, W:2, H:2, Src:0 },
-          Bottom: { L:0, T:26, DT:86, H:2, Src:1 },
-          RightBottom: { L:26, DL:86, T:26, W:2, H:2, Src:0 }
+          LeftTop: { L:0, DL:30, T:0, W:2, H:2, Src:0 },
+          Top: { L:0, T:0, DT:30, H:2, Src:1 },
+          RightTop: { L:26, DL:56, T:0, W:2, H:2, Src:0 },
+          Left: { L:0, DL:30, T:0, W:2, Src:2 },
+          Right: { L:26, DL:56, T:0, W:2, Src:2 },
+          LeftBottom: { L:0, DL:30, T:26, W:2, H:2, Src:0 },
+          Bottom: { L:0, T:26, DT:116, H:2, Src:1 },
+          RightBottom: { L:26, DL:56, T:26, W:2, H:2, Src:0 }
         },
         Dark: {
-          LeftTop: { L:30, DL:90, T:0, W:2, H:2, Src:0 },
-          Top: { L:0, T:30, DT:90, H:2, Src:1 },
-          RightTop: { L:56, DL:116, T:0, W:2, H:2, Src:0 },
-          Left: { L:30, DL:90, T:0, W:2, Src:2 },
-          Right: { L:56, DL:116, T:0, W:2, Src:2 },
-          LeftBottom: { L:30, DL:90, T:26, W:2, H:2, Src:0 },
-          Bottom: { L:0, T:56, DT:116, H:2, Src:1 },
-          RightBottom: { L:56, DL:116, T:26, W:2, H:2, Src:0 }
+          LeftTop: { L:0, DL:30, T:30, W:2, H:2, Src:0 },
+          Top: { L:0, T:60, DT:90, H:2, Src:1 },
+          RightTop: { L:26, DL:56, T:30, W:2, H:2, Src:0 },
+          Left: { L:60, DL:90, T:0, W:2, Src:2 },
+          Right: { L:86, DL:116, T:0, W:2, Src:2 },
+          LeftBottom: { L:0, DL:30, T:56, W:2, H:2, Src:0 },
+          Bottom: { L:0, T:86, DT:116, H:2, Src:1 },
+          RightBottom: { L:26, DL:56, T:56, W:2, H:2, Src:0 }
         }
       },
       Inner: {
         Light: {
-          LeftTop: { L:0, DL:60, T:30, W:2, H:2, Src:0 },
-          Top: { L:0, T:120, DT:180, H:2, Src:1 },
-          RightTop: { L:26, DL:86, T:30, W:2, H:2, Src:0 },
-          Left: { L:120, DL:180, T:0, W:2, Src:2 },
-          Right: { L:146, DL:206, T:0, W:2, Src:2 },
-          LeftBottom: { L:0, DL:60, T:56, W:2, H:2, Src:0 },
-          Bottom: { L:0, T:146, DT:206, H:2, Src:1 },
-          RightBottom: { L:26, DL:86, T:56, W:2, H:2, Src:0 }
+          LeftTop: { L:0, DL:30, T:60, W:2, H:2, Src:0 },
+          Top: { L:0, T:120, DT:150, H:2, Src:1 },
+          RightTop: { L:26, DL:56, T:60, W:2, H:2, Src:0 },
+          Left: { L:120, DL:150, T:0, W:2, Src:2 },
+          Right: { L:146, DL:176, T:0, W:2, Src:2 },
+          LeftBottom: { L:0, DL:30, T:86, W:2, H:2, Src:0 },
+          Bottom: { L:0, T:146, DT:176, H:2, Src:1 },
+          RightBottom: { L:26, DL:56, T:86, W:2, H:2, Src:0 }
         },
         Dark: {
-          LeftTop: { L:30, DL:90, T:30, W:2, H:2, Src:0 },
-          Top: { L:0, T:150, DT:210, H:2, Src:1 },
-          RightTop: { L:56, DL:116, T:30, W:2, H:2, Src:0 },
-          Left: { L:150, DL:210, T:0, W:2, Src:2 },
-          Right: { L:176, DL:236, T:0, W:2, Src:2 },
-          LeftBottom: { L:30, DL:90, T:56, W:2, H:2, Src:0 },
-          Bottom: { L:0, T:176, DT:236, H:2, Src:1 },
-          RightBottom: { L:56, DL:116, T:56, W:2, H:2, Src:0 }
+          LeftTop: { L:0, DL:30, T:90, W:2, H:2, Src:0 },
+          Top: { L:0, T:180, DT:210, H:2, Src:1 },
+          RightTop: { L:26, DL:56, T:90, W:2, H:2, Src:0 },
+          Left: { L:180, DL:210, T:0, W:2, Src:2 },
+          Right: { L:206, DL:236, T:0, W:2, Src:2 },
+          LeftBottom: { L:0, DL:30, T:116, W:2, H:2, Src:0 },
+          Bottom: { L:0, T:206, DT:236, H:2, Src:1 },
+          RightBottom: { L:26, DL:56, T:116, W:2, H:2, Src:0 }
         }
       }
     },
@@ -131,52 +131,52 @@ bbbfly.morph.aegis.Medium = {
       Outer: {
         Horizontal:{
           Light: {
-            Left: { L:0, DL:60, T:72, W:3, H:3, Src:0 },
-            Center: { L:0, T:240, DT:250, H:3, Src:1 },
-            Right: { L:25, DL:85, T:72, W:3, H:3, Src:0 }
+            Left: { L:0, DL:30, T:132, W:3, H:3, Src:0 },
+            Center: { L:0, T:240, DT:245, H:3, Src:1 },
+            Right: { L:25, DL:55, T:132, W:3, H:3, Src:0 }
           },
           Dark: {
-            Left: { L:30, DL:90, T:72, W:3, H:3, Src:0 },
-            Center: { L:0, T:245, DT:255, H:3, Src:1 },
-            Right: { L:55, DL:115, T:72, W:3, H:3, Src:0 }
+            Left: { L:0, DL:30, T:162, W:3, H:3, Src:0 },
+            Center: { L:0, T:250, DT:255, H:3, Src:1 },
+            Right: { L:25, DL:55, T:162, W:3, H:3, Src:0 }
           }
         },
         Vertical:{
           Light: {
-            Top: { L:12, DL:72, T:60, W:3, H:3, Src:0 },
-            Center: { L:240, DL:250, T:0, W:3, Src:2 },
-            Bottom: { L:12, DL:72, T:85, W:3, H:3, Src:0 }
+            Top: { L:12, DL:42, T:120, W:3, H:3, Src:0 },
+            Center: { L:240, DL:245, T:0, W:3, Src:2 },
+            Bottom: { L:12, DL:42, T:145, W:3, H:3, Src:0 }
           },
           Dark: {
-            Top: {L:42, DL:102, T:60, W:3, H:3, Src:0 },
-            Center: { L:245, DL:255, T:0, W:3, Src:2 },
-            Bottom: { L:42, DL:102, T:85, W:3, H:3, Src:0 }
+            Top: { L:12, DL:42, T:130, W:3, H:3, Src:0 },
+            Center: { L:250, DL:255, T:0, W:3, Src:2 },
+            Bottom: { L:12, DL:42, T:175, W:3, H:3, Src:0 }
           }
         }
       },
       Inner: {
         Horizontal:{
           Light: {
-            Left: { L:0, DL:60, T:102, W:3, H:3, Src:0 },
-            Center: { L:0, T:260, DT:270, H:3, Src:1 },
-            Right: { L:25, DL:85, T:102, W:3, H:3, Src:0 }
+            Left: { L:0, DL:30, T:192, W:3, H:3, Src:0 },
+            Center: { L:0, T:260, DT:265, H:3, Src:1 },
+            Right: { L:25, DL:55, T:192, W:3, H:3, Src:0 }
           },
           Dark: {
-            Left: { L:30, DL:90, T:102, W:3, H:3, Src:0 },
-            Center: { L:0, T:265, DT:275, H:3, Src:1 },
-            Right: { L:55, DL:115, T:102, W:3, H:3, Src:0 }
+            Left: { L:0, DL:30, T:222, W:3, H:3, Src:0 },
+            Center: { L:0, T:270, DT:275, H:3, Src:1 },
+            Right: { L:25, DL:55, T:222, W:3, H:3, Src:0 }
           }
         },
         Vertical:{
           Light: {
-            Top: { L:12, DL:72, T:90, W:3, H:3, Src:0 },
-            Center: { L:260, DL:270, T:0, W:3, Src:2 },
-            Bottom: { L:12, DL:72, T:115, W:3, H:3, Src:0 }
+            Top: { L:12, DL:42, T:180, W:3, H:3, Src:0 },
+            Center: { L:260, DL:265, T:0, W:3, Src:2 },
+            Bottom: { L:12, DL:42, T:205, W:3, H:3, Src:0 }
           },
           Dark: {
-            Top: {L:42, DL:102, T:90, W:3, H:3, Src:0 },
-            Center: { L:265, DL:275, T:0, W:3, Src:2 },
-            Bottom: { L:42, DL:102, T:115, W:3, H:3, Src:0 }
+            Top: { L:12, DL:42, T:210, W:3, H:3, Src:0 },
+            Center: { L:270, DL:275, T:0, W:3, Src:2 },
+            Bottom: { L:12, DL:42, T:235, W:3, H:3, Src:0 }
           }
         }
       }
