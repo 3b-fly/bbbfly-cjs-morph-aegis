@@ -10,7 +10,7 @@ bbbfly.morph = bbbfly.morph || {};
 bbbfly.morph.aegis = bbbfly.morph.aegis || {};
 bbbfly.morph.aegis.medium = {};
 bbbfly.morph.aegis.medium._onCreateControl = function(def){
-  var imgs = bbbfly.morph.aegis.Medium.ImageDefs;
+  var imgs = bbbfly.morph.aegis.Medium.Images;
 
   switch(def.Type){
     case 'bbbfly.morph.ContentFrame':
@@ -75,55 +75,79 @@ bbbfly.morph.aegis.Medium = {
   Lib: 'bbbfly-cjs-morph-aegis',
   Prefix: 'aegis-',
 
-  Images: [
-    'medium/png/morph-medium-frame.png?4',
-    'medium/png/morph-medium-frame_h.png?4',
-    'medium/png/morph-medium-frame_v.png?4'
-  ],
-  ImageDefs: {
+  Sources: {
+    frame: {
+      Path: 'medium/png/morph-medium-frame.png?4',
+      Anchors: {
+        frame_outer: { L:0, T:0 },
+        frame_inner: { L:0, T:60 },
+        line_outer: { L:0, T:120 },
+        line_inner: { L:0, T:180 }
+      }
+    },
+    frame_h: {
+      Path: 'medium/png/morph-medium-frame_h.png?4',
+      Anchors: {
+        frame_outer: { L:0, T:0 },
+        frame_inner: { L:0, T:120 },
+        line_outer: { L:0, T:240 },
+        line_inner: { L:0, T:260 }
+      }
+    },
+    frame_v: {
+      Path: 'medium/png/morph-medium-frame_v.png?4',
+      Anchors: {
+        frame_outer: { L:0, T:0 },
+        frame_inner: { L:120, T:0 },
+        line_outer: { L:240, T:0 },
+        line_inner: { L:260, T:0 }
+      }
+    }
+  },
+  Images: {
     Frame: {
       Outer: {
         Light: {
-          LeftTop: { L:0, DL:30, T:0, W:2, H:2, Src:0 },
-          Top: { L:0, T:0, DT:30, H:2, Src:1 },
-          RightTop: { L:26, DL:56, T:0, W:2, H:2, Src:0 },
-          Left: { L:0, DL:30, T:0, W:2, Src:2 },
-          Right: { L:26, DL:56, T:0, W:2, Src:2 },
-          LeftBottom: { L:0, DL:30, T:26, W:2, H:2, Src:0 },
-          Bottom: { L:0, T:26, DT:116, H:2, Src:1 },
-          RightBottom: { L:26, DL:56, T:26, W:2, H:2, Src:0 }
+          LeftTop: { L:0, DL:30, T:0, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
+          Top: { L:0, T:0, DT:30, H:2, Src:{Img:'frame_h', Anchor:'frame_outer'} },
+          RightTop: { L:26, DL:56, T:0, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
+          Left: { L:0, DL:30, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_outer'} },
+          Right: { L:26, DL:56, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_outer'} },
+          LeftBottom: { L:0, DL:30, T:26, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
+          Bottom: { L:0, T:26, DT:56, H:2, Src:{Img:'frame_h', Anchor:'frame_outer'} },
+          RightBottom: { L:26, DL:56, T:26, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} }
         },
         Dark: {
-          LeftTop: { L:0, DL:30, T:30, W:2, H:2, Src:0 },
-          Top: { L:0, T:60, DT:90, H:2, Src:1 },
-          RightTop: { L:26, DL:56, T:30, W:2, H:2, Src:0 },
-          Left: { L:60, DL:90, T:0, W:2, Src:2 },
-          Right: { L:86, DL:116, T:0, W:2, Src:2 },
-          LeftBottom: { L:0, DL:30, T:56, W:2, H:2, Src:0 },
-          Bottom: { L:0, T:86, DT:116, H:2, Src:1 },
-          RightBottom: { L:26, DL:56, T:56, W:2, H:2, Src:0 }
+          LeftTop: { L:0, DL:30, T:30, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
+          Top: { L:0, T:60, DT:90, H:2, Src:{Img:'frame_h', Anchor:'frame_outer'} },
+          RightTop: { L:26, DL:56, T:30, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
+          Left: { L:60, DL:90, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_outer'} },
+          Right: { L:86, DL:116, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_outer'} },
+          LeftBottom: { L:0, DL:30, T:56, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
+          Bottom: { L:0, T:86, DT:116, H:2, Src:{Img:'frame_h', Anchor:'frame_outer'} },
+          RightBottom: { L:26, DL:56, T:56, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} }
         }
       },
       Inner: {
         Light: {
-          LeftTop: { L:0, DL:30, T:60, W:2, H:2, Src:0 },
-          Top: { L:0, T:120, DT:150, H:2, Src:1 },
-          RightTop: { L:26, DL:56, T:60, W:2, H:2, Src:0 },
-          Left: { L:120, DL:150, T:0, W:2, Src:2 },
-          Right: { L:146, DL:176, T:0, W:2, Src:2 },
-          LeftBottom: { L:0, DL:30, T:86, W:2, H:2, Src:0 },
-          Bottom: { L:0, T:146, DT:176, H:2, Src:1 },
-          RightBottom: { L:26, DL:56, T:86, W:2, H:2, Src:0 }
+          LeftTop: { L:0, DL:30, T:0, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
+          Top: { L:0, T:0, DT:30, H:2, Src:{Img:'frame_h', Anchor:'frame_inner'} },
+          RightTop: { L:26, DL:56, T:0, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
+          Left: { L:0, DL:30, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_inner'} },
+          Right: { L:26, DL:56, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_inner'} },
+          LeftBottom: { L:0, DL:30, T:26, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
+          Bottom: { L:0, T:26, DT:56, H:2, Src:{Img:'frame_h', Anchor:'frame_inner'} },
+          RightBottom: { L:26, DL:56, T:26, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} }
         },
         Dark: {
-          LeftTop: { L:0, DL:30, T:90, W:2, H:2, Src:0 },
-          Top: { L:0, T:180, DT:210, H:2, Src:1 },
-          RightTop: { L:26, DL:56, T:90, W:2, H:2, Src:0 },
-          Left: { L:180, DL:210, T:0, W:2, Src:2 },
-          Right: { L:206, DL:236, T:0, W:2, Src:2 },
-          LeftBottom: { L:0, DL:30, T:116, W:2, H:2, Src:0 },
-          Bottom: { L:0, T:206, DT:236, H:2, Src:1 },
-          RightBottom: { L:26, DL:56, T:116, W:2, H:2, Src:0 }
+          LeftTop: { L:0, DL:30, T:30, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
+          Top: { L:0, T:60, DT:90, H:2, Src:{Img:'frame_h', Anchor:'frame_inner'} },
+          RightTop: { L:26, DL:56, T:30, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
+          Left: { L:60, DL:90, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_inner'} },
+          Right: { L:86, DL:116, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_inner'} },
+          LeftBottom: { L:0, DL:30, T:56, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
+          Bottom: { L:0, T:86, DT:116, H:2, Src:{Img:'frame_h', Anchor:'frame_inner'} },
+          RightBottom: { L:26, DL:56, T:56, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} }
         }
       }
     },
@@ -131,52 +155,52 @@ bbbfly.morph.aegis.Medium = {
       Outer: {
         Horizontal:{
           Light: {
-            Left: { L:0, DL:30, T:132, W:3, H:3, Src:0 },
-            Center: { L:0, T:240, DT:245, H:3, Src:1 },
-            Right: { L:25, DL:55, T:132, W:3, H:3, Src:0 }
+            Left: { L:0, DL:30, T:12, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} },
+            Center: { L:0, T:0, DT:5, H:3, Src:{Img:'frame_h', Anchor:'line_outer'} },
+            Right: { L:25, DL:55, T:12, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} }
           },
           Dark: {
-            Left: { L:0, DL:30, T:162, W:3, H:3, Src:0 },
-            Center: { L:0, T:250, DT:255, H:3, Src:1 },
-            Right: { L:25, DL:55, T:162, W:3, H:3, Src:0 }
+            Left: { L:0, DL:30, T:42, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} },
+            Center: { L:0, T:10, DT:15, H:3, Src:{Img:'frame_h', Anchor:'line_outer'} },
+            Right: { L:25, DL:55, T:42, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} }
           }
         },
         Vertical:{
           Light: {
-            Top: { L:12, DL:42, T:120, W:3, H:3, Src:0 },
-            Center: { L:240, DL:245, T:0, W:3, Src:2 },
-            Bottom: { L:12, DL:42, T:145, W:3, H:3, Src:0 }
+            Top: { L:12, DL:42, T:120, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} },
+            Center: { L:0, DL:5, T:0, W:3, Src:{Img:'frame_v', Anchor:'line_outer'} },
+            Bottom: { L:12, DL:42, T:145, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} }
           },
           Dark: {
-            Top: { L:12, DL:42, T:130, W:3, H:3, Src:0 },
-            Center: { L:250, DL:255, T:0, W:3, Src:2 },
-            Bottom: { L:12, DL:42, T:175, W:3, H:3, Src:0 }
+            Top: { L:12, DL:42, T:130, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} },
+            Center: { L:10, DL:15, T:0, W:3, Src:{Img:'frame_v', Anchor:'line_outer'} },
+            Bottom: { L:12, DL:42, T:175, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} }
           }
         }
       },
       Inner: {
         Horizontal:{
           Light: {
-            Left: { L:0, DL:30, T:192, W:3, H:3, Src:0 },
-            Center: { L:0, T:260, DT:265, H:3, Src:1 },
-            Right: { L:25, DL:55, T:192, W:3, H:3, Src:0 }
+            Left: { L:0, DL:30, T:192, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} },
+            Center: { L:0, T:0, DT:5, H:3, Src:{Img:'frame_h', Anchor:'line_inner'} },
+            Right: { L:25, DL:55, T:192, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} }
           },
           Dark: {
-            Left: { L:0, DL:30, T:222, W:3, H:3, Src:0 },
-            Center: { L:0, T:270, DT:275, H:3, Src:1 },
-            Right: { L:25, DL:55, T:222, W:3, H:3, Src:0 }
+            Left: { L:0, DL:30, T:222, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} },
+            Center: { L:0, T:10, DT:15, H:3, Src:{Img:'frame_h', Anchor:'line_inner'} },
+            Right: { L:25, DL:55, T:222, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} }
           }
         },
         Vertical:{
           Light: {
-            Top: { L:12, DL:42, T:180, W:3, H:3, Src:0 },
-            Center: { L:260, DL:265, T:0, W:3, Src:2 },
-            Bottom: { L:12, DL:42, T:205, W:3, H:3, Src:0 }
+            Top: { L:12, DL:42, T:180, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} },
+            Center: { L:0, DL:5, T:0, W:3, Src:{Img:'frame_v', Anchor:'line_inner'} },
+            Bottom: { L:12, DL:42, T:205, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} }
           },
           Dark: {
-            Top: { L:12, DL:42, T:210, W:3, H:3, Src:0 },
-            Center: { L:270, DL:275, T:0, W:3, Src:2 },
-            Bottom: { L:12, DL:42, T:235, W:3, H:3, Src:0 }
+            Top: { L:12, DL:42, T:30, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} },
+            Center: { L:10, DL:15, T:0, W:3, Src:{Img:'frame_v', Anchor:'line_inner'} },
+            Bottom: { L:12, DL:42, T:55, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} }
           }
         }
       }
