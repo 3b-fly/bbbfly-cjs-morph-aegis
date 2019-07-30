@@ -1,7 +1,7 @@
 @import "./theme.less";
 
 /* App ************************************************************************/
-/*.ngApplication{
+.ngApplication{
   position: absolute;
   left: 0%;
   top: 0%;
@@ -11,7 +11,15 @@
   background-color: @bApp;
 }
 
- Remove IE10+ text input buttons
+* [unselectable='on']{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 ::-ms-clear{
   width: 0;
   height: 0;
@@ -20,10 +28,7 @@
 ::-ms-reveal{
   width: 0;
   height: 0;
-}*/
-
-/*light|dark*/
-/*disabled*/
+}
 
 /* ContentPanel, ContentFrame, ContentGrid, ContentWrapper ********************/
 .@{tp}ContentPanel,
@@ -40,9 +45,9 @@
     color: @tInferLight;
   }
 
-  [D='1'] > .ControlsPanel{
-    background-color: @bInferLightDsbl;
-    color: @tInferLightDsbl;
+  &[D='1'] > .ControlsPanel{
+    background-color: @bInferLight_D;
+    color: @tInferLight_D;
   }
 }
 
@@ -56,13 +61,13 @@
     color: @tInferDark;
   }
 
-  [D='1'] > .ControlsPanel{
-    background-color: @bInferDarkDsbl;
-    color: @tInferDarkDsbl;
+  &[D='1'] > .ControlsPanel{
+    background-color: @bInferDark_D;
+    color: @tInferDark_D;
   }
 }
 
-/* InputFrame ******************************************************************/
+/* InputFrame *****************************************************************/
 .@{tp}InputFrame,
 .@{tp}InputFrameLight{
 
@@ -71,9 +76,9 @@
     color: @tInput;
   }
 
-  [D='1'] > .ControlsPanel{
-    background-color: @bInputDsbl;
-    color: @tInputDsbl;
+  &[D='1'] > .ControlsPanel{
+    background-color: @bInput_D;
+    color: @tInput_D;
   }
 }
 
@@ -84,8 +89,8 @@
     color: @tInput;
   }
 
-  [D='1'] > .ControlsPanel{
-    background-color: @bInputDsbl;
-    color: @tInputDsbl;
+  &[D='1'] > .ControlsPanel{
+    background-color: @bInput_D;
+    color: @tInput_D;
   }
 }

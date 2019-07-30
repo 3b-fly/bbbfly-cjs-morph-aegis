@@ -1,26 +1,29 @@
 /* App ************************************************************************/
-/*.ngApplication{
+.ngApplication {
   position: absolute;
   left: 0%;
   top: 0%;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: @bApp;
+  background-color: #333333;
 }
-
- Remove IE10+ text input buttons
-::-ms-clear{
+* [unselectable='on'] {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+::-ms-clear {
   width: 0;
   height: 0;
 }
-
-::-ms-reveal{
+::-ms-reveal {
   width: 0;
   height: 0;
-}*/
-/*light|dark*/
-/*disabled*/
+}
 /* ContentPanel, ContentFrame, ContentGrid, ContentWrapper ********************/
 .aegis-ContentPanel > .ControlsPanel,
 .aegis-ContentPanelLight > .ControlsPanel,
@@ -33,16 +36,16 @@
   background-color: #768d87;
   color: #111111;
 }
-.aegis-ContentPanel [D='1'] > .ControlsPanel,
-.aegis-ContentPanelLight [D='1'] > .ControlsPanel,
-.aegis-ContentFrame [D='1'] > .ControlsPanel,
-.aegis-ContentFrameLight [D='1'] > .ControlsPanel,
-.aegis-ContentGrid [D='1'] > .ControlsPanel,
-.aegis-ContentGridLight [D='1'] > .ControlsPanel,
-.aegis-ContentWrapper [D='1'] > .ControlsPanel,
-.aegis-ContentWrapperLight [D='1'] > .ControlsPanel {
+.aegis-ContentPanel[D='1'] > .ControlsPanel,
+.aegis-ContentPanelLight[D='1'] > .ControlsPanel,
+.aegis-ContentFrame[D='1'] > .ControlsPanel,
+.aegis-ContentFrameLight[D='1'] > .ControlsPanel,
+.aegis-ContentGrid[D='1'] > .ControlsPanel,
+.aegis-ContentGridLight[D='1'] > .ControlsPanel,
+.aegis-ContentWrapper[D='1'] > .ControlsPanel,
+.aegis-ContentWrapperLight[D='1'] > .ControlsPanel {
   background-color: #768d87;
-  color: #808080;
+  color: #606060;
 }
 .aegis-ContentPanelDark > .ControlsPanel,
 .aegis-ContentFrameDark > .ControlsPanel,
@@ -51,21 +54,21 @@
   background-color: #566963;
   color: #dddddd;
 }
-.aegis-ContentPanelDark [D='1'] > .ControlsPanel,
-.aegis-ContentFrameDark [D='1'] > .ControlsPanel,
-.aegis-ContentGridDark [D='1'] > .ControlsPanel,
-.aegis-ContentWrapperDark [D='1'] > .ControlsPanel {
+.aegis-ContentPanelDark[D='1'] > .ControlsPanel,
+.aegis-ContentFrameDark[D='1'] > .ControlsPanel,
+.aegis-ContentGridDark[D='1'] > .ControlsPanel,
+.aegis-ContentWrapperDark[D='1'] > .ControlsPanel {
   background-color: #566963;
-  color: #dddddd;
+  color: #8a8a8a;
 }
-/* InputFrame ******************************************************************/
+/* InputFrame *****************************************************************/
 .aegis-InputFrame > .ControlsPanel,
 .aegis-InputFrameLight > .ControlsPanel {
   background-color: #eeeeee;
   color: #111111;
 }
-.aegis-InputFrame [D='1'] > .ControlsPanel,
-.aegis-InputFrameLight [D='1'] > .ControlsPanel {
+.aegis-InputFrame[D='1'] > .ControlsPanel,
+.aegis-InputFrameLight[D='1'] > .ControlsPanel {
   background-color: #eeeeee;
   color: #808080;
 }
@@ -73,7 +76,7 @@
   background-color: #eeeeee;
   color: #111111;
 }
-.aegis-InputFrameDark [D='1'] > .ControlsPanel {
+.aegis-InputFrameDark[D='1'] > .ControlsPanel {
   background-color: #eeeeee;
   color: #808080;
 }
