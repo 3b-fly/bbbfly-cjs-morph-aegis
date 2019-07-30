@@ -94,3 +94,137 @@
     color: @tInput_D;
   }
 }
+
+/* ButtonPanel, ContentButton, ContentFlatButton, LargeContentButton **********/
+.@{tp}ButtonPanel,
+.@{tp}ButtonPanelLight,
+.@{tp}ContentButton,
+.@{tp}ContentButtonLight,
+.@{tp}LargeContentButton,
+.@{tp}LargeContentButtonLight,
+.@{tp}ContentFlatButton,
+.@{tp}ContentFlatButtonLight{
+  font-family: @fontInfer;
+  line-height: 14px;
+  font-size: 11px;
+
+  > div > .Text{
+    margin: 7px 10px 7px 10px;
+  }
+}
+
+.@{tp}ButtonPanelDark,
+.@{tp}ContentButtonDark,
+.@{tp}LargeContentButtonDark,
+.@{tp}ContentFlatButtonDark{
+  font-family: @fontInfer;
+  line-height: 14px;
+  font-size: 11px;
+
+  > div > .Text{
+    margin: 7px 10px 7px 10px;
+  }
+}
+
+.@{tp}LargeContentButton,
+.@{tp}LargeContentButtonLight,
+.@{tp}LargeContentButtonDark{
+  line-height: 18px;
+  font-size: 14px;
+
+  > div > .Text{
+    margin: 5px;
+  }
+}
+
+.@{tp}ButtonPanel,
+.@{tp}ButtonPanelLight{
+
+  color: @tInferLight;
+  > .ControlsPanel{ background-color: @bInferLight; }
+
+  &[o='1']{
+    color: @tInferLight_o;
+    > .ControlsPanel{ background-color: @bInferLight_o; }
+  }
+
+  &[S='1']{
+    color: @tInferLight_S;
+    > .ControlsPanel{ background-color: @bInferLight_S; }
+  }
+
+  &[D='1']{
+    color: @tInferLight_D;
+    > .ControlsPanel{ background-color: @bInferLight_D; }
+  }
+}
+
+.@{tp}ButtonPanelDark{
+
+  color: @tInferDark;
+  > .ControlsPanel{ background-color: @bInferDark; }
+
+  &[o='1']{
+    color: @tInferLight_o;
+    > .ControlsPanel{ background-color: @bInferDark_o; }
+  }
+
+  &[S='1']{
+    color: @tInferDark_S;
+    > .ControlsPanel{ background-color: @bInferDark_S; }
+  }
+
+  &[D='1']{
+    color: @tInferDark_D;
+    > .ControlsPanel{ background-color: @bInferDark_D; }
+  }
+}
+
+.@{tp}ContentButton,
+.@{tp}ContentButtonLight,
+.@{tp}LargeContentButton,
+.@{tp}LargeContentButtonLight,
+.@{tp}ContentFlatButton,
+.@{tp}ContentFlatButtonLight{
+
+  color: @tBtnLight;
+  > .ControlsPanel{ background-color: @bBtnLight; }
+
+  &[o='1']{
+    color: @tBtnLight_o;
+    > .ControlsPanel{ background-color: @bBtnLight_o; }
+  }
+
+  &[S='1']{
+    color: @tBtnLight_S;
+    > .ControlsPanel{ background-color: @bBtnLight_S; }
+  }
+
+  &[D='1']{
+    color: @tBtnLight_D;
+    > .ControlsPanel{ background-color: @bBtnLight_D; }
+  }
+}
+
+.@{tp}ContentButtonDark,
+.@{tp}LargeContentButtonDark,
+.@{tp}ContentFlatButtonDark{
+
+  color: @tBtnDark;
+  > .ControlsPanel{ background-color: @bBtnDark; }
+
+  &[o='1']{
+    color: @tBtnLight_o;
+    > .ControlsPanel{ background-color: @bBtnDark_o; }
+  }
+
+  &[S='1']{
+    color: @tBtnDark_S;
+    > .ControlsPanel{ background-color: @bBtnDark_S; }
+  }
+
+  &[D='1']{
+    color: @tBtnDark_D;
+    > .ControlsPanel{ background-color: @bBtnDark_D; }
+  }
+}

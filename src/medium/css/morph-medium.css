@@ -80,3 +80,211 @@
   background-color: #eeeeee;
   color: #808080;
 }
+/* ButtonPanel, ContentButton, ContentFlatButton, LargeContentButton **********/
+.aegis-ButtonPanel,
+.aegis-ButtonPanelLight,
+.aegis-ContentButton,
+.aegis-ContentButtonLight,
+.aegis-LargeContentButton,
+.aegis-LargeContentButtonLight,
+.aegis-ContentFlatButton,
+.aegis-ContentFlatButtonLight {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  font-size: 11px;
+}
+.aegis-ButtonPanel > div > .Text,
+.aegis-ButtonPanelLight > div > .Text,
+.aegis-ContentButton > div > .Text,
+.aegis-ContentButtonLight > div > .Text,
+.aegis-LargeContentButton > div > .Text,
+.aegis-LargeContentButtonLight > div > .Text,
+.aegis-ContentFlatButton > div > .Text,
+.aegis-ContentFlatButtonLight > div > .Text {
+  margin: 7px 10px 7px 10px;
+}
+.aegis-ButtonPanelDark,
+.aegis-ContentButtonDark,
+.aegis-LargeContentButtonDark,
+.aegis-ContentFlatButtonDark {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  font-size: 11px;
+}
+.aegis-ButtonPanelDark > div > .Text,
+.aegis-ContentButtonDark > div > .Text,
+.aegis-LargeContentButtonDark > div > .Text,
+.aegis-ContentFlatButtonDark > div > .Text {
+  margin: 7px 10px 7px 10px;
+}
+.aegis-LargeContentButton,
+.aegis-LargeContentButtonLight,
+.aegis-LargeContentButtonDark {
+  line-height: 18px;
+  font-size: 14px;
+}
+.aegis-LargeContentButton > div > .Text,
+.aegis-LargeContentButtonLight > div > .Text,
+.aegis-LargeContentButtonDark > div > .Text {
+  margin: 5px;
+}
+.aegis-ButtonPanel,
+.aegis-ButtonPanelLight {
+  color: #111111;
+}
+.aegis-ButtonPanel > .ControlsPanel,
+.aegis-ButtonPanelLight > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-ButtonPanel[o='1'],
+.aegis-ButtonPanelLight[o='1'] {
+  color: #111111;
+}
+.aegis-ButtonPanel[o='1'] > .ControlsPanel,
+.aegis-ButtonPanelLight[o='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-ButtonPanel[S='1'],
+.aegis-ButtonPanelLight[S='1'] {
+  color: #111111;
+}
+.aegis-ButtonPanel[S='1'] > .ControlsPanel,
+.aegis-ButtonPanelLight[S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-ButtonPanel[D='1'],
+.aegis-ButtonPanelLight[D='1'] {
+  color: #606060;
+}
+.aegis-ButtonPanel[D='1'] > .ControlsPanel,
+.aegis-ButtonPanelLight[D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-ButtonPanelDark {
+  color: #dddddd;
+}
+.aegis-ButtonPanelDark > .ControlsPanel {
+  background-color: #566963;
+}
+.aegis-ButtonPanelDark[o='1'] {
+  color: #111111;
+}
+.aegis-ButtonPanelDark[o='1'] > .ControlsPanel {
+  background-color: #788a84;
+}
+.aegis-ButtonPanelDark[S='1'] {
+  color: #dddddd;
+}
+.aegis-ButtonPanelDark[S='1'] > .ControlsPanel {
+  background-color: #788a84;
+}
+.aegis-ButtonPanelDark[D='1'] {
+  color: #8a8a8a;
+}
+.aegis-ButtonPanelDark[D='1'] > .ControlsPanel {
+  background-color: #566963;
+}
+.aegis-ContentButton,
+.aegis-ContentButtonLight,
+.aegis-LargeContentButton,
+.aegis-LargeContentButtonLight,
+.aegis-ContentFlatButton,
+.aegis-ContentFlatButtonLight {
+  color: #111111;
+}
+.aegis-ContentButton > .ControlsPanel,
+.aegis-ContentButtonLight > .ControlsPanel,
+.aegis-LargeContentButton > .ControlsPanel,
+.aegis-LargeContentButtonLight > .ControlsPanel,
+.aegis-ContentFlatButton > .ControlsPanel,
+.aegis-ContentFlatButtonLight > .ControlsPanel {
+  background-color: #879a95;
+}
+.aegis-ContentButton[o='1'],
+.aegis-ContentButtonLight[o='1'],
+.aegis-LargeContentButton[o='1'],
+.aegis-LargeContentButtonLight[o='1'],
+.aegis-ContentFlatButton[o='1'],
+.aegis-ContentFlatButtonLight[o='1'] {
+  color: #111111;
+}
+.aegis-ContentButton[o='1'] > .ControlsPanel,
+.aegis-ContentButtonLight[o='1'] > .ControlsPanel,
+.aegis-LargeContentButton[o='1'] > .ControlsPanel,
+.aegis-LargeContentButtonLight[o='1'] > .ControlsPanel,
+.aegis-ContentFlatButton[o='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonLight[o='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-ContentButton[S='1'],
+.aegis-ContentButtonLight[S='1'],
+.aegis-LargeContentButton[S='1'],
+.aegis-LargeContentButtonLight[S='1'],
+.aegis-ContentFlatButton[S='1'],
+.aegis-ContentFlatButtonLight[S='1'] {
+  color: #111111;
+}
+.aegis-ContentButton[S='1'] > .ControlsPanel,
+.aegis-ContentButtonLight[S='1'] > .ControlsPanel,
+.aegis-LargeContentButton[S='1'] > .ControlsPanel,
+.aegis-LargeContentButtonLight[S='1'] > .ControlsPanel,
+.aegis-ContentFlatButton[S='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonLight[S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-ContentButton[D='1'],
+.aegis-ContentButtonLight[D='1'],
+.aegis-LargeContentButton[D='1'],
+.aegis-LargeContentButtonLight[D='1'],
+.aegis-ContentFlatButton[D='1'],
+.aegis-ContentFlatButtonLight[D='1'] {
+  color: #606060;
+}
+.aegis-ContentButton[D='1'] > .ControlsPanel,
+.aegis-ContentButtonLight[D='1'] > .ControlsPanel,
+.aegis-LargeContentButton[D='1'] > .ControlsPanel,
+.aegis-LargeContentButtonLight[D='1'] > .ControlsPanel,
+.aegis-ContentFlatButton[D='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonLight[D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-ContentButtonDark,
+.aegis-LargeContentButtonDark,
+.aegis-ContentFlatButtonDark {
+  color: #dddddd;
+}
+.aegis-ContentButtonDark > .ControlsPanel,
+.aegis-LargeContentButtonDark > .ControlsPanel,
+.aegis-ContentFlatButtonDark > .ControlsPanel {
+  background-color: #566963;
+}
+.aegis-ContentButtonDark[o='1'],
+.aegis-LargeContentButtonDark[o='1'],
+.aegis-ContentFlatButtonDark[o='1'] {
+  color: #111111;
+}
+.aegis-ContentButtonDark[o='1'] > .ControlsPanel,
+.aegis-LargeContentButtonDark[o='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonDark[o='1'] > .ControlsPanel {
+  background-color: #788a84;
+}
+.aegis-ContentButtonDark[S='1'],
+.aegis-LargeContentButtonDark[S='1'],
+.aegis-ContentFlatButtonDark[S='1'] {
+  color: #dddddd;
+}
+.aegis-ContentButtonDark[S='1'] > .ControlsPanel,
+.aegis-LargeContentButtonDark[S='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonDark[S='1'] > .ControlsPanel {
+  background-color: #788a84;
+}
+.aegis-ContentButtonDark[D='1'],
+.aegis-LargeContentButtonDark[D='1'],
+.aegis-ContentFlatButtonDark[D='1'] {
+  color: #8a8a8a;
+}
+.aegis-ContentButtonDark[D='1'] > .ControlsPanel,
+.aegis-LargeContentButtonDark[D='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonDark[D='1'] > .ControlsPanel {
+  background-color: #566963;
+}

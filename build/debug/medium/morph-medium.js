@@ -29,6 +29,18 @@ bbbfly.morph.aegis.medium._onCreateControl = function(def){
     case 'bbbfly.morph.ContentWrapper':
       bbbfly.morph.aegis.medium.ContentWrapper(def,imgs);
     break;
+    case 'bbbfly.morph.ButtonPanel':
+      bbbfly.morph.aegis.medium.ButtonPanel(def,imgs);
+    break;
+    case 'bbbfly.morph.ContentButton':
+      bbbfly.morph.aegis.medium.ContentButton(def,imgs);
+    break;
+    case 'bbbfly.morph.LargeContentButton':
+      bbbfly.morph.aegis.medium.LargeContentButton(def,imgs);
+    break;
+    case 'bbbfly.morph.ContentFlatButton':
+      bbbfly.morph.aegis.medium.ContentFlatButton(def,imgs);
+    break;
   }
 };
 bbbfly.morph.aegis.medium.ContentFrame = function(def,imgs){
@@ -71,6 +83,42 @@ bbbfly.morph.aegis.medium.ContentWrapper = function(def,imgs){
     }
   });
 };
+bbbfly.morph.aegis.medium.ButtonPanel = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      Frame: imgs.Button.Panel,
+      Indent: -3
+    }
+  });
+};
+bbbfly.morph.aegis.medium.ContentButton = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      Frame: imgs.Button.Std,
+      Indent: -3
+    }
+  });
+};
+bbbfly.morph.aegis.medium.ContentFlatButton = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      Frame: imgs.Button.Flat,
+      Indent: -3
+    }
+  });
+};
+bbbfly.morph.aegis.medium.LargeContentButton = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      Frame: imgs.Button.Std,
+      Indent: 11
+    }
+  });
+};
 bbbfly.morph.aegis.medium.img.PanelFrame = function(anchor){
   return {
     LeftTop: { L:0, DL:30, T:0, W:2, H:2, Src:{Img:'frame', Anchor:anchor} },
@@ -95,6 +143,18 @@ bbbfly.morph.aegis.medium.img.VLineFrame = function(anchor){
     Top: { L:12, DL:42, T:0, W:3, H:3, Src:{Img:'frame', Anchor:anchor} },
     Center: { L:0, DL:5, T:0, W:3, Src:{Img:'frame_v', Anchor:anchor} },
     Bottom: { L:12, DL:42, T:25, W:3, H:3, Src:{Img:'frame', Anchor:anchor} }
+  };
+};
+bbbfly.morph.aegis.medium.img.ButtonFrame = function(anchor){
+  return {
+    LeftTop: { L:0, oL:30, SL:60, oSL:90, DL:120, oDL:150, DSL:180, oDSL:210, T:0, W:3, H:3, Src:{Img:'button', Anchor:anchor} },
+    Top: { L:0, T:0, oT:30, ST:60, oST:90, DT:120, oDT:150, DST:180, oDST:210, H:3, Src:{Img:'button_h', Anchor:anchor} },
+    RightTop: { L:25, oL:55, SL:85, oSL:115, DL:145, oDL:175, DSL:205, oDSL:235, T:0, W:3, H:3, Src:{Img:'button', Anchor:anchor} },
+    Left: { L:0, oL:30, SL:60, oSL:90, DL:120, oDL:150, DSL:180, oDSL:210, T:0, W:3, Src:{Img:'button_v', Anchor:anchor} },
+    Right: { L:25, oL:55, SL:85, oSL:115, DL:145, oDL:175, DSL:205, oDSL:235, T:0, W:3, Src:{Img:'button_v', Anchor:anchor} },
+    LeftBottom: { L:0, oL:30, SL:60, oSL:90, DL:120, oDL:150, DSL:180, oDSL:210, T:25, W:3, H:3, Src:{Img:'button', Anchor:anchor} },
+    Bottom: { L:0, T:25, oT:55, ST:85, oST:115, DT:145, oDT:175, DST:205, oDST:235, H:3, Src:{Img:'button_h', Anchor:anchor} },
+    RightBottom: { L:25, oL:55, SL:85, oSL:115, DL:145, oDL:175, DSL:205, oDSL:235, T:25, W:3, H:3, Src:{Img:'button', Anchor:anchor} }
   };
 };
 bbbfly.morph.aegis.Medium = {
@@ -141,6 +201,39 @@ bbbfly.morph.aegis.Medium = {
         line_inner_light: { L:260, T:0 },
         line_inner_dark: { L:270, T:0 }
       }
+    },
+    button: {
+      Path: 'medium/png/morph-medium-button.png?1',
+      Anchors: {
+        button_panel_light: { L:0, T:0 },
+        button_panel_dark: { L:0, T:30 },
+        button_std_light: { L:0, T:60 },
+        button_std_dark: { L:0, T:90 },
+        button_flat_light: { L:0, T:120 },
+        button_flat_dark: { L:0, T:150 }
+      }
+    },
+    button_h: {
+      Path: 'medium/png/morph-medium-button_h.png?1',
+      Anchors: {
+        button_panel_light: { L:0, T:0 },
+        button_panel_dark: { L:0, T:240 },
+        button_std_light: { L:0, T:480 },
+        button_std_dark: { L:0, T:720 },
+        button_flat_light: { L:0, T:960 },
+        button_flat_dark: { L:0, T:1200 }
+      }
+    },
+    button_v: {
+      Path: 'medium/png/morph-medium-button_v.png?1',
+      Anchors: {
+        button_panel_light: { L:0, T:0 },
+        button_panel_dark: { L:240, T:0 },
+        button_std_light: { L:480, T:0 },
+        button_std_dark: { L:720, T:0 },
+        button_flat_light: { L:960, T:0 },
+        button_flat_dark: { L:1200, T:0 }
+      }
     }
   },
   Images: {
@@ -174,6 +267,20 @@ bbbfly.morph.aegis.Medium = {
           Light: bbbfly.morph.aegis.medium.img.VLineFrame('line_inner_light'),
           Dark: bbbfly.morph.aegis.medium.img.VLineFrame('line_inner_dark')
         }
+      }
+    },
+    Button: {
+      Panel: {
+        Light: bbbfly.morph.aegis.medium.img.ButtonFrame('button_panel_light'),
+        Dark: bbbfly.morph.aegis.medium.img.ButtonFrame('button_panel_dark')
+      },
+      Std: {
+        Light: bbbfly.morph.aegis.medium.img.ButtonFrame('button_std_light'),
+        Dark: bbbfly.morph.aegis.medium.img.ButtonFrame('button_std_dark')
+      },
+      Flat: {
+        Light: bbbfly.morph.aegis.medium.img.ButtonFrame('button_flat_light'),
+        Dark: bbbfly.morph.aegis.medium.img.ButtonFrame('button_flat_dark')
       }
     }
   },
