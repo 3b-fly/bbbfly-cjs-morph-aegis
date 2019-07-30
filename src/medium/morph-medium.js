@@ -14,12 +14,15 @@ bbbfly.morph = bbbfly.morph || {};
 bbbfly.morph.aegis = bbbfly.morph.aegis || {};
 /** @ignore */
 bbbfly.morph.aegis.medium = {};
+/** @ignore */
+bbbfly.morph.aegis.medium.img = {};
 
 /** @ignore */
 bbbfly.morph.aegis.medium._onCreateControl = function(def){
   var imgs = bbbfly.morph.aegis.Medium.Images;
 
   switch(def.Type){
+    //panel
     case 'bbbfly.morph.ContentFrame':
       bbbfly.morph.aegis.medium.ContentFrame(def,imgs);
     break;
@@ -29,9 +32,11 @@ bbbfly.morph.aegis.medium._onCreateControl = function(def){
     case 'bbbfly.morph.ContentSeparator':
       bbbfly.morph.aegis.medium.ContentSeparator(def,imgs);
     break;
+    //grid
     case 'bbbfly.morph.ContentGrid':
       bbbfly.morph.aegis.medium.ContentGrid(def,imgs);
     break;
+    //wrapper
     case 'bbbfly.morph.ContentWrapper':
       bbbfly.morph.aegis.medium.ContentWrapper(def,imgs);
     break;
@@ -89,6 +94,38 @@ bbbfly.morph.aegis.medium.ContentWrapper = function(def,imgs){
 };
 
 /** @ignore */
+bbbfly.morph.aegis.medium.img.PanelFrame = function(anchor){
+  return {
+    LeftTop: { L:0, DL:30, T:0, W:2, H:2, Src:{Img:'frame', Anchor:anchor} },
+    Top: { L:0, T:0, DT:30, H:2, Src:{Img:'frame_h', Anchor:anchor} },
+    RightTop: { L:26, DL:56, T:0, W:2, H:2, Src:{Img:'frame', Anchor:anchor} },
+    Left: { L:0, DL:30, T:0, W:2, Src:{Img:'frame_v', Anchor:anchor} },
+    Right: { L:26, DL:56, T:0, W:2, Src:{Img:'frame_v', Anchor:anchor} },
+    LeftBottom: { L:0, DL:30, T:26, W:2, H:2, Src:{Img:'frame', Anchor:anchor} },
+    Bottom: { L:0, T:26, DT:56, H:2, Src:{Img:'frame_h', Anchor:anchor} },
+    RightBottom: { L:26, DL:56, T:26, W:2, H:2, Src:{Img:'frame', Anchor:anchor} }
+  };
+};
+
+/** @ignore */
+bbbfly.morph.aegis.medium.img.HLineFrame = function(anchor){
+  return {
+    Left: { L:0, DL:30, T:12, W:3, H:3, Src:{Img:'frame', Anchor:anchor} },
+    Center: { L:0, T:0, DT:5, H:3, Src:{Img:'frame_h', Anchor:anchor} },
+    Right: { L:25, DL:55, T:12, W:3, H:3, Src:{Img:'frame', Anchor:anchor} }
+  };
+};
+
+/** @ignore */
+bbbfly.morph.aegis.medium.img.VLineFrame = function(anchor){
+  return {
+    Top: { L:12, DL:42, T:0, W:3, H:3, Src:{Img:'frame', Anchor:anchor} },
+    Center: { L:0, DL:5, T:0, W:3, Src:{Img:'frame_v', Anchor:anchor} },
+    Bottom: { L:12, DL:42, T:25, W:3, H:3, Src:{Img:'frame', Anchor:anchor} }
+  };
+};
+
+/** @ignore */
 bbbfly.morph.aegis.Medium = {
   ID: 'morph-aegis',
   Lib: 'bbbfly-cjs-morph-aegis',
@@ -96,131 +133,75 @@ bbbfly.morph.aegis.Medium = {
 
   Sources: {
     frame: {
-      Path: 'medium/png/morph-medium-frame.png?4',
+      Path: 'medium/png/morph-medium-frame.png?1',
       Anchors: {
-        frame_outer: { L:0, T:0 },
-        frame_inner: { L:0, T:60 },
-        line_outer: { L:0, T:120 },
-        line_inner: { L:0, T:180 }
+        frame_outer_light: { L:0, T:0 },
+        frame_outer_dark: { L:0, T:30 },
+        frame_inner_light: { L:0, T:60 },
+        frame_inner_dark: { L:0, T:90 },
+        line_outer_light: { L:0, T:120 },
+        line_outer_dark: { L:0, T:150 },
+        line_inner_light: { L:0, T:180 },
+        line_inner_dark: { L:0, T:210 }
       }
     },
     frame_h: {
-      Path: 'medium/png/morph-medium-frame_h.png?4',
+      Path: 'medium/png/morph-medium-frame_h.png?1',
       Anchors: {
-        frame_outer: { L:0, T:0 },
-        frame_inner: { L:0, T:120 },
-        line_outer: { L:0, T:240 },
-        line_inner: { L:0, T:260 }
+        frame_outer_light: { L:0, T:0 },
+        frame_outer_dark: { L:0, T:60 },
+        frame_inner_light: { L:0, T:120 },
+        frame_inner_dark: { L:0, T:180 },
+        line_outer_light: { L:0, T:240 },
+        line_outer_dark: { L:0, T:250 },
+        line_inner_light: { L:0, T:260 },
+        line_inner_dark: { L:0, T:270 }
       }
     },
     frame_v: {
-      Path: 'medium/png/morph-medium-frame_v.png?4',
+      Path: 'medium/png/morph-medium-frame_v.png?1',
       Anchors: {
-        frame_outer: { L:0, T:0 },
-        frame_inner: { L:120, T:0 },
-        line_outer: { L:240, T:0 },
-        line_inner: { L:260, T:0 }
+        frame_outer_light: { L:0, T:0 },
+        frame_outer_dark: { L:60, T:0 },
+        frame_inner_light: { L:120, T:0 },
+        frame_inner_dark: { L:180, T:0 },
+        line_outer_light: { L:240, T:0 },
+        line_outer_dark: { L:250, T:0 },
+        line_inner_light: { L:260, T:0 },
+        line_inner_dark: { L:270, T:0 }
       }
     }
   },
   Images: {
     Frame: {
       Outer: {
-        Light: {
-          LeftTop: { L:0, DL:30, T:0, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
-          Top: { L:0, T:0, DT:30, H:2, Src:{Img:'frame_h', Anchor:'frame_outer'} },
-          RightTop: { L:26, DL:56, T:0, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
-          Left: { L:0, DL:30, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_outer'} },
-          Right: { L:26, DL:56, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_outer'} },
-          LeftBottom: { L:0, DL:30, T:26, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
-          Bottom: { L:0, T:26, DT:56, H:2, Src:{Img:'frame_h', Anchor:'frame_outer'} },
-          RightBottom: { L:26, DL:56, T:26, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} }
-        },
-        Dark: {
-          LeftTop: { L:0, DL:30, T:30, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
-          Top: { L:0, T:60, DT:90, H:2, Src:{Img:'frame_h', Anchor:'frame_outer'} },
-          RightTop: { L:26, DL:56, T:30, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
-          Left: { L:60, DL:90, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_outer'} },
-          Right: { L:86, DL:116, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_outer'} },
-          LeftBottom: { L:0, DL:30, T:56, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} },
-          Bottom: { L:0, T:86, DT:116, H:2, Src:{Img:'frame_h', Anchor:'frame_outer'} },
-          RightBottom: { L:26, DL:56, T:56, W:2, H:2, Src:{Img:'frame', Anchor:'frame_outer'} }
-        }
+        Light: bbbfly.morph.aegis.medium.img.PanelFrame('frame_outer_light'),
+        Dark: bbbfly.morph.aegis.medium.img.PanelFrame('frame_outer_dark')
       },
       Inner: {
-        Light: {
-          LeftTop: { L:0, DL:30, T:0, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
-          Top: { L:0, T:0, DT:30, H:2, Src:{Img:'frame_h', Anchor:'frame_inner'} },
-          RightTop: { L:26, DL:56, T:0, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
-          Left: { L:0, DL:30, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_inner'} },
-          Right: { L:26, DL:56, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_inner'} },
-          LeftBottom: { L:0, DL:30, T:26, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
-          Bottom: { L:0, T:26, DT:56, H:2, Src:{Img:'frame_h', Anchor:'frame_inner'} },
-          RightBottom: { L:26, DL:56, T:26, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} }
-        },
-        Dark: {
-          LeftTop: { L:0, DL:30, T:30, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
-          Top: { L:0, T:60, DT:90, H:2, Src:{Img:'frame_h', Anchor:'frame_inner'} },
-          RightTop: { L:26, DL:56, T:30, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
-          Left: { L:60, DL:90, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_inner'} },
-          Right: { L:86, DL:116, T:0, W:2, Src:{Img:'frame_v', Anchor:'frame_inner'} },
-          LeftBottom: { L:0, DL:30, T:56, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} },
-          Bottom: { L:0, T:86, DT:116, H:2, Src:{Img:'frame_h', Anchor:'frame_inner'} },
-          RightBottom: { L:26, DL:56, T:56, W:2, H:2, Src:{Img:'frame', Anchor:'frame_inner'} }
-        }
+        Light: bbbfly.morph.aegis.medium.img.PanelFrame('frame_inner_light'),
+        Dark: bbbfly.morph.aegis.medium.img.PanelFrame('frame_inner_dark')
       }
     },
     Line: {
       Outer: {
         Horizontal:{
-          Light: {
-            Left: { L:0, DL:30, T:12, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} },
-            Center: { L:0, T:0, DT:5, H:3, Src:{Img:'frame_h', Anchor:'line_outer'} },
-            Right: { L:25, DL:55, T:12, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} }
-          },
-          Dark: {
-            Left: { L:0, DL:30, T:42, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} },
-            Center: { L:0, T:10, DT:15, H:3, Src:{Img:'frame_h', Anchor:'line_outer'} },
-            Right: { L:25, DL:55, T:42, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} }
-          }
+          Light: bbbfly.morph.aegis.medium.img.HLineFrame('line_outer_light'),
+          Dark: bbbfly.morph.aegis.medium.img.HLineFrame('line_outer_dark')
         },
         Vertical:{
-          Light: {
-            Top: { L:12, DL:42, T:120, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} },
-            Center: { L:0, DL:5, T:0, W:3, Src:{Img:'frame_v', Anchor:'line_outer'} },
-            Bottom: { L:12, DL:42, T:145, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} }
-          },
-          Dark: {
-            Top: { L:12, DL:42, T:130, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} },
-            Center: { L:10, DL:15, T:0, W:3, Src:{Img:'frame_v', Anchor:'line_outer'} },
-            Bottom: { L:12, DL:42, T:175, W:3, H:3, Src:{Img:'frame', Anchor:'line_outer'} }
-          }
+          Light: bbbfly.morph.aegis.medium.img.VLineFrame('line_outer_light'),
+          Dark: bbbfly.morph.aegis.medium.img.VLineFrame('line_outer_dark')
         }
       },
       Inner: {
         Horizontal:{
-          Light: {
-            Left: { L:0, DL:30, T:192, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} },
-            Center: { L:0, T:0, DT:5, H:3, Src:{Img:'frame_h', Anchor:'line_inner'} },
-            Right: { L:25, DL:55, T:192, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} }
-          },
-          Dark: {
-            Left: { L:0, DL:30, T:222, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} },
-            Center: { L:0, T:10, DT:15, H:3, Src:{Img:'frame_h', Anchor:'line_inner'} },
-            Right: { L:25, DL:55, T:222, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} }
-          }
+          Light: bbbfly.morph.aegis.medium.img.HLineFrame('line_inner_light'),
+          Dark: bbbfly.morph.aegis.medium.img.HLineFrame('line_inner_dark')
         },
         Vertical:{
-          Light: {
-            Top: { L:12, DL:42, T:180, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} },
-            Center: { L:0, DL:5, T:0, W:3, Src:{Img:'frame_v', Anchor:'line_inner'} },
-            Bottom: { L:12, DL:42, T:205, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} }
-          },
-          Dark: {
-            Top: { L:12, DL:42, T:30, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} },
-            Center: { L:10, DL:15, T:0, W:3, Src:{Img:'frame_v', Anchor:'line_inner'} },
-            Bottom: { L:12, DL:42, T:55, W:3, H:3, Src:{Img:'frame', Anchor:'line_inner'} }
-          }
+          Light: bbbfly.morph.aegis.medium.img.VLineFrame('line_inner_light'),
+          Dark: bbbfly.morph.aegis.medium.img.VLineFrame('line_inner_dark')
         }
       }
     }
