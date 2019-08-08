@@ -45,7 +45,7 @@
 .aegis-ContentWrapper[D='1'] > .ControlsPanel,
 .aegis-ContentWrapperLight[D='1'] > .ControlsPanel {
   background-color: #768d87;
-  color: #606060;
+  color: #404040;
 }
 .aegis-ContentPanelDark > .ControlsPanel,
 .aegis-ContentFrameDark > .ControlsPanel,
@@ -59,7 +59,7 @@
 .aegis-ContentGridDark[D='1'] > .ControlsPanel,
 .aegis-ContentWrapperDark[D='1'] > .ControlsPanel {
   background-color: #566963;
-  color: #8a8a8a;
+  color: #a8a8a8;
 }
 /* InputFrame *****************************************************************/
 .aegis-InputFrame > .ControlsPanel,
@@ -154,7 +154,7 @@
 }
 .aegis-ButtonPanel[D='1'],
 .aegis-ButtonPanelLight[D='1'] {
-  color: #606060;
+  color: #404040;
 }
 .aegis-ButtonPanel[D='1'] > .ControlsPanel,
 .aegis-ButtonPanelLight[D='1'] > .ControlsPanel {
@@ -167,7 +167,7 @@
   background-color: #566963;
 }
 .aegis-ButtonPanelDark[o='1'] {
-  color: #111111;
+  color: #dddddd;
 }
 .aegis-ButtonPanelDark[o='1'] > .ControlsPanel {
   background-color: #788a84;
@@ -179,7 +179,7 @@
   background-color: #788a84;
 }
 .aegis-ButtonPanelDark[D='1'] {
-  color: #8a8a8a;
+  color: #a8a8a8;
 }
 .aegis-ButtonPanelDark[D='1'] > .ControlsPanel {
   background-color: #566963;
@@ -238,7 +238,7 @@
 .aegis-LargeContentButtonLight[D='1'],
 .aegis-ContentFlatButton[D='1'],
 .aegis-ContentFlatButtonLight[D='1'] {
-  color: #606060;
+  color: #404040;
 }
 .aegis-ContentButton[D='1'] > .ControlsPanel,
 .aegis-ContentButtonLight[D='1'] > .ControlsPanel,
@@ -251,12 +251,12 @@
 .aegis-ContentButtonDark,
 .aegis-LargeContentButtonDark,
 .aegis-ContentFlatButtonDark {
-  color: #dddddd;
+  color: #111111;
 }
 .aegis-ContentButtonDark > .ControlsPanel,
 .aegis-LargeContentButtonDark > .ControlsPanel,
 .aegis-ContentFlatButtonDark > .ControlsPanel {
-  background-color: #566963;
+  background-color: #677a74;
 }
 .aegis-ContentButtonDark[o='1'],
 .aegis-LargeContentButtonDark[o='1'],
@@ -271,7 +271,7 @@
 .aegis-ContentButtonDark[S='1'],
 .aegis-LargeContentButtonDark[S='1'],
 .aegis-ContentFlatButtonDark[S='1'] {
-  color: #dddddd;
+  color: #111111;
 }
 .aegis-ContentButtonDark[S='1'] > .ControlsPanel,
 .aegis-LargeContentButtonDark[S='1'] > .ControlsPanel,
@@ -281,10 +281,75 @@
 .aegis-ContentButtonDark[D='1'],
 .aegis-LargeContentButtonDark[D='1'],
 .aegis-ContentFlatButtonDark[D='1'] {
-  color: #8a8a8a;
+  color: #a8a8a8;
 }
 .aegis-ContentButtonDark[D='1'] > .ControlsPanel,
 .aegis-LargeContentButtonDark[D='1'] > .ControlsPanel,
 .aegis-ContentFlatButtonDark[D='1'] > .ControlsPanel {
   background-color: #566963;
+}
+/* ContentCheckBox, ContentRadioButton ****************************************/
+.aegis-ContentCheckBox,
+.aegis-ContentCheckBoxLight,
+.aegis-ContentRadioButton,
+.aegis-ContentRadioButtonLight {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  font-size: 11px;
+}
+.aegis-ContentCheckBox > div > .Text,
+.aegis-ContentCheckBoxLight > div > .Text,
+.aegis-ContentRadioButton > div > .Text,
+.aegis-ContentRadioButtonLight > div > .Text {
+  margin: 7px 10px 7px 10px;
+}
+.aegis-ContentCheckBoxDark,
+.aegis-ContentRadioButtonDark {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  font-size: 11px;
+}
+.aegis-ContentCheckBoxDark > div > .Text,
+.aegis-ContentRadioButtonDark > div > .Text {
+  margin: 7px 10px 7px 10px;
+}
+.aegis-ContentCheckBox,
+.aegis-ContentCheckBoxLight,
+.aegis-ContentRadioButton,
+.aegis-ContentRadioButtonLight {
+  color: #111111;
+}
+.aegis-ContentCheckBox[o='1'],
+.aegis-ContentCheckBoxLight[o='1'],
+.aegis-ContentRadioButton[o='1'],
+.aegis-ContentRadioButtonLight[o='1'] {
+  color: #111111;
+}
+.aegis-ContentCheckBox[S='1'],
+.aegis-ContentCheckBoxLight[S='1'],
+.aegis-ContentRadioButton[S='1'],
+.aegis-ContentRadioButtonLight[S='1'] {
+  color: #111111;
+}
+.aegis-ContentCheckBox[D='1'],
+.aegis-ContentCheckBoxLight[D='1'],
+.aegis-ContentRadioButton[D='1'],
+.aegis-ContentRadioButtonLight[D='1'] {
+  color: #404040;
+}
+.aegis-ContentCheckBoxDark,
+.aegis-ContentRadioButtonDark {
+  color: #111111;
+}
+.aegis-ContentCheckBoxDark[o='1'],
+.aegis-ContentRadioButtonDark[o='1'] {
+  color: #111111;
+}
+.aegis-ContentCheckBoxDark[S='1'],
+.aegis-ContentRadioButtonDark[S='1'] {
+  color: #111111;
+}
+.aegis-ContentCheckBoxDark[D='1'],
+.aegis-ContentRadioButtonDark[D='1'] {
+  color: #a8a8a8;
 }

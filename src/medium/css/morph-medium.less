@@ -165,7 +165,7 @@
   > .ControlsPanel{ background-color: @bInferDark; }
 
   &[o='1']{
-    color: @tInferLight_o;
+    color: @tInferDark_o;
     > .ControlsPanel{ background-color: @bInferDark_o; }
   }
 
@@ -214,7 +214,7 @@
   > .ControlsPanel{ background-color: @bBtnDark; }
 
   &[o='1']{
-    color: @tBtnLight_o;
+    color: @tBtnDark_o;
     > .ControlsPanel{ background-color: @bBtnDark_o; }
   }
 
@@ -227,4 +227,49 @@
     color: @tBtnDark_D;
     > .ControlsPanel{ background-color: @bBtnDark_D; }
   }
+}
+
+/* ContentCheckBox, ContentRadioButton ****************************************/
+.@{tp}ContentCheckBox,
+.@{tp}ContentCheckBoxLight,
+.@{tp}ContentRadioButton,
+.@{tp}ContentRadioButtonLight{
+  font-family: @fontInfer;
+  line-height: 14px;
+  font-size: 11px;
+
+  > div > .Text{
+    margin: 7px 10px 7px 10px;
+  }
+}
+
+.@{tp}ContentCheckBoxDark,
+.@{tp}ContentRadioButtonDark{
+  font-family: @fontInfer;
+  line-height: 14px;
+  font-size: 11px;
+
+  > div > .Text{
+    margin: 7px 10px 7px 10px;
+  }
+}
+
+.@{tp}ContentCheckBox,
+.@{tp}ContentCheckBoxLight,
+.@{tp}ContentRadioButton,
+.@{tp}ContentRadioButtonLight{
+  color: @tBtnLight;
+
+  &[o='1']{ color: @tBtnLight_o; }
+  &[S='1']{ color: @tBtnLight_S; }
+  &[D='1']{ color: @tBtnLight_D; }
+}
+
+.@{tp}ContentCheckBoxDark,
+.@{tp}ContentRadioButtonDark{
+  color: @tBtnDark;
+
+  &[o='1']{ color: @tBtnDark_o; }
+  &[S='1']{ color: @tBtnDark_S; }
+  &[D='1']{ color: @tBtnDark_D; }
 }
