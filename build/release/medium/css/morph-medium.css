@@ -173,7 +173,7 @@
   background-color: #788a84;
 }
 .aegis-ButtonPanelDark[S='1'] {
-  color: #dddddd;
+  color: #111111;
 }
 .aegis-ButtonPanelDark[S='1'] > .ControlsPanel {
   background-color: #788a84;
@@ -351,5 +351,116 @@
 }
 .aegis-ContentCheckBoxDark[D='1'],
 .aegis-ContentRadioButtonDark[D='1'] {
+  color: #a8a8a8;
+}
+/* PopupMenu ******************************************************************/
+.aegis-PopupMenu,
+.aegis-PopupMenuLight,
+.aegis-PopupMenuDark {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  outline: none;
+  -moz-outline: 0px;
+  -webkit-appearance: none;
+}
+.aegis-PopupMenuText .aegis-PopupMenuLightText,
+.aegis-PopupMenuDarkText {
+  padding: 3px 10px;
+}
+.aegis-PopupMenuSubMenu,
+.aegis-PopupMenuLightSubMenu,
+.aegis-PopupMenuDarkSubMenu {
+  position: absolute;
+  top: -3px;
+  right: -10px;
+}
+.aegis-PopupMenuSeparator,
+.aegis-PopupMenuLightSeparator {
+  border-style: solid;
+  border-color: #566963;
+  border-width: 1px 0px 0px 0px;
+  margin: 5px;
+}
+.aegis-PopupMenuDarkSeparator {
+  border-style: solid;
+  border-color: #36423e;
+  border-width: 1px 0px 0px 0px;
+  margin: 5px;
+}
+.aegis-PopupMenuBack,
+.aegis-PopupMenuLightBack {
+  padding: 5px 0px 5px 0px;
+  background-color: #768d87;
+  color: #111111;
+}
+.aegis-PopupMenuDarkBack {
+  padding: 5px 0px 5px 0px;
+  background-color: #566963;
+  color: #dddddd;
+}
+.aegis-PopupMenuRow,
+.aegis-PopupMenuRow > TD,
+.aegis-PopupMenuLightRow,
+.aegis-PopupMenuLightRow > TD {
+  background-color: #768d87;
+  color: #111111;
+  cursor: pointer;
+}
+.aegis-PopupMenuRow_Focus,
+.aegis-PopupMenuRow_Focus > TD,
+.aegis-PopupMenuLightRow_Focus,
+.aegis-PopupMenuLightRow_Focus > TD {
+  background-color: #97ada7;
+  color: #111111;
+  cursor: pointer;
+}
+.aegis-PopupMenuRowChecked,
+.aegis-PopupMenuRowChecked > TD,
+.aegis-PopupMenuLightRowChecked,
+.aegis-PopupMenuLightRowChecked > TD,
+.aegis-PopupMenuRowChecked_Focus,
+.aegis-PopupMenuRowChecked_Focus > TD,
+.aegis-PopupMenuLightRowChecked_Focus,
+.aegis-PopupMenuLightRowChecked_Focus > TD {
+  background-color: #97ada7;
+  color: #111111;
+  cursor: pointer;
+}
+.aegis-PopupMenuRowDisabled,
+.aegis-PopupMenuRowDisabled > TD,
+.aegis-PopupMenuLightRowDisabled,
+.aegis-PopupMenuLightRowDisabled > TD,
+.aegis-PopupMenuRowDisabled_Focus,
+.aegis-PopupMenuRowDisabled_Focus > TD,
+.aegis-PopupMenuLightRowDisabled_Focus,
+.aegis-PopupMenuLightRowDisabled_Focus > TD {
+  background-color: #768d87;
+  color: #404040;
+}
+.aegis-PopupMenuDarkRow,
+.aegis-PopupMenuDarkRow > TD {
+  background-color: #566963;
+  color: #dddddd;
+  cursor: pointer;
+}
+.aegis-PopupMenuDarkRow_Focus,
+.aegis-PopupMenuDarkRow_Focus > TD {
+  background-color: #788a84;
+  color: #dddddd;
+  cursor: pointer;
+}
+.aegis-PopupMenuDarkRowChecked,
+.aegis-PopupMenuDarkRowChecked > TD,
+.aegis-PopupMenuDarkRowChecked_Focus,
+.aegis-PopupMenuDarkRowChecked_Focus > TD {
+  background-color: #788a84;
+  color: #111111;
+  cursor: pointer;
+}
+.aegis-PopupMenuDarkRowDisabled,
+.aegis-PopupMenuDarkRowDisabled > TD,
+.aegis-PopupMenuDarkRowDisabled_Focus,
+.aegis-PopupMenuDarkRowDisabled_Focus > TD {
+  background-color: #566963;
   color: #a8a8a8;
 }

@@ -273,3 +273,132 @@
   &[S='1']{ color: @tBtnDark_S; }
   &[D='1']{ color: @tBtnDark_D; }
 }
+
+/* PopupMenu ******************************************************************/
+
+.@{tp}PopupMenu,
+.@{tp}PopupMenuLight,
+.@{tp}PopupMenuDark{
+  font-family: @fontInfer;
+  font-size: 11px;
+
+  outline: none;
+  -moz-outline: 0px;
+  -webkit-appearance: none;
+}
+
+.@{tp}PopupMenuText
+.@{tp}PopupMenuLightText,
+.@{tp}PopupMenuDarkText{
+  padding: 3px 10px;
+}
+
+.@{tp}PopupMenuSubMenu,
+.@{tp}PopupMenuLightSubMenu,
+.@{tp}PopupMenuDarkSubMenu{
+  position:absolute;
+  top: -3px;
+  right: -10px;
+}
+
+.@{tp}PopupMenuSeparator,
+.@{tp}PopupMenuLightSeparator{
+  border-style: solid;
+  border-color: @cInferLight;
+  border-width: 1px 0px 0px 0px;
+  margin: 5px;
+}
+
+.@{tp}PopupMenuDarkSeparator{
+  border-style: solid;
+  border-color: @cInferDark;
+  border-width: 1px 0px 0px 0px;
+  margin: 5px;
+}
+
+.@{tp}PopupMenuBack,
+.@{tp}PopupMenuLightBack{
+  padding: 5px 0px 5px 0px;
+  background-color: @bInferLight;
+  color: @tInferLight;
+}
+
+.@{tp}PopupMenuDarkBack{
+  padding: 5px 0px 5px 0px;
+  background-color: @bInferDark;
+  color: @tInferDark;
+}
+
+.@{tp}PopupMenuRow,
+.@{tp}PopupMenuRow > TD,
+.@{tp}PopupMenuLightRow,
+.@{tp}PopupMenuLightRow > TD{
+  background-color: @bInferLight;
+  color: @tInferLight;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuRow_Focus,
+.@{tp}PopupMenuRow_Focus > TD,
+.@{tp}PopupMenuLightRow_Focus,
+.@{tp}PopupMenuLightRow_Focus > TD{
+  background-color: @bInferLight_o;
+  color: @tInferLight_o;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuRowChecked,
+.@{tp}PopupMenuRowChecked > TD,
+.@{tp}PopupMenuLightRowChecked,
+.@{tp}PopupMenuLightRowChecked > TD,
+.@{tp}PopupMenuRowChecked_Focus,
+.@{tp}PopupMenuRowChecked_Focus > TD,
+.@{tp}PopupMenuLightRowChecked_Focus,
+.@{tp}PopupMenuLightRowChecked_Focus > TD{
+  background-color: @bInferLight_S;
+  color: @tInferLight_S;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuRowDisabled,
+.@{tp}PopupMenuRowDisabled > TD,
+.@{tp}PopupMenuLightRowDisabled,
+.@{tp}PopupMenuLightRowDisabled > TD,
+.@{tp}PopupMenuRowDisabled_Focus,
+.@{tp}PopupMenuRowDisabled_Focus > TD,
+.@{tp}PopupMenuLightRowDisabled_Focus,
+.@{tp}PopupMenuLightRowDisabled_Focus > TD{
+  background-color: @bInferLight_D;
+  color: @tInferLight_D;
+}
+
+.@{tp}PopupMenuDarkRow,
+.@{tp}PopupMenuDarkRow > TD{
+  background-color: @bInferDark;
+  color: @tInferDark;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuDarkRow_Focus,
+.@{tp}PopupMenuDarkRow_Focus > TD{
+  background-color: @bInferDark_o;
+  color: @tInferDark_o;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuDarkRowChecked,
+.@{tp}PopupMenuDarkRowChecked > TD,
+.@{tp}PopupMenuDarkRowChecked_Focus,
+.@{tp}PopupMenuDarkRowChecked_Focus > TD{
+  background-color: @bInferDark_S;
+  color: @tInferDark_S;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuDarkRowDisabled,
+.@{tp}PopupMenuDarkRowDisabled > TD,
+.@{tp}PopupMenuDarkRowDisabled_Focus,
+.@{tp}PopupMenuDarkRowDisabled_Focus > TD{
+  background-color: @bInferDark_D;
+  color: @tInferDark_D;
+}
