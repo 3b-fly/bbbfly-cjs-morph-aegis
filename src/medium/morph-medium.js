@@ -185,9 +185,30 @@ bbbfly.morph.aegis.medium.PopupMenu = function(def,imgs){
   ng_MergeDef(def,{
     Data: {
       Shade: bbbfly.Morph.shade.dark,
-      ShadeFrame: imgs.Frame.Outer
+      ShadeFrame: imgs.Frame.Outer,
+      SubMenuImg: imgs.Icon.Menu.SubMenu,
+      CheckImg: imgs.Icon.Menu.Check
     }
   });
+};
+
+/** @ignore */
+bbbfly.morph.aegis.medium.img.Icon = function(anchor,padding){
+  var defP = {L:0,T:0,R:0,B:0};
+
+  if(Object.isObject(padding)){ng_MergeVar(padding,defP);}
+  else{padding = defP;}
+
+  return {
+    L:(0+padding.L),oL:(30+padding.L),
+    SL:(60+padding.L), oSL:(90+padding.L),
+    DL:(120+padding.L), oDL:(150+padding.L),
+    DSL:(180+padding.L), oDSL:(210+padding.L),
+    W:(28-padding.L-padding.R),
+    H:(28-padding.T-padding.B),
+    T:(0+padding.T),
+    Src:{Img:'icon', Anchor:anchor}
+  };
 };
 
 /** @ignore */
@@ -259,6 +280,23 @@ bbbfly.morph.aegis.Medium = {
   Prefix: 'aegis-',
 
   Sources: {
+    icon: {
+      Path: 'medium/png/morph-medium-icon.png?1',
+      Anchors: {
+        list_check_light: { L:0, T:0 },
+        list_check_dark: { L:0, T:30 },
+        list_tree_light: { L:0, T:60 },
+        list_tree_dark: { L:0, T:90 },
+        menu_check_light: { L:0, T:120 },
+        menu_check_dark: { L:0, T:150 },
+        menu_tree_light: { L:0, T:180 },
+        menu_tree_dark: { L:0, T:210 },
+        menu_sub_light: { L:0, T:240 },
+        menu_sub_dark: { L:0, T:270 },
+        edit_drop_light: { L:0, T:300 },
+        edit_drop_dark: { L:0, T:330 }
+      }
+    },
     frame: {
       Path: 'medium/png/morph-medium-frame.png?1',
       Anchors: {
@@ -337,6 +375,38 @@ bbbfly.morph.aegis.Medium = {
     }
   },
   Images: {
+    Icon: {
+      List: {
+        Check: {
+          Light: bbbfly.morph.aegis.medium.img.Icon('list_check_light',{R:6}),
+          Dark: bbbfly.morph.aegis.medium.img.Icon('list_check_dark',{R:6})
+        },
+        Tree: {
+          Light: bbbfly.morph.aegis.medium.img.Icon('list_tree_light',{L:4,R:4}),
+          Dark: bbbfly.morph.aegis.medium.img.Icon('list_tree_dark',{L:4,R:4})
+        }
+      },
+      Menu: {
+        Check: {
+          Light: bbbfly.morph.aegis.medium.img.Icon('menu_check_light',{R:6,T:2,B:2}),
+          Dark: bbbfly.morph.aegis.medium.img.Icon('menu_check_dark',{R:6,T:2,B:2})
+        },
+        Tree: {
+          Light: bbbfly.morph.aegis.medium.img.Icon('menu_tree_light',{L:4,R:4,T:2,B:2}),
+          Dark: bbbfly.morph.aegis.medium.img.Icon('menu_tree_dark',{L:4,R:4,T:2,B:2})
+        },
+        SubMenu: {
+          Light: bbbfly.morph.aegis.medium.img.Icon('menu_sub_light',{L:4,R:4,T:2,B:2}),
+          Dark: bbbfly.morph.aegis.medium.img.Icon('menu_sub_dark',{L:4,R:4,T:2,B:2})
+        }
+      },
+      Edit: {
+        DropDown: {
+          Light: bbbfly.morph.aegis.medium.img.Icon('edit_drop_light'),
+          Dark: bbbfly.morph.aegis.medium.img.Icon('edit_drop_dark')
+        }
+      }
+    },
     Frame: {
       Outer: {
         Light: bbbfly.morph.aegis.medium.img.PanelFrame('frame_outer_light'),
