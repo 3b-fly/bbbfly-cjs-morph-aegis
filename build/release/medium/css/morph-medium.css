@@ -152,12 +152,28 @@
 .aegis-ButtonPanelLight[S='1'] > .ControlsPanel {
   background-color: #97ada7;
 }
+.aegis-ButtonPanel[o='1'][S='1'],
+.aegis-ButtonPanelLight[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-ButtonPanel[o='1'][S='1'] > .ControlsPanel,
+.aegis-ButtonPanelLight[o='1'][S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
 .aegis-ButtonPanel[D='1'],
 .aegis-ButtonPanelLight[D='1'] {
   color: #404040;
 }
 .aegis-ButtonPanel[D='1'] > .ControlsPanel,
 .aegis-ButtonPanelLight[D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-ButtonPanel[o='1'][D='1'],
+.aegis-ButtonPanelLight[o='1'][D='1'] {
+  color: #404040;
+}
+.aegis-ButtonPanel[o='1'][D='1'] > .ControlsPanel,
+.aegis-ButtonPanelLight[o='1'][D='1'] > .ControlsPanel {
   background-color: #768d87;
 }
 .aegis-ButtonPanelDark {
@@ -178,10 +194,22 @@
 .aegis-ButtonPanelDark[S='1'] > .ControlsPanel {
   background-color: #788a84;
 }
+.aegis-ButtonPanelDark[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-ButtonPanelDark[o='1'][S='1'] > .ControlsPanel {
+  background-color: #788a84;
+}
 .aegis-ButtonPanelDark[D='1'] {
   color: #a8a8a8;
 }
 .aegis-ButtonPanelDark[D='1'] > .ControlsPanel {
+  background-color: #566963;
+}
+.aegis-ButtonPanelDark[o='1'][D='1'] {
+  color: #a8a8a8;
+}
+.aegis-ButtonPanelDark[o='1'][D='1'] > .ControlsPanel {
   background-color: #566963;
 }
 .aegis-ContentButton,
@@ -232,6 +260,22 @@
 .aegis-ContentFlatButtonLight[S='1'] > .ControlsPanel {
   background-color: #97ada7;
 }
+.aegis-ContentButton[o='1'][S='1'],
+.aegis-ContentButtonLight[o='1'][S='1'],
+.aegis-LargeContentButton[o='1'][S='1'],
+.aegis-LargeContentButtonLight[o='1'][S='1'],
+.aegis-ContentFlatButton[o='1'][S='1'],
+.aegis-ContentFlatButtonLight[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-ContentButton[o='1'][S='1'] > .ControlsPanel,
+.aegis-ContentButtonLight[o='1'][S='1'] > .ControlsPanel,
+.aegis-LargeContentButton[o='1'][S='1'] > .ControlsPanel,
+.aegis-LargeContentButtonLight[o='1'][S='1'] > .ControlsPanel,
+.aegis-ContentFlatButton[o='1'][S='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonLight[o='1'][S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
 .aegis-ContentButton[D='1'],
 .aegis-ContentButtonLight[D='1'],
 .aegis-LargeContentButton[D='1'],
@@ -246,6 +290,22 @@
 .aegis-LargeContentButtonLight[D='1'] > .ControlsPanel,
 .aegis-ContentFlatButton[D='1'] > .ControlsPanel,
 .aegis-ContentFlatButtonLight[D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-ContentButton[o='1'][D='1'],
+.aegis-ContentButtonLight[o='1'][D='1'],
+.aegis-LargeContentButton[o='1'][D='1'],
+.aegis-LargeContentButtonLight[o='1'][D='1'],
+.aegis-ContentFlatButton[o='1'][D='1'],
+.aegis-ContentFlatButtonLight[o='1'][D='1'] {
+  color: #404040;
+}
+.aegis-ContentButton[o='1'][D='1'] > .ControlsPanel,
+.aegis-ContentButtonLight[o='1'][D='1'] > .ControlsPanel,
+.aegis-LargeContentButton[o='1'][D='1'] > .ControlsPanel,
+.aegis-LargeContentButtonLight[o='1'][D='1'] > .ControlsPanel,
+.aegis-ContentFlatButton[o='1'][D='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonLight[o='1'][D='1'] > .ControlsPanel {
   background-color: #768d87;
 }
 .aegis-ContentButtonDark,
@@ -278,6 +338,16 @@
 .aegis-ContentFlatButtonDark[S='1'] > .ControlsPanel {
   background-color: #788a84;
 }
+.aegis-ContentButtonDark[o='1'][S='1'],
+.aegis-LargeContentButtonDark[o='1'][S='1'],
+.aegis-ContentFlatButtonDark[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-ContentButtonDark[o='1'][S='1'] > .ControlsPanel,
+.aegis-LargeContentButtonDark[o='1'][S='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonDark[o='1'][S='1'] > .ControlsPanel {
+  background-color: #788a84;
+}
 .aegis-ContentButtonDark[D='1'],
 .aegis-LargeContentButtonDark[D='1'],
 .aegis-ContentFlatButtonDark[D='1'] {
@@ -286,6 +356,16 @@
 .aegis-ContentButtonDark[D='1'] > .ControlsPanel,
 .aegis-LargeContentButtonDark[D='1'] > .ControlsPanel,
 .aegis-ContentFlatButtonDark[D='1'] > .ControlsPanel {
+  background-color: #566963;
+}
+.aegis-ContentButtonDark[o='1'][D='1'],
+.aegis-LargeContentButtonDark[o='1'][D='1'],
+.aegis-ContentFlatButtonDark[o='1'][D='1'] {
+  color: #a8a8a8;
+}
+.aegis-ContentButtonDark[o='1'][D='1'] > .ControlsPanel,
+.aegis-LargeContentButtonDark[o='1'][D='1'] > .ControlsPanel,
+.aegis-ContentFlatButtonDark[o='1'][D='1'] > .ControlsPanel {
   background-color: #566963;
 }
 /* ContentCheckBox, ContentRadioButton ****************************************/
@@ -331,10 +411,22 @@
 .aegis-ContentRadioButtonLight[S='1'] {
   color: #111111;
 }
+.aegis-ContentCheckBox[o='1'][S='1'],
+.aegis-ContentCheckBoxLight[o='1'][S='1'],
+.aegis-ContentRadioButton[o='1'][S='1'],
+.aegis-ContentRadioButtonLight[o='1'][S='1'] {
+  color: #111111;
+}
 .aegis-ContentCheckBox[D='1'],
 .aegis-ContentCheckBoxLight[D='1'],
 .aegis-ContentRadioButton[D='1'],
 .aegis-ContentRadioButtonLight[D='1'] {
+  color: #404040;
+}
+.aegis-ContentCheckBox[o='1'][D='1'],
+.aegis-ContentCheckBoxLight[o='1'][D='1'],
+.aegis-ContentRadioButton[o='1'][D='1'],
+.aegis-ContentRadioButtonLight[o='1'][D='1'] {
   color: #404040;
 }
 .aegis-ContentCheckBoxDark,
@@ -349,8 +441,16 @@
 .aegis-ContentRadioButtonDark[S='1'] {
   color: #111111;
 }
+.aegis-ContentCheckBoxDark[o='1'][S='1'],
+.aegis-ContentRadioButtonDark[o='1'][S='1'] {
+  color: #111111;
+}
 .aegis-ContentCheckBoxDark[D='1'],
 .aegis-ContentRadioButtonDark[D='1'] {
+  color: #a8a8a8;
+}
+.aegis-ContentCheckBoxDark[o='1'][D='1'],
+.aegis-ContentRadioButtonDark[o='1'][D='1'] {
   color: #a8a8a8;
 }
 /* PopupMenu ******************************************************************/
@@ -365,13 +465,14 @@
 }
 .aegis-PopupMenuText .aegis-PopupMenuLightText,
 .aegis-PopupMenuDarkText {
-  padding: 3px 10px;
+  line-height: 20px;
+  padding: 2px 10px;
 }
 .aegis-PopupMenuSubMenu,
 .aegis-PopupMenuLightSubMenu,
 .aegis-PopupMenuDarkSubMenu {
   position: absolute;
-  top: -3px;
+  top: -2px;
   right: -10px;
 }
 .aegis-PopupMenuSeparator,
@@ -402,7 +503,7 @@
 .aegis-PopupMenuRow > TD,
 .aegis-PopupMenuLightRow,
 .aegis-PopupMenuLightRow > TD {
-  background-color: #768d87;
+  background-color: transparent;
   color: #111111;
   cursor: pointer;
 }
@@ -410,57 +511,71 @@
 .aegis-PopupMenuRow_Focus > TD,
 .aegis-PopupMenuLightRow_Focus,
 .aegis-PopupMenuLightRow_Focus > TD {
-  background-color: #97ada7;
+  background-color: #94c469;
   color: #111111;
   cursor: pointer;
 }
 .aegis-PopupMenuRowChecked,
 .aegis-PopupMenuRowChecked > TD,
 .aegis-PopupMenuLightRowChecked,
-.aegis-PopupMenuLightRowChecked > TD,
+.aegis-PopupMenuLightRowChecked > TD {
+  background-color: transparent;
+  color: #111111;
+  cursor: pointer;
+}
 .aegis-PopupMenuRowChecked_Focus,
 .aegis-PopupMenuRowChecked_Focus > TD,
 .aegis-PopupMenuLightRowChecked_Focus,
 .aegis-PopupMenuLightRowChecked_Focus > TD {
-  background-color: #97ada7;
+  background-color: #94c469;
   color: #111111;
   cursor: pointer;
 }
 .aegis-PopupMenuRowDisabled,
 .aegis-PopupMenuRowDisabled > TD,
 .aegis-PopupMenuLightRowDisabled,
-.aegis-PopupMenuLightRowDisabled > TD,
+.aegis-PopupMenuLightRowDisabled > TD {
+  background-color: transparent;
+  color: #404040;
+}
 .aegis-PopupMenuRowDisabled_Focus,
 .aegis-PopupMenuRowDisabled_Focus > TD,
 .aegis-PopupMenuLightRowDisabled_Focus,
 .aegis-PopupMenuLightRowDisabled_Focus > TD {
-  background-color: #768d87;
+  background-color: transparent;
   color: #404040;
 }
 .aegis-PopupMenuDarkRow,
 .aegis-PopupMenuDarkRow > TD {
-  background-color: #566963;
-  color: #dddddd;
+  background-color: transparent;
+  color: #eeeeee;
   cursor: pointer;
 }
 .aegis-PopupMenuDarkRow_Focus,
 .aegis-PopupMenuDarkRow_Focus > TD {
-  background-color: #788a84;
-  color: #dddddd;
+  background-color: #94c469;
+  color: #111111;
   cursor: pointer;
 }
 .aegis-PopupMenuDarkRowChecked,
-.aegis-PopupMenuDarkRowChecked > TD,
+.aegis-PopupMenuDarkRowChecked > TD {
+  background-color: transparent;
+  color: #eeeeee;
+  cursor: pointer;
+}
 .aegis-PopupMenuDarkRowChecked_Focus,
 .aegis-PopupMenuDarkRowChecked_Focus > TD {
-  background-color: #788a84;
+  background-color: #94c469;
   color: #111111;
   cursor: pointer;
 }
 .aegis-PopupMenuDarkRowDisabled,
-.aegis-PopupMenuDarkRowDisabled > TD,
+.aegis-PopupMenuDarkRowDisabled > TD {
+  background-color: transparent;
+  color: #a8a8a8;
+}
 .aegis-PopupMenuDarkRowDisabled_Focus,
 .aegis-PopupMenuDarkRowDisabled_Focus > TD {
-  background-color: #566963;
+  background-color: transparent;
   color: #a8a8a8;
 }

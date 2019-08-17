@@ -153,9 +153,19 @@
     > .ControlsPanel{ background-color: @bInferLight_S; }
   }
 
+  &[o='1'][S='1']{
+    color: @tInferLight_oS;
+    > .ControlsPanel{ background-color: @bInferLight_oS; }
+  }
+
   &[D='1']{
     color: @tInferLight_D;
     > .ControlsPanel{ background-color: @bInferLight_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tInferLight_oD;
+    > .ControlsPanel{ background-color: @bInferLight_oD; }
   }
 }
 
@@ -174,9 +184,19 @@
     > .ControlsPanel{ background-color: @bInferDark_S; }
   }
 
+  &[o='1'][S='1']{
+    color: @tInferDark_oS;
+    > .ControlsPanel{ background-color: @bInferDark_oS; }
+  }
+
   &[D='1']{
     color: @tInferDark_D;
     > .ControlsPanel{ background-color: @bInferDark_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tInferDark_oD;
+    > .ControlsPanel{ background-color: @bInferDark_oD; }
   }
 }
 
@@ -200,9 +220,19 @@
     > .ControlsPanel{ background-color: @bBtnLight_S; }
   }
 
+  &[o='1'][S='1']{
+    color: @tBtnLight_oS;
+    > .ControlsPanel{ background-color: @bBtnLight_oS; }
+  }
+
   &[D='1']{
     color: @tBtnLight_D;
     > .ControlsPanel{ background-color: @bBtnLight_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tBtnLight_oD;
+    > .ControlsPanel{ background-color: @bBtnLight_oD; }
   }
 }
 
@@ -223,9 +253,19 @@
     > .ControlsPanel{ background-color: @bBtnDark_S; }
   }
 
+  &[o='1'][S='1']{
+    color: @tBtnDark_oS;
+    > .ControlsPanel{ background-color: @bBtnDark_oS; }
+  }
+
   &[D='1']{
     color: @tBtnDark_D;
     > .ControlsPanel{ background-color: @bBtnDark_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tBtnDark_oD;
+    > .ControlsPanel{ background-color: @bBtnDark_oD; }
   }
 }
 
@@ -262,7 +302,9 @@
 
   &[o='1']{ color: @tBtnLight_o; }
   &[S='1']{ color: @tBtnLight_S; }
+  &[o='1'][S='1']{ color: @tBtnLight_oS; }
   &[D='1']{ color: @tBtnLight_D; }
+  &[o='1'][D='1']{ color: @tBtnLight_oD; }
 }
 
 .@{tp}ContentCheckBoxDark,
@@ -271,7 +313,9 @@
 
   &[o='1']{ color: @tBtnDark_o; }
   &[S='1']{ color: @tBtnDark_S; }
+  &[o='1'][S='1']{ color: @tBtnDark_oS; }
   &[D='1']{ color: @tBtnDark_D; }
+  &[o='1'][D='1']{ color: @tBtnDark_oD; }
 }
 
 /* PopupMenu ******************************************************************/
@@ -290,14 +334,15 @@
 .@{tp}PopupMenuText
 .@{tp}PopupMenuLightText,
 .@{tp}PopupMenuDarkText{
-  padding: 3px 10px;
+  line-height: 20px;
+  padding: 2px 10px;
 }
 
 .@{tp}PopupMenuSubMenu,
 .@{tp}PopupMenuLightSubMenu,
 .@{tp}PopupMenuDarkSubMenu{
   position:absolute;
-  top: -3px;
+  top: -2px;
   right: -10px;
 }
 
@@ -333,8 +378,8 @@
 .@{tp}PopupMenuRow > TD,
 .@{tp}PopupMenuLightRow,
 .@{tp}PopupMenuLightRow > TD{
-  background-color: @bInferLight;
-  color: @tInferLight;
+  background-color: @bInferItemLight;
+  color: @tInferItemLight;
   cursor: pointer;
 }
 
@@ -342,63 +387,81 @@
 .@{tp}PopupMenuRow_Focus > TD,
 .@{tp}PopupMenuLightRow_Focus,
 .@{tp}PopupMenuLightRow_Focus > TD{
-  background-color: @bInferLight_o;
-  color: @tInferLight_o;
+  background-color: @bInferItemLight_o;
+  color: @tInferItemLight_o;
   cursor: pointer;
 }
 
 .@{tp}PopupMenuRowChecked,
 .@{tp}PopupMenuRowChecked > TD,
 .@{tp}PopupMenuLightRowChecked,
-.@{tp}PopupMenuLightRowChecked > TD,
+.@{tp}PopupMenuLightRowChecked > TD{
+  background-color: @bInferItemLight_S;
+  color: @tInferItemLight_S;
+  cursor: pointer;
+}
+
 .@{tp}PopupMenuRowChecked_Focus,
 .@{tp}PopupMenuRowChecked_Focus > TD,
 .@{tp}PopupMenuLightRowChecked_Focus,
 .@{tp}PopupMenuLightRowChecked_Focus > TD{
-  background-color: @bInferLight_S;
-  color: @tInferLight_S;
+  background-color: @bInferItemLight_oS;
+  color: @tInferItemLight_oS;
   cursor: pointer;
 }
 
 .@{tp}PopupMenuRowDisabled,
 .@{tp}PopupMenuRowDisabled > TD,
 .@{tp}PopupMenuLightRowDisabled,
-.@{tp}PopupMenuLightRowDisabled > TD,
+.@{tp}PopupMenuLightRowDisabled > TD{
+  background-color: @bInferItemLight_oD;
+  color: @tInferItemLight_oD;
+}
+
 .@{tp}PopupMenuRowDisabled_Focus,
 .@{tp}PopupMenuRowDisabled_Focus > TD,
 .@{tp}PopupMenuLightRowDisabled_Focus,
 .@{tp}PopupMenuLightRowDisabled_Focus > TD{
-  background-color: @bInferLight_D;
-  color: @tInferLight_D;
+  background-color: @bInferItemLight_D;
+  color: @tInferItemLight_D;
 }
 
 .@{tp}PopupMenuDarkRow,
 .@{tp}PopupMenuDarkRow > TD{
-  background-color: @bInferDark;
-  color: @tInferDark;
+  background-color: @bInferItemDark;
+  color: @tInferItemDark;
   cursor: pointer;
 }
 
 .@{tp}PopupMenuDarkRow_Focus,
 .@{tp}PopupMenuDarkRow_Focus > TD{
-  background-color: @bInferDark_o;
-  color: @tInferDark_o;
+  background-color: @bInferItemDark_o;
+  color: @tInferItemDark_o;
   cursor: pointer;
 }
 
 .@{tp}PopupMenuDarkRowChecked,
-.@{tp}PopupMenuDarkRowChecked > TD,
+.@{tp}PopupMenuDarkRowChecked > TD{
+  background-color: @bInferItemDark_S;
+  color: @tInferItemDark_S;
+  cursor: pointer;
+}
+
 .@{tp}PopupMenuDarkRowChecked_Focus,
 .@{tp}PopupMenuDarkRowChecked_Focus > TD{
-  background-color: @bInferDark_S;
-  color: @tInferDark_S;
+  background-color: @bInferItemDark_oS;
+  color: @tInferItemDark_oS;
   cursor: pointer;
 }
 
 .@{tp}PopupMenuDarkRowDisabled,
-.@{tp}PopupMenuDarkRowDisabled > TD,
+.@{tp}PopupMenuDarkRowDisabled > TD{
+  background-color: @bInferItemDark_oD;
+  color: @tInferItemDark_oD;
+}
+
 .@{tp}PopupMenuDarkRowDisabled_Focus,
 .@{tp}PopupMenuDarkRowDisabled_Focus > TD{
-  background-color: @bInferDark_D;
-  color: @tInferDark_D;
+  background-color: @bInferItemDark_D;
+  color: @tInferItemDark_D;
 }
