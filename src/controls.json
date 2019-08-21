@@ -13,10 +13,12 @@
     "medium": {
       "DebugFiles": [
         "medium/morph-medium.js",
+        "medium/morph-medium-img.js",
         "medium/css/morph-medium.css"
       ],
       "ReleaseFiles": [
         "medium/morph-medium.js",
+        "medium/morph-medium-img.js",
         "medium/css/morph-medium.css"
       ],
       "Libraries": {
