@@ -18,22 +18,51 @@ bbbfly.morph.aegis.medium = bbbfly.morph.aegis.medium || {};
 bbbfly.morph.aegis.medium.img = {};
 
 /** @ignore */
-bbbfly.morph.aegis.medium.img.Image = function(anchor,padding){
-  var defP = {L:0,T:0,R:0,B:0};
+bbbfly.morph.aegis.medium.img._padding = function(padding){
+  if(Object.isObject(padding)){
+    ng_MergeVar(padding,{L:0,T:0,R:0,B:0});
+  }
+  else if(Number.isInteger(padding)){
+    padding = {L:padding,T:padding,R:padding,B:padding};
+  }
+  else{
+    padding = {L:0,T:0,R:0,B:0};
+  }
+  return padding;
+};
 
-  if(Object.isObject(padding)){ng_MergeVar(padding,defP);}
-  else{padding = defP;}
+/** @ignore */
+bbbfly.morph.aegis.medium.img._image = function(src,anchor,padding){
+  padding = bbbfly.morph.aegis.medium.img._padding(padding);
 
   return {
+    T:(0+padding.T),
     L:(0+padding.L),oL:(30+padding.L),
     SL:(60+padding.L), oSL:(90+padding.L),
     DL:(120+padding.L), oDL:(150+padding.L),
     DSL:(180+padding.L), oDSL:(210+padding.L),
-    W:(28-padding.L-padding.R),
-    H:(28-padding.T-padding.B),
-    T:(0+padding.T),
-    Src:{Img:'image', Anchor:anchor}
+    W:(28-padding.L-padding.R), H:(28-padding.T-padding.B),
+    Src:{Img:src, Anchor:anchor}
   };
+};
+
+/** @ignore */
+bbbfly.morph.aegis.medium.img._icon = function(top,anchor,padding){
+  padding = bbbfly.morph.aegis.medium.img._padding(padding);
+  if(!Number.isInteger(top)){top = -30;}
+
+  return {
+    T:(0+top+padding.T),
+    L:(0+padding.L),oL:(30+padding.L),
+    SL:(60+padding.L), oSL:(90+padding.L), DL:(120+padding.L),
+    W:(28-padding.L-padding.R), H:(28-padding.T-padding.B),
+    Src:{Img:'icon', Anchor:anchor}
+  };
+};
+
+/** @ignore */
+bbbfly.morph.aegis.medium.img.Image = function(anchor,padding){
+  return bbbfly.morph.aegis.medium.img._image('image',anchor,padding);
 };
 
 /** @ignore */
@@ -84,18 +113,21 @@ bbbfly.morph.aegis.medium.img.ButtonFrame = function(anchor){
 
 /** @ignore */
 bbbfly.morph.aegis.medium.img.ButtonImage = function(anchor,indent){
-  var img = {
-    L:(0+indent), oL:(30+indent),
-    SL:(60+indent), oSL:(90+indent),
-    DL:(120+indent), oDL:(150+indent),
-    DSL:(180+indent), oDSL:(210+indent),
-    W:(28-2*indent), H:(28-2*indent),
-    T:(0+indent), Src:{Img:'button', Anchor:anchor}
-  };
+  var img = bbbfly.morph.aegis.medium.img._image(
+    'button',anchor,indent
+  );
   bbbfly.Renderer.RecalcImageState(
     img,bbbfly.Renderer.stateattr.invalid,{ T:(30+indent) }
   );
   return img;
+};
+
+/** @ignore */
+bbbfly.morph.aegis.medium.img.Icon = function(top,padding){
+  return {
+    Light: bbbfly.morph.aegis.medium.img._icon(top,'misc_light',padding),
+    Dark: bbbfly.morph.aegis.medium.img._icon(top,'misc_dark',padding)
+  };
 };
 
 /** @ignore */
