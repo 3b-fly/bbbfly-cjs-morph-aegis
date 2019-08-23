@@ -35,12 +35,12 @@ bbbfly.morph.aegis.medium.img._image = function(src,anchor,padding){
     Src:{Img:src, Anchor:anchor}
   };
 };
-bbbfly.morph.aegis.medium.img._icon = function(top,anchor,padding){
+bbbfly.morph.aegis.medium.img._icon = function(index,anchor,padding){
   padding = bbbfly.morph.aegis.medium.img._padding(padding);
-  if(!Number.isInteger(top)){top = -30;}
+  if(!Number.isInteger(index)){index = -1;}
 
   return {
-    T:(0+top+padding.T),
+    T:(0+(index*60)+padding.T),
     L:(0+padding.L),oL:(30+padding.L),
     SL:(60+padding.L), oSL:(90+padding.L), DL:(120+padding.L),
     W:(28-padding.L-padding.R), H:(28-padding.T-padding.B),
@@ -97,11 +97,16 @@ bbbfly.morph.aegis.medium.img.ButtonImage = function(anchor,indent){
   );
   return img;
 };
-bbbfly.morph.aegis.medium.img.Icon = function(top,padding){
-  return {
-    Light: bbbfly.morph.aegis.medium.img._icon(top,'misc_light',padding),
-    Dark: bbbfly.morph.aegis.medium.img._icon(top,'misc_dark',padding)
-  };
+bbbfly.morph.aegis.medium.img.Icon = function(anchor,padding){
+  padding = bbbfly.morph.aegis.medium.img._padding(padding);
+  var icons = {};
+  
+  for(var name in bbbfly.morph.aegis.medium.img.icon){
+    var index = bbbfly.morph.aegis.medium.img.icon[name];
+    var icon = bbbfly.morph.aegis.medium.img._icon(index,anchor,padding);
+    icons[name] = icon;
+  }
+  return icons;
 };
 bbbfly.morph.aegis.medium.img.sources = {
   image: {
@@ -205,6 +210,28 @@ bbbfly.morph.aegis.medium.img.sources = {
     }
   }
 };
+bbbfly.morph.aegis.medium.img.icon = {
+  none: -1,
+  plus: 0,
+  minus: 1,
+  add: 2,
+  remove: 3,
+  up: 4,
+  down: 5,
+  left: 6,
+  right: 7,
+  close: 8,
+  refresh: 9,
+  edit: 10,
+  delete: 11,
+  settings: 12,
+  search: 13,
+  filter: 14,
+  copyright: 15,
+  drop: 16,
+  circle: 17,
+  set: 18
+};
 bbbfly.morph.aegis.medium.img.images = {
   Image: {
     List: {
@@ -293,24 +320,13 @@ bbbfly.morph.aegis.medium.img.images = {
     }
   },
   Icon: {
-    plus: 0,
-    minus: 60,
-    add: 120,
-    remove: 180,
-    up: 240,
-    down: 300,
-    left: 360,
-    right: 420,
-    close: 480,
-    refresh: 540,
-    edit: 600,
-    delete: 660,
-    settings: 720,
-    search: 780,
-    filter: 840,
-    copyright: 900,
-    drop: 960,
-    circle: 1020,
-    set: 1080
+    Full: {
+      Light: bbbfly.morph.aegis.medium.img.Icon('misc_light'),
+      Dark: bbbfly.morph.aegis.medium.img.Icon('misc_dark')
+    },
+    Button: {
+      Light: bbbfly.morph.aegis.medium.img.Icon('misc_light',2),
+      Dark: bbbfly.morph.aegis.medium.img.Icon('misc_dark',2)
+    }
   }
 };

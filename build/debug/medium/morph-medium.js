@@ -9,11 +9,6 @@ var bbbfly = bbbfly || {};
 bbbfly.morph = bbbfly.morph || {};
 bbbfly.morph.aegis = bbbfly.morph.aegis || {};
 bbbfly.morph.aegis.medium =  bbbfly.morph.aegis.medium || {};
-bbbfly.morph.aegis.medium._icon = function(icon){
-  icon = bbbfly.morph.aegis.medium.img.Icon(icon);
-  bbbfly.morph.core._recalcImageSources(icon,this.Sources);
-  return icon;
-};
 bbbfly.morph.aegis.medium._onInit = function(){
   if(bbbfly.morph.aegis.medium.img){
     this.Sources = bbbfly.morph.aegis.medium.img.sources;
@@ -171,8 +166,6 @@ bbbfly.morph.aegis.Medium = {
 
   Sources: null,
   Images: null,
-
-  Icon: bbbfly.morph.aegis.medium._icon,
 
   OnInit: bbbfly.morph.aegis.medium._onInit,
   OnCreateControl: bbbfly.morph.aegis.medium._onCreateControl
