@@ -95,7 +95,7 @@
   }
 }
 
-/* ButtonPanel, ContentButton, ContentFlatButton, LargeContentButton **********/
+/* ButtonPanel, ContentButton, LargeContentButton, ContentFlatButton **********/
 .@{tp}ButtonPanel,
 .@{tp}ButtonPanelLight,
 .@{tp}ContentButton,
@@ -203,9 +203,7 @@
 .@{tp}ContentButton,
 .@{tp}ContentButtonLight,
 .@{tp}LargeContentButton,
-.@{tp}LargeContentButtonLight,
-.@{tp}ContentFlatButton,
-.@{tp}ContentFlatButtonLight{
+.@{tp}LargeContentButtonLight{
 
   color: @tBtnLight;
   > .ControlsPanel{ background-color: @bBtnLight; }
@@ -237,8 +235,7 @@
 }
 
 .@{tp}ContentButtonDark,
-.@{tp}LargeContentButtonDark,
-.@{tp}ContentFlatButtonDark{
+.@{tp}LargeContentButtonDark{
 
   color: @tBtnDark;
   > .ControlsPanel{ background-color: @bBtnDark; }
@@ -266,6 +263,69 @@
   &[o='1'][D='1']{
     color: @tBtnDark_oD;
     > .ControlsPanel{ background-color: @bBtnDark_oD; }
+  }
+}
+
+.@{tp}ContentFlatButton,
+.@{tp}ContentFlatButtonLight{
+
+  color: @tFlatLight;
+  > .ControlsPanel{ background-color: @bFlatLight; }
+
+  &[o='1']{
+    color: @tFlatLight_o;
+    > .ControlsPanel{ background-color: @bFlatLight_o; }
+  }
+
+  &[S='1']{
+    color: @tFlatLight_S;
+    > .ControlsPanel{ background-color: @bFlatLight_S; }
+  }
+
+  &[o='1'][S='1']{
+    color: @tFlatLight_oS;
+    > .ControlsPanel{ background-color: @bFlatLight_oS; }
+  }
+
+  &[D='1']{
+    color: @tFlatLight_D;
+    > .ControlsPanel{ background-color: @bFlatLight_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tFlatLight_oD;
+    > .ControlsPanel{ background-color: @bFlatLight_oD; }
+  }
+}
+
+.@{tp}ContentFlatButtonDark{
+
+  color: @tFlatDark;
+  > .ControlsPanel{ background-color: @bFlatDark; }
+
+  &[o='1']{
+    color: @tFlatDark_o;
+    > .ControlsPanel{ background-color: @bFlatDark_o; }
+  }
+
+  &[S='1']{
+    color: @tFlatDark_S;
+    > .ControlsPanel{ background-color: @bFlatDark_S; }
+  }
+
+  &[o='1'][S='1']{
+    color: @tFlatDark_oS;
+    > .ControlsPanel{ background-color: @bFlatDark_oS; }
+  }
+
+  &[D='1']{
+    color: @tFlatDark_D;
+    > .ControlsPanel{ background-color: @bFlatDark_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tFlatDark_oD;
+    > .ControlsPanel{ background-color: @bFlatDark_oD; }
   }
 }
 
