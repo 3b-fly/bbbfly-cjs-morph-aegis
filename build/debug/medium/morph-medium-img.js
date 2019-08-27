@@ -35,18 +35,6 @@ bbbfly.morph.aegis.medium.img._image = function(src,anchor,padding){
     Src:{Img:src, Anchor:anchor}
   };
 };
-bbbfly.morph.aegis.medium.img._icon = function(index,anchor,padding){
-  padding = bbbfly.morph.aegis.medium.img._padding(padding);
-  if(!Number.isInteger(index)){index = -1;}
-
-  return {
-    T:(0+(index*60)+padding.T),
-    L:(0+padding.L),oL:(30+padding.L),
-    SL:(60+padding.L), oSL:(90+padding.L), DL:(120+padding.L),
-    W:(28-padding.L-padding.R), H:(28-padding.T-padding.B),
-    Src:{Img:'icon', Anchor:anchor}
-  };
-};
 bbbfly.morph.aegis.medium.img.Image = function(anchor,padding){
   return bbbfly.morph.aegis.medium.img._image('image',anchor,padding);
 };
@@ -97,14 +85,22 @@ bbbfly.morph.aegis.medium.img.ButtonImage = function(anchor,indent){
   );
   return img;
 };
-bbbfly.morph.aegis.medium.img.Icon = function(anchor,padding){
+bbbfly.morph.aegis.medium.img.ButtonIcon = function(anchor,padding){
   padding = bbbfly.morph.aegis.medium.img._padding(padding);
   var icons = {};
-  
+
   for(var name in bbbfly.morph.aegis.medium.img.icon){
     var index = bbbfly.morph.aegis.medium.img.icon[name];
-    var icon = bbbfly.morph.aegis.medium.img._icon(index,anchor,padding);
-    icons[name] = icon;
+    if(!Number.isInteger(index)){index = -1;}
+
+    icons[name] = {
+      T:(0+(index*60)+padding.T),
+      L:(0+padding.L),oL:(30+padding.L),
+      SL:(60+padding.L), oSL:(90+padding.L),
+      DL:(120+padding.L), oDL:(120+padding.L),
+      W:(28-padding.L-padding.R), H:(28-padding.T-padding.B),
+      Src:{Img:'icon', Anchor:anchor}
+    };
   }
   return icons;
 };
@@ -174,6 +170,8 @@ bbbfly.morph.aegis.medium.img.sources = {
       button_std_dark: { L:0, T:90 },
       button_flat_light: { L:0, T:120 },
       button_flat_dark: { L:0, T:150 },
+      button_icon_light: { L:0, T:120 },
+      button_icon_dark: { L:0, T:150 },
       button_check_light: { L:0, T:180 },
       button_check_dark: { L:0, T:240 },
       button_radio_light: { L:0, T:300 },
@@ -310,6 +308,14 @@ bbbfly.morph.aegis.medium.img.images = {
       Light: bbbfly.morph.aegis.medium.img.ButtonFrame('button_flat_light'),
       Dark: bbbfly.morph.aegis.medium.img.ButtonFrame('button_flat_dark')
     },
+    Icon: {
+      Light: {
+        Center: bbbfly.morph.aegis.medium.img.ButtonImage('button_icon_light')
+      },
+      Dark: {
+        Center: bbbfly.morph.aegis.medium.img.ButtonImage('button_icon_dark')
+      }
+    },
     Check: {
       Light: bbbfly.morph.aegis.medium.img.ButtonImage('button_check_light',4),
       Dark: bbbfly.morph.aegis.medium.img.ButtonImage('button_check_dark',4)
@@ -320,13 +326,9 @@ bbbfly.morph.aegis.medium.img.images = {
     }
   },
   Icon: {
-    Full: {
-      Light: bbbfly.morph.aegis.medium.img.Icon('misc_light'),
-      Dark: bbbfly.morph.aegis.medium.img.Icon('misc_dark')
-    },
     Button: {
-      Light: bbbfly.morph.aegis.medium.img.Icon('misc_light',2),
-      Dark: bbbfly.morph.aegis.medium.img.Icon('misc_dark',2)
+      Light: bbbfly.morph.aegis.medium.img.ButtonIcon('misc_light'),
+      Dark: bbbfly.morph.aegis.medium.img.ButtonIcon('misc_dark')
     }
   }
 };
