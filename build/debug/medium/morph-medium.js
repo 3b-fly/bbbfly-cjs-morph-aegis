@@ -45,8 +45,11 @@ bbbfly.morph.aegis.medium._onCreateControl = function(def){
     case 'bbbfly.morph.ContentWrapper':
       bbbfly.morph.aegis.medium.ContentFrame(def,imgs);
     break;
-    case 'bbbfly.morph.ButtonPanel':
-      bbbfly.morph.aegis.medium.ButtonPanel(def,imgs);
+    case 'bbbfly.morph.PanelButton':
+      bbbfly.morph.aegis.medium.PanelButton(def,imgs);
+    break;
+    case 'bbbfly.morph.PanelIconButton':
+      bbbfly.morph.aegis.medium.PanelIconButton(def,imgs);
     break;
     case 'bbbfly.morph.ContentButton':
       bbbfly.morph.aegis.medium.ContentButton(def,imgs);
@@ -95,12 +98,12 @@ bbbfly.morph.aegis.medium.ContentSeparator = function(def,imgs){
     }
   });
 };
-bbbfly.morph.aegis.medium.ButtonPanel = function(def,imgs){
+bbbfly.morph.aegis.medium.PanelButton = function(def,imgs){
   ng_MergeDef(def,{
     Data: {
       Shade: bbbfly.Morph.shade.light,
-      Frame: imgs.Button.Panel,
-      Indent: -3
+      Frame: imgs.ButtonFrame.Panel,
+      Indent: {L:-3,T:-3,R:-3,B:-3}
     },
     Methods: {
       GetIcon: bbbfly.morph.aegis.medium._getButtonIcon
@@ -111,8 +114,8 @@ bbbfly.morph.aegis.medium.ContentButton = function(def,imgs){
   ng_MergeDef(def,{
     Data: {
       Shade: bbbfly.Morph.shade.light,
-      Frame: imgs.Button.Std,
-      Indent: -3
+      Frame: imgs.ButtonFrame.Std,
+      Indent: {L:-3,T:-3,R:-3,B:-3}
     },
     Methods: {
       GetIcon: bbbfly.morph.aegis.medium._getButtonIcon
@@ -123,8 +126,32 @@ bbbfly.morph.aegis.medium.ContentFlatButton = function(def,imgs){
   ng_MergeDef(def,{
     Data: {
       Shade: bbbfly.Morph.shade.light,
-      Frame: imgs.Button.Flat,
-      Indent: -3
+      Frame: imgs.ButtonFrame.Flat,
+      Indent: {L:-3,T:-3,R:-3,B:-3}
+    },
+    Methods: {
+      GetIcon: bbbfly.morph.aegis.medium._getButtonIcon
+    }
+  });
+};
+bbbfly.morph.aegis.medium.LargeContentButton = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      Frame: imgs.ButtonFrame.Std,
+      Indent: {L:11,T:11,R:11,B:11}
+    },
+    Methods: {
+      GetIcon: bbbfly.morph.aegis.medium._getButtonIcon
+    }
+  });
+};
+bbbfly.morph.aegis.medium.PanelIconButton = function(def,imgs){
+  ng_MergeDef(def,{
+    W:28,H:28,
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      Frame: imgs.Button.Panel
     },
     Methods: {
       GetIcon: bbbfly.morph.aegis.medium._getButtonIcon
@@ -136,22 +163,10 @@ bbbfly.morph.aegis.medium.ContentIconButton = function(def,imgs){
     W:28,H:28,
     Data: {
       Shade: bbbfly.Morph.shade.light,
-      Frame: imgs.Button.Icon
+      Frame: imgs.Button.Flat
     },
     Methods: {
       GetIcon: bbbfly.morph.aegis.medium._getButtonIcon
-    }
-  });
-};
-bbbfly.morph.aegis.medium.LargeContentButton = function(def,imgs){
-  ng_MergeDef(def,{
-    Data: {
-      Shade: bbbfly.Morph.shade.light,
-      Frame: imgs.Button.Std,
-      Indent: 11
-    },
-    Methods: {
-      GetIcon: bbbfly.morph.aegis.medium._getFullIcon
     }
   });
 };

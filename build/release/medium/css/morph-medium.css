@@ -80,9 +80,9 @@
   background-color: #eeeeee;
   color: #808080;
 }
-/* ButtonPanel, ContentButton, LargeContentButton, ContentFlatButton **********/
-.aegis-ButtonPanel,
-.aegis-ButtonPanelLight,
+/* PanelButton, ContentButton, LargeContentButton, ContentFlatButton **********/
+.aegis-PanelButton,
+.aegis-PanelButtonLight,
 .aegis-ContentButton,
 .aegis-ContentButtonLight,
 .aegis-LargeContentButton,
@@ -93,8 +93,8 @@
   line-height: 14px;
   font-size: 11px;
 }
-.aegis-ButtonPanel > div > .Text,
-.aegis-ButtonPanelLight > div > .Text,
+.aegis-PanelButton > div > .Text,
+.aegis-PanelButtonLight > div > .Text,
 .aegis-ContentButton > div > .Text,
 .aegis-ContentButtonLight > div > .Text,
 .aegis-LargeContentButton > div > .Text,
@@ -103,7 +103,7 @@
 .aegis-ContentFlatButtonLight > div > .Text {
   margin: 7px 10px 7px 10px;
 }
-.aegis-ButtonPanelDark,
+.aegis-PanelButtonDark,
 .aegis-ContentButtonDark,
 .aegis-LargeContentButtonDark,
 .aegis-ContentFlatButtonDark {
@@ -111,7 +111,7 @@
   line-height: 14px;
   font-size: 11px;
 }
-.aegis-ButtonPanelDark > div > .Text,
+.aegis-PanelButtonDark > div > .Text,
 .aegis-ContentButtonDark > div > .Text,
 .aegis-LargeContentButtonDark > div > .Text,
 .aegis-ContentFlatButtonDark > div > .Text {
@@ -128,88 +128,88 @@
 .aegis-LargeContentButtonDark > div > .Text {
   margin: 5px;
 }
-.aegis-ButtonPanel,
-.aegis-ButtonPanelLight {
+.aegis-PanelButton,
+.aegis-PanelButtonLight {
   color: #111111;
 }
-.aegis-ButtonPanel > .ControlsPanel,
-.aegis-ButtonPanelLight > .ControlsPanel {
+.aegis-PanelButton > .ControlsPanel,
+.aegis-PanelButtonLight > .ControlsPanel {
   background-color: #768d87;
 }
-.aegis-ButtonPanel[o='1'],
-.aegis-ButtonPanelLight[o='1'] {
+.aegis-PanelButton[o='1'],
+.aegis-PanelButtonLight[o='1'] {
   color: #111111;
 }
-.aegis-ButtonPanel[o='1'] > .ControlsPanel,
-.aegis-ButtonPanelLight[o='1'] > .ControlsPanel {
+.aegis-PanelButton[o='1'] > .ControlsPanel,
+.aegis-PanelButtonLight[o='1'] > .ControlsPanel {
   background-color: #97ada7;
 }
-.aegis-ButtonPanel[S='1'],
-.aegis-ButtonPanelLight[S='1'] {
+.aegis-PanelButton[S='1'],
+.aegis-PanelButtonLight[S='1'] {
   color: #111111;
 }
-.aegis-ButtonPanel[S='1'] > .ControlsPanel,
-.aegis-ButtonPanelLight[S='1'] > .ControlsPanel {
+.aegis-PanelButton[S='1'] > .ControlsPanel,
+.aegis-PanelButtonLight[S='1'] > .ControlsPanel {
   background-color: #97ada7;
 }
-.aegis-ButtonPanel[o='1'][S='1'],
-.aegis-ButtonPanelLight[o='1'][S='1'] {
+.aegis-PanelButton[o='1'][S='1'],
+.aegis-PanelButtonLight[o='1'][S='1'] {
   color: #111111;
 }
-.aegis-ButtonPanel[o='1'][S='1'] > .ControlsPanel,
-.aegis-ButtonPanelLight[o='1'][S='1'] > .ControlsPanel {
+.aegis-PanelButton[o='1'][S='1'] > .ControlsPanel,
+.aegis-PanelButtonLight[o='1'][S='1'] > .ControlsPanel {
   background-color: #97ada7;
 }
-.aegis-ButtonPanel[D='1'],
-.aegis-ButtonPanelLight[D='1'] {
+.aegis-PanelButton[D='1'],
+.aegis-PanelButtonLight[D='1'] {
   color: #404040;
 }
-.aegis-ButtonPanel[D='1'] > .ControlsPanel,
-.aegis-ButtonPanelLight[D='1'] > .ControlsPanel {
+.aegis-PanelButton[D='1'] > .ControlsPanel,
+.aegis-PanelButtonLight[D='1'] > .ControlsPanel {
   background-color: #768d87;
 }
-.aegis-ButtonPanel[o='1'][D='1'],
-.aegis-ButtonPanelLight[o='1'][D='1'] {
+.aegis-PanelButton[o='1'][D='1'],
+.aegis-PanelButtonLight[o='1'][D='1'] {
   color: #404040;
 }
-.aegis-ButtonPanel[o='1'][D='1'] > .ControlsPanel,
-.aegis-ButtonPanelLight[o='1'][D='1'] > .ControlsPanel {
+.aegis-PanelButton[o='1'][D='1'] > .ControlsPanel,
+.aegis-PanelButtonLight[o='1'][D='1'] > .ControlsPanel {
   background-color: #768d87;
 }
-.aegis-ButtonPanelDark {
+.aegis-PanelButtonDark {
   color: #dddddd;
 }
-.aegis-ButtonPanelDark > .ControlsPanel {
+.aegis-PanelButtonDark > .ControlsPanel {
   background-color: #566963;
 }
-.aegis-ButtonPanelDark[o='1'] {
+.aegis-PanelButtonDark[o='1'] {
   color: #dddddd;
 }
-.aegis-ButtonPanelDark[o='1'] > .ControlsPanel {
+.aegis-PanelButtonDark[o='1'] > .ControlsPanel {
   background-color: #788a84;
 }
-.aegis-ButtonPanelDark[S='1'] {
+.aegis-PanelButtonDark[S='1'] {
   color: #111111;
 }
-.aegis-ButtonPanelDark[S='1'] > .ControlsPanel {
+.aegis-PanelButtonDark[S='1'] > .ControlsPanel {
   background-color: #788a84;
 }
-.aegis-ButtonPanelDark[o='1'][S='1'] {
+.aegis-PanelButtonDark[o='1'][S='1'] {
   color: #111111;
 }
-.aegis-ButtonPanelDark[o='1'][S='1'] > .ControlsPanel {
+.aegis-PanelButtonDark[o='1'][S='1'] > .ControlsPanel {
   background-color: #788a84;
 }
-.aegis-ButtonPanelDark[D='1'] {
+.aegis-PanelButtonDark[D='1'] {
   color: #a8a8a8;
 }
-.aegis-ButtonPanelDark[D='1'] > .ControlsPanel {
+.aegis-PanelButtonDark[D='1'] > .ControlsPanel {
   background-color: #566963;
 }
-.aegis-ButtonPanelDark[o='1'][D='1'] {
+.aegis-PanelButtonDark[o='1'][D='1'] {
   color: #a8a8a8;
 }
-.aegis-ButtonPanelDark[o='1'][D='1'] > .ControlsPanel {
+.aegis-PanelButtonDark[o='1'][D='1'] > .ControlsPanel {
   background-color: #566963;
 }
 .aegis-ContentButton,

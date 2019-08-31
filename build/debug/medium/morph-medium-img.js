@@ -170,8 +170,7 @@ bbbfly.morph.aegis.medium.img.sources = {
       button_std_dark: { L:0, T:90 },
       button_flat_light: { L:0, T:120 },
       button_flat_dark: { L:0, T:150 },
-      button_icon_light: { L:0, T:120 },
-      button_icon_dark: { L:0, T:150 },
+
       button_check_light: { L:0, T:180 },
       button_check_dark: { L:0, T:240 },
       button_radio_light: { L:0, T:300 },
@@ -295,7 +294,7 @@ bbbfly.morph.aegis.medium.img.images = {
       }
     }
   },
-  Button: {
+  ButtonFrame: {
     Panel: {
       Light: bbbfly.morph.aegis.medium.img.ButtonFrame('button_panel_light'),
       Dark: bbbfly.morph.aegis.medium.img.ButtonFrame('button_panel_dark')
@@ -307,13 +306,23 @@ bbbfly.morph.aegis.medium.img.images = {
     Flat: {
       Light: bbbfly.morph.aegis.medium.img.ButtonFrame('button_flat_light'),
       Dark: bbbfly.morph.aegis.medium.img.ButtonFrame('button_flat_dark')
-    },
-    Icon: {
+    }
+  },
+  Button: {
+    Panel: {
       Light: {
-        Center: bbbfly.morph.aegis.medium.img.ButtonImage('button_icon_light')
+        Center: bbbfly.morph.aegis.medium.img.ButtonImage('button_panel_light')
       },
       Dark: {
-        Center: bbbfly.morph.aegis.medium.img.ButtonImage('button_icon_dark')
+        Center: bbbfly.morph.aegis.medium.img.ButtonImage('button_panel_dark')
+      }
+    },
+    Flat: {
+      Light: {
+        Center: bbbfly.morph.aegis.medium.img.ButtonImage('button_flat_light')
+      },
+      Dark: {
+        Center: bbbfly.morph.aegis.medium.img.ButtonImage('button_flat_dark')
       }
     },
     Check: {
