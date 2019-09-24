@@ -12,12 +12,14 @@
       "DebugFiles": [
         "debug/medium/morph-medium.js",
         "debug/medium/morph-medium-img.js",
-        "debug/medium/css/morph-medium.css"
+        "debug/medium/css/morph-medium.css",
+        "debug/medium/css/morph-medium_ng.css"
       ],
       "ReleaseFiles": [
         "release/medium/morph-medium.js",
         "release/medium/morph-medium-img.js",
-        "release/medium/css/morph-medium.css"
+        "release/medium/css/morph-medium.css",
+        "release/medium/css/morph-medium_ng.css"
       ],
       "Libraries": {
         "bbbfly-cjs": {

@@ -69,6 +69,12 @@ bbbfly.morph.aegis.medium._onCreateControl = function(def){
     case 'bbbfly.morph.ContentRadioButton':
       bbbfly.morph.aegis.medium.ContentRadioButton(def,imgs);
     break;
+    case 'bbbfly.morph.ContentList':
+      bbbfly.morph.aegis.medium.ContentList(def,imgs);
+    break;
+    case 'bbbfly.morph.ContentTreeList':
+      bbbfly.morph.aegis.medium.ContentTreeList(def,imgs);
+    break;
     case 'bbbfly.morph.PopupMenu':
       bbbfly.morph.aegis.medium.PopupMenu(def,imgs);
     break;
@@ -183,6 +189,25 @@ bbbfly.morph.aegis.medium.ContentRadioButton = function(def,imgs){
     Data: {
       Shade: bbbfly.Morph.shade.light,
       Icon: imgs.Button.Radio
+    }
+  });
+};
+bbbfly.morph.aegis.medium.ContentList = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      ShadeFrame: imgs.Frame.Inner,
+      CheckImg: imgs.Image.List.Check,
+
+      ListIndent: 0,
+      DefaultIndent: 15
+    }
+  });
+};
+bbbfly.morph.aegis.medium.ContentTreeList = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      TreeImg: imgs.Image.List.Tree
     }
   });
 };

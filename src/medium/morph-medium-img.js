@@ -269,12 +269,12 @@ bbbfly.morph.aegis.medium.img.images = {
   Image: {
     List: {
       Check: {
-        Light: bbbfly.morph.aegis.medium.img.Image('list_check_light',{R:6}),
-        Dark: bbbfly.morph.aegis.medium.img.Image('list_check_dark',{R:6})
+        Light: bbbfly.morph.aegis.medium.img.Image('list_check_light',{R:6,T:4,B:4}),
+        Dark: bbbfly.morph.aegis.medium.img.Image('list_check_dark',{R:6,T:4,B:4})
       },
       Tree: {
-        Light: bbbfly.morph.aegis.medium.img.Image('list_tree_light',{L:4,R:4}),
-        Dark: bbbfly.morph.aegis.medium.img.Image('list_tree_dark',{L:4,R:4})
+        Light: bbbfly.morph.aegis.medium.img.Image('list_tree_light',{L:4,R:4,T:4,B:4}),
+        Dark: bbbfly.morph.aegis.medium.img.Image('list_tree_dark',{L:4,R:4,T:4,B:4})
       }
     },
     Menu: {
@@ -342,6 +342,10 @@ bbbfly.morph.aegis.medium.img.images = {
     Flat: {
       Light: bbbfly.morph.aegis.medium.img.ButtonFrame('button_flat_light'),
       Dark: bbbfly.morph.aegis.medium.img.ButtonFrame('button_flat_dark')
+    },
+    Input: {
+      Light: bbbfly.morph.aegis.medium.img.ButtonFrame('button_input_light'),
+      Dark: bbbfly.morph.aegis.medium.img.ButtonFrame('button_input_dark')
     }
   },
   Button: {
