@@ -230,10 +230,11 @@ bbbfly.morph.aegis.medium.img.icon = {
   settings: 12,
   search: 13,
   filter: 14,
-  copyright: 15,
-  drop: 16,
-  circle: 17,
-  set: 18
+  layers: 15,
+  copyright: 16,
+  drop: 17,
+  circle: 18,
+  set: 19
 };
 bbbfly.morph.aegis.medium.img.images = {
   Image: {
