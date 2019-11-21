@@ -65,28 +65,23 @@
   }
 }
 
-/* PanelButton, ContentButton, LargeContentButton, ContentFlatButton **********/
+/* PanelButton, ContentButton *************************************************/
+/* LargeContentButton, ContentFlatButton, ContentInputButton ******************/
 .@{tp}PanelButton,
 .@{tp}PanelButtonLight,
+.@{tp}PanelButtonDark,
 .@{tp}ContentButton,
 .@{tp}ContentButtonLight,
+.@{tp}ContentButtonDark,
 .@{tp}LargeContentButton,
 .@{tp}LargeContentButtonLight,
-.@{tp}ContentFlatButton,
-.@{tp}ContentFlatButtonLight{
-  font-family: @fontInfer;
-  line-height: 14px;
-  font-size: 11px;
-
-  > div > .Text{
-    margin: 7px 10px 7px 10px;
-  }
-}
-
-.@{tp}PanelButtonDark,
-.@{tp}ContentButtonDark,
 .@{tp}LargeContentButtonDark,
-.@{tp}ContentFlatButtonDark{
+.@{tp}ContentFlatButton,
+.@{tp}ContentFlatButtonLight,
+.@{tp}ContentFlatButtonDark
+.@{tp}ContentInputButton,
+.@{tp}ContentInputButtonLight,
+.@{tp}ContentInputButtonDark{
   font-family: @fontInfer;
   line-height: 14px;
   font-size: 11px;
@@ -296,6 +291,49 @@
   &[o='1'][D='1']{
     color: @tFlatDark_oD;
     > .ControlsPanel{ background-color: @bFlatDark_oD; }
+  }
+}
+
+.@{tp}ContentInputButton,
+.@{tp}ContentInputButtonLight,
+.@{tp}ContentInputButtonDark{
+
+  color: @tInput;
+  > .ControlsPanel{ background-color: @bInput; }
+
+  &[o='1']{
+    color: @tInput_o;
+    > .ControlsPanel{ background-color: @bInput_o; }
+  }
+
+  &[S='1']{
+    color: @tInput_S;
+    > .ControlsPanel{ background-color: @bInput_S; }
+  }
+
+  &[o='1'][S='1']{
+    color: @tInput_oS;
+    > .ControlsPanel{ background-color: @bInput_oS; }
+  }
+
+  &[I='1']{
+    color: @tInput_I;
+    > .ControlsPanel{ background-color: @bInput_I; }
+  }
+
+  &[o='1'][I='1']{
+    color: @tInput_oI;
+    > .ControlsPanel{ background-color: @bInput_oI; }
+  }
+
+  &[D='1']{
+    color: @tInput_D;
+    > .ControlsPanel{ background-color: @bInput_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tInput_oD;
+    > .ControlsPanel{ background-color: @bInput_oD; }
   }
 }
 

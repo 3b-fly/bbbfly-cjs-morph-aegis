@@ -54,41 +54,40 @@
   background-color: #eeeeee;
   color: #808080;
 }
-/* PanelButton, ContentButton, LargeContentButton, ContentFlatButton **********/
+/* PanelButton, ContentButton *************************************************/
+/* LargeContentButton, ContentFlatButton, ContentInputButton ******************/
 .aegis-PanelButton,
 .aegis-PanelButtonLight,
+.aegis-PanelButtonDark,
 .aegis-ContentButton,
 .aegis-ContentButtonLight,
+.aegis-ContentButtonDark,
 .aegis-LargeContentButton,
 .aegis-LargeContentButtonLight,
+.aegis-LargeContentButtonDark,
 .aegis-ContentFlatButton,
-.aegis-ContentFlatButtonLight {
+.aegis-ContentFlatButtonLight,
+.aegis-ContentFlatButtonDark .aegis-ContentInputButton,
+.aegis-ContentInputButtonLight,
+.aegis-ContentInputButtonDark {
   font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
   line-height: 14px;
   font-size: 11px;
 }
 .aegis-PanelButton > div > .Text,
 .aegis-PanelButtonLight > div > .Text,
+.aegis-PanelButtonDark > div > .Text,
 .aegis-ContentButton > div > .Text,
 .aegis-ContentButtonLight > div > .Text,
+.aegis-ContentButtonDark > div > .Text,
 .aegis-LargeContentButton > div > .Text,
 .aegis-LargeContentButtonLight > div > .Text,
-.aegis-ContentFlatButton > div > .Text,
-.aegis-ContentFlatButtonLight > div > .Text {
-  margin: 7px 10px 7px 10px;
-}
-.aegis-PanelButtonDark,
-.aegis-ContentButtonDark,
-.aegis-LargeContentButtonDark,
-.aegis-ContentFlatButtonDark {
-  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
-  line-height: 14px;
-  font-size: 11px;
-}
-.aegis-PanelButtonDark > div > .Text,
-.aegis-ContentButtonDark > div > .Text,
 .aegis-LargeContentButtonDark > div > .Text,
-.aegis-ContentFlatButtonDark > div > .Text {
+.aegis-ContentFlatButton > div > .Text,
+.aegis-ContentFlatButtonLight > div > .Text,
+.aegis-ContentFlatButtonDark .aegis-ContentInputButton > div > .Text,
+.aegis-ContentInputButtonLight > div > .Text,
+.aegis-ContentInputButtonDark > div > .Text {
   margin: 7px 10px 7px 10px;
 }
 .aegis-LargeContentButton,
@@ -389,6 +388,86 @@
 }
 .aegis-ContentFlatButtonDark[o='1'][D='1'] > .ControlsPanel {
   background-color: #566963;
+}
+.aegis-ContentInputButton,
+.aegis-ContentInputButtonLight,
+.aegis-ContentInputButtonDark {
+  color: #111111;
+}
+.aegis-ContentInputButton > .ControlsPanel,
+.aegis-ContentInputButtonLight > .ControlsPanel,
+.aegis-ContentInputButtonDark > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-ContentInputButton[o='1'],
+.aegis-ContentInputButtonLight[o='1'],
+.aegis-ContentInputButtonDark[o='1'] {
+  color: #111111;
+}
+.aegis-ContentInputButton[o='1'] > .ControlsPanel,
+.aegis-ContentInputButtonLight[o='1'] > .ControlsPanel,
+.aegis-ContentInputButtonDark[o='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-ContentInputButton[S='1'],
+.aegis-ContentInputButtonLight[S='1'],
+.aegis-ContentInputButtonDark[S='1'] {
+  color: #111111;
+}
+.aegis-ContentInputButton[S='1'] > .ControlsPanel,
+.aegis-ContentInputButtonLight[S='1'] > .ControlsPanel,
+.aegis-ContentInputButtonDark[S='1'] > .ControlsPanel {
+  background-color: #eba428;
+}
+.aegis-ContentInputButton[o='1'][S='1'],
+.aegis-ContentInputButtonLight[o='1'][S='1'],
+.aegis-ContentInputButtonDark[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-ContentInputButton[o='1'][S='1'] > .ControlsPanel,
+.aegis-ContentInputButtonLight[o='1'][S='1'] > .ControlsPanel,
+.aegis-ContentInputButtonDark[o='1'][S='1'] > .ControlsPanel {
+  background-color: #eba428;
+}
+.aegis-ContentInputButton[I='1'],
+.aegis-ContentInputButtonLight[I='1'],
+.aegis-ContentInputButtonDark[I='1'] {
+  color: #111111;
+}
+.aegis-ContentInputButton[I='1'] > .ControlsPanel,
+.aegis-ContentInputButtonLight[I='1'] > .ControlsPanel,
+.aegis-ContentInputButtonDark[I='1'] > .ControlsPanel {
+  background-color: #eeb7b7;
+}
+.aegis-ContentInputButton[o='1'][I='1'],
+.aegis-ContentInputButtonLight[o='1'][I='1'],
+.aegis-ContentInputButtonDark[o='1'][I='1'] {
+  color: #111111;
+}
+.aegis-ContentInputButton[o='1'][I='1'] > .ControlsPanel,
+.aegis-ContentInputButtonLight[o='1'][I='1'] > .ControlsPanel,
+.aegis-ContentInputButtonDark[o='1'][I='1'] > .ControlsPanel {
+  background-color: #eeb7b7;
+}
+.aegis-ContentInputButton[D='1'],
+.aegis-ContentInputButtonLight[D='1'],
+.aegis-ContentInputButtonDark[D='1'] {
+  color: #808080;
+}
+.aegis-ContentInputButton[D='1'] > .ControlsPanel,
+.aegis-ContentInputButtonLight[D='1'] > .ControlsPanel,
+.aegis-ContentInputButtonDark[D='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-ContentInputButton[o='1'][D='1'],
+.aegis-ContentInputButtonLight[o='1'][D='1'],
+.aegis-ContentInputButtonDark[o='1'][D='1'] {
+  color: #808080;
+}
+.aegis-ContentInputButton[o='1'][D='1'] > .ControlsPanel,
+.aegis-ContentInputButtonLight[o='1'][D='1'] > .ControlsPanel,
+.aegis-ContentInputButtonDark[o='1'][D='1'] > .ControlsPanel {
+  background-color: #eeeeee;
 }
 /* ContentCheckBox, ContentRadioButton ****************************************/
 .aegis-ContentCheckBox,
