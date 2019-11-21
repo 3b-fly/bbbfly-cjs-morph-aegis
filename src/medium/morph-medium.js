@@ -75,6 +75,9 @@ bbbfly.morph.aegis.medium._onCreateControl = function(def){
     case 'bbbfly.morph.ContentFlatButton':
       bbbfly.morph.aegis.medium.ContentFlatButton(def,imgs);
     break;
+    case 'bbbfly.morph.ContentInputButton':
+      bbbfly.morph.aegis.medium.ContentInputButton(def,imgs);
+    break;
     case 'bbbfly.morph.ContentIconButton':
       bbbfly.morph.aegis.medium.ContentIconButton(def,imgs);
     break;
@@ -162,6 +165,20 @@ bbbfly.morph.aegis.medium.ContentFlatButton = function(def,imgs){
     Data: {
       Shade: bbbfly.Morph.shade.light,
       Frame: imgs.ButtonFrame.Flat,
+      Indent: {L:-3,T:-3,R:-3,B:-3}
+    },
+    Methods: {
+      GetIcon: bbbfly.morph.aegis.medium._getButtonIcon
+    }
+  });
+};
+
+/** @ignore */
+bbbfly.morph.aegis.medium.ContentInputButton = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      Shade: bbbfly.Morph.shade.light,
+      Frame: imgs.ButtonFrame.Input,
       Indent: {L:-3,T:-3,R:-3,B:-3}
     },
     Methods: {
