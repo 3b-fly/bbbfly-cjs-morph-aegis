@@ -64,6 +64,18 @@ bbbfly.morph.aegis.medium.img.VLineFrame = function(anchor){
     Bottom: { L:12, DL:42, T:25, W:3, H:3, Src:{Img:'frame', Anchor:anchor} }
   };
 };
+bbbfly.morph.aegis.medium.img.HintFrame = function(anchor){
+  return {
+    LeftTop: { L:0, DL:30, T:0, W:4, H:4, Src:{Img:'frame', Anchor:anchor} },
+    Top: { L:0, T:0, DT:30, H:4, Src:{Img:'frame_h', Anchor:anchor} },
+    RightTop: { L:24, DL:54, T:0, W:4, H:4, Src:{Img:'frame', Anchor:anchor} },
+    Left: { L:0, DL:30, T:0, W:4, Src:{Img:'frame_v', Anchor:anchor} },
+    Right: { L:24, DL:54, T:0, W:4, Src:{Img:'frame_v', Anchor:anchor} },
+    LeftBottom: { L:0, DL:30, T:24, W:4, H:4, Src:{Img:'frame', Anchor:anchor} },
+    Bottom: { L:0, T:24, DT:54, H:4, Src:{Img:'frame_h', Anchor:anchor} },
+    RightBottom: { L:24, DL:54, T:24, W:4, H:4, Src:{Img:'frame', Anchor:anchor} }
+  };
+};
 bbbfly.morph.aegis.medium.img.ButtonFrame = function(anchor){
   var frame = {
     LeftTop: { L:0, oL:30, SL:60, oSL:90, DL:120, DSL:150, T:0, W:3, H:3, Src:{Img:'button', Anchor:anchor} },
@@ -190,11 +202,11 @@ bbbfly.morph.aegis.medium.img.sources = {
       frame_outer_light: { L:0, T:40 },
       frame_outer_dark: { L:0, T:100 },
       frame_inner_light: { L:0, T:160 },
-      frame_inner_dark: { L:0, T:320 },
-      frame_hint_warn: { L:0, T:380 },
-      frame_hint_error: { L:0, T:440 },
-      frame_hint_submit: { L:0, T:500 },
-      frame_hint_info: { L:0, T:560 }
+      frame_inner_dark: { L:0, T:220 },
+      frame_hint_warn: { L:0, T:280 },
+      frame_hint_error: { L:0, T:340 },
+      frame_hint_submit: { L:0, T:400 },
+      frame_hint_info: { L:0, T:460 }
     }
   },
   frame_v: {
@@ -207,11 +219,11 @@ bbbfly.morph.aegis.medium.img.sources = {
       frame_outer_light: { L:40, T:0 },
       frame_outer_dark: { L:100, T:0 },
       frame_inner_light: { L:160, T:0 },
-      frame_inner_dark: { L:320, T:0 },
-      frame_hint_warn: { L:380, T:0 },
-      frame_hint_error: { L:440, T:0 },
-      frame_hint_submit: { L:500, T:0 },
-      frame_hint_info: { L:560, T:0 }
+      frame_inner_dark: { L:220, T:0 },
+      frame_hint_warn: { L:280, T:0 },
+      frame_hint_error: { L:340, T:0 },
+      frame_hint_submit: { L:400, T:0 },
+      frame_hint_info: { L:460, T:0 }
     }
   },
   button: {
@@ -353,6 +365,12 @@ bbbfly.morph.aegis.medium.img.images = {
         Dark: bbbfly.morph.aegis.medium.img.VLineFrame('line_inner_dark')
       }
     }
+  },
+  HintFrame: {
+    Warn: bbbfly.morph.aegis.medium.img.HintFrame('frame_hint_warn'),
+    Error: bbbfly.morph.aegis.medium.img.HintFrame('frame_hint_error'),
+    Submit: bbbfly.morph.aegis.medium.img.HintFrame('frame_hint_submit'),
+    Info: bbbfly.morph.aegis.medium.img.HintFrame('frame_hint_info')
   },
   ButtonFrame: {
     Panel: {
