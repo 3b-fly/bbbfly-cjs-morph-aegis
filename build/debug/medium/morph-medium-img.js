@@ -122,7 +122,7 @@ bbbfly.morph.aegis.medium.img.ButtonImage = function(anchor,indent){
     ISL:(img.SL), oISL:(img.oSL),
     DIL:(img.DL), DISL:(img.DSL)
   });
-  
+
   return img;
 };
 bbbfly.morph.aegis.medium.img.ButtonIcon = function(anchor,padding){
@@ -147,7 +147,7 @@ bbbfly.morph.aegis.medium.img.ButtonIcon = function(anchor,padding){
 };
 bbbfly.morph.aegis.medium.img.sources = {
   image: {
-    Path: 'medium/png/morph-medium-image.png?1',
+    Path: 'medium/png/morph-medium-image.png?2',
     Anchors: {
       list_check_light: { L:0, T:0 },
       list_check_dark: { L:0, T:30 },
@@ -164,46 +164,58 @@ bbbfly.morph.aegis.medium.img.sources = {
     }
   },
   frame: {
-    Path: 'medium/png/morph-medium-frame.png?1',
+    Path: 'medium/png/morph-medium-frame.png?2',
     Anchors: {
-      frame_outer_light: { L:0, T:0 },
-      frame_outer_dark: { L:0, T:30 },
-      frame_inner_light: { L:0, T:60 },
-      frame_inner_dark: { L:0, T:90 },
-      line_outer_light: { L:0, T:120 },
-      line_outer_dark: { L:0, T:150 },
-      line_inner_light: { L:0, T:180 },
-      line_inner_dark: { L:0, T:210 }
+      line_outer_light: { L:0, T:0 },
+      line_outer_dark: { L:0, T:30 },
+      line_inner_light: { L:0, T:60 },
+      line_inner_dark: { L:0, T:90 },
+      frame_outer_light: { L:0, T:120 },
+      frame_outer_dark: { L:0, T:150 },
+      frame_inner_light: { L:0, T:180 },
+      frame_inner_dark: { L:0, T:210 },
+      frame_hint_warn: { L:0, T:240 },
+      frame_hint_error: { L:0, T:270 },
+      frame_hint_submit: { L:0, T:300 },
+      frame_hint_info: { L:0, T:330 }
     }
   },
   frame_h: {
-    Path: 'medium/png/morph-medium-frame_h.png?1',
+    Path: 'medium/png/morph-medium-frame_h.png?2',
     Anchors: {
-      frame_outer_light: { L:0, T:0 },
-      frame_outer_dark: { L:0, T:60 },
-      frame_inner_light: { L:0, T:120 },
-      frame_inner_dark: { L:0, T:180 },
-      line_outer_light: { L:0, T:240 },
-      line_outer_dark: { L:0, T:250 },
-      line_inner_light: { L:0, T:260 },
-      line_inner_dark: { L:0, T:270 }
+      line_outer_light: { L:0, T:0 },
+      line_outer_dark: { L:0, T:10 },
+      line_inner_light: { L:0, T:20 },
+      line_inner_dark: { L:0, T:30 },
+      frame_outer_light: { L:0, T:40 },
+      frame_outer_dark: { L:0, T:100 },
+      frame_inner_light: { L:0, T:160 },
+      frame_inner_dark: { L:0, T:320 },
+      frame_hint_warn: { L:0, T:380 },
+      frame_hint_error: { L:0, T:440 },
+      frame_hint_submit: { L:0, T:500 },
+      frame_hint_info: { L:0, T:560 }
     }
   },
   frame_v: {
-    Path: 'medium/png/morph-medium-frame_v.png?1',
+    Path: 'medium/png/morph-medium-frame_v.png?2',
     Anchors: {
-      frame_outer_light: { L:0, T:0 },
-      frame_outer_dark: { L:60, T:0 },
-      frame_inner_light: { L:120, T:0 },
-      frame_inner_dark: { L:180, T:0 },
-      line_outer_light: { L:240, T:0 },
-      line_outer_dark: { L:250, T:0 },
-      line_inner_light: { L:260, T:0 },
-      line_inner_dark: { L:270, T:0 }
+      line_outer_light: { L:0, T:0 },
+      line_outer_dark: { L:10, T:0 },
+      line_inner_light: { L:20, T:0 },
+      line_inner_dark: { L:30, T:0 },
+      frame_outer_light: { L:40, T:0 },
+      frame_outer_dark: { L:100, T:0 },
+      frame_inner_light: { L:160, T:0 },
+      frame_inner_dark: { L:320, T:0 },
+      frame_hint_warn: { L:380, T:0 },
+      frame_hint_error: { L:440, T:0 },
+      frame_hint_submit: { L:500, T:0 },
+      frame_hint_info: { L:560, T:0 }
     }
   },
   button: {
-    Path: 'medium/png/morph-medium-button.png?1',
+    Path: 'medium/png/morph-medium-button.png?2',
     Anchors: {
       button_panel_light: { L:0, T:0 },
       button_panel_dark: { L:0, T:60 },
@@ -221,7 +233,7 @@ bbbfly.morph.aegis.medium.img.sources = {
     }
   },
   button_h: {
-    Path: 'medium/png/morph-medium-button_h.png?1',
+    Path: 'medium/png/morph-medium-button_h.png?2',
     Anchors: {
       button_panel_light: { L:0, T:0 },
       button_panel_dark: { L:0, T:360 },
@@ -234,7 +246,7 @@ bbbfly.morph.aegis.medium.img.sources = {
     }
   },
   button_v: {
-    Path: 'medium/png/morph-medium-button_v.png?1',
+    Path: 'medium/png/morph-medium-button_v.png?2',
     Anchors: {
       button_panel_light: { L:0, T:0 },
       button_panel_dark: { L:360, T:0 },
@@ -247,7 +259,7 @@ bbbfly.morph.aegis.medium.img.sources = {
     }
   },
   icon: {
-    Path: 'medium/png/morph-medium-icon.png?1',
+    Path: 'medium/png/morph-medium-icon.png?2',
     Anchors: {
       misc_light: { L:0, T:0 },
       misc_dark: { L:0, T:30 }
