@@ -1,0 +1,484 @@
+/* App ************************************************************************/
+.ngApplication {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #333333;
+}
+* [unselectable='on'] {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+::-ms-clear {
+  width: 0;
+  height: 0;
+}
+::-ms-reveal {
+  width: 0;
+  height: 0;
+}
+/* PopupMenu ******************************************************************/
+.aegis-light-PopupMenu {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  outline: none;
+  -moz-outline: 0px;
+  -webkit-appearance: none;
+}
+.aegis-light-PopupMenuText {
+  line-height: 20px;
+  padding: 2px 10px;
+}
+.aegis-light-PopupMenuSubMenu {
+  position: absolute;
+  top: -2px;
+  right: -10px;
+}
+.aegis-light-PopupMenuSeparator {
+  border-style: solid;
+  border-color: #566963;
+  border-width: 1px 0px 0px 0px;
+  margin: 5px;
+}
+.aegis-light-PopupMenuBack {
+  padding: 5px 0px 5px 0px;
+  background-color: #768d87;
+  color: #111111;
+}
+.aegis-light-PopupMenuRow,
+.aegis-light-PopupMenuRow > TD {
+  background-color: transparent;
+  color: #111111;
+  cursor: pointer;
+}
+.aegis-light-PopupMenuRow_Focus,
+.aegis-light-PopupMenuRow_Focus > TD {
+  background-color: #94c469;
+  color: #111111;
+  cursor: pointer;
+}
+.aegis-light-PopupMenuRowChecked,
+.aegis-light-PopupMenuRowChecked > TD {
+  background-color: transparent;
+  color: #111111;
+  cursor: pointer;
+}
+.aegis-light-PopupMenuRowChecked_Focus,
+.aegis-light-PopupMenuRowChecked_Focus > TD {
+  background-color: #94c469;
+  color: #111111;
+  cursor: pointer;
+}
+.aegis-light-PopupMenuRowDisabled,
+.aegis-light-PopupMenuRowDisabled > TD {
+  background-color: transparent;
+  color: #404040;
+}
+.aegis-light-PopupMenuRowDisabled_Focus,
+.aegis-light-PopupMenuRowDisabled_Focus > TD {
+  background-color: transparent;
+  color: #404040;
+}
+/* ContentList ****************************************************************/
+.aegis-light-ContentList,
+.aegis-light-ContentList table {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+.aegis-light-ContentList {
+  padding: 2px;
+  -moz-outline: 0px;
+  outline: none;
+  -webkit-appearance: none;
+}
+.aegis-light-ContentListText {
+  padding: 0px 10px 0px 10px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.aegis-light-ContentList .aegis-light-ContentListBack {
+  background-color: #eeeeee;
+  color: #111111;
+}
+.aegis-light-ContentListInvalid .aegis-light-ContentListBack {
+  background-color: #eeb7b7;
+  color: #111111;
+}
+.aegis-light-ContentListDisabled .aegis-light-ContentListBack {
+  background-color: #eeeeee;
+  color: #808080;
+}
+.aegis-light-ContentList .aegis-light-ContentListCaption {
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-color: #eeeeee;
+  border-width: 1px 0px 0px 0px;
+}
+.aegis-light-ContentList TD:first-child .aegis-light-ContentListCaption {
+  border-left-width: 1px;
+}
+.aegis-light-ContentList TD:last-child .aegis-light-ContentListCaption {
+  border-right-width: 1px;
+}
+.aegis-light-ContentList .aegis-light-ContentListCaption {
+  background-color: #97ada7 !important;
+  color: #111111 !important;
+}
+.aegis-light-ContentListInvalid .aegis-light-ContentListCaption {
+  background-color: #f08484 !important;
+  border-color: #eeb7b7 !important;
+  color: #111111 !important;
+}
+.aegis-light-ContentListDisabled .aegis-light-ContentListCaption {
+  background-color: #cccccc !important;
+  border-color: #eeeeee !important;
+  color: #808080 !important;
+}
+.aegis-light-ContentListRow,
+.aegis-light-ContentListRow > TD {
+  cursor: pointer;
+  padding: 2px 0px 2px 0px;
+  border-style: solid;
+  border-color: #eeeeee;
+  border-width: 1px 0px 1px 0px;
+}
+.aegis-light-ContentListRow {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+.aegis-light-ContentListRow > TD:first-child {
+  border-left-width: 1px;
+}
+.aegis-light-ContentListRow > TD:last-child {
+  border-right-width: 1px;
+}
+.aegis-light-ContentListInvalid .aegis-light-ContentListRow,
+.aegis-light-ContentListInvalid .aegis-light-ContentListRow > TD {
+  border-color: #eeb7b7;
+}
+.aegis-light-ContentListDisabled .aegis-light-ContentListRow,
+.aegis-light-ContentListDisabled .aegis-light-ContentListRow > TD {
+  border-color: #eeeeee;
+}
+.aegis-light-ContentListRow,
+.aegis-light-ContentListRow > TD,
+.aegis-light-ContentListRowChecked,
+.aegis-light-ContentListRowChecked > TD {
+  background-color: #eeeeee;
+  color: #111111;
+}
+.aegis-light-ContentListInvalid .aegis-light-ContentListRow,
+.aegis-light-ContentListInvalid .aegis-light-ContentListRow > TD,
+.aegis-light-ContentListInvalid .aegis-light-ContentListRowChecked,
+.aegis-light-ContentListInvalid .aegis-light-ContentListRowChecked > TD {
+  background-color: #eeb7b7;
+  color: #111111;
+}
+.aegis-light-ContentListRow_Focus,
+.aegis-light-ContentListRow_Focus > TD,
+.aegis-light-ContentListRowChecked_Focus,
+.aegis-light-ContentListRowChecked_Focus > TD {
+  background-color: #94c469 !important;
+  color: #111111 !important;
+}
+.aegis-light-ContentList .aegis-light-ContentListStatic {
+  background-color: #cccccc !important;
+  color: #111111 !important;
+}
+.aegis-light-ContentListInvalid .aegis-light-ContentListStatic {
+  background-color: #f08484 !important;
+  color: #111111 !important;
+}
+.aegis-light-ContentListDisabled .aegis-light-ContentListStatic {
+  background-color: #eeeeee !important;
+  color: #808080 !important;
+}
+.aegis-light-ContentList .aegis-light-ContentListSelected,
+.aegis-light-ContentListInvalid .aegis-light-ContentListSelected {
+  background-color: #eba428 !important;
+  color: #111111 !important;
+}
+.aegis-light-ContentList .aegis-light-ContentListRowDisabled,
+.aegis-light-ContentList .aegis-light-ContentListRowDisabled > TD,
+.aegis-light-ContentList .aegis-light-ContentListRowDisabled_Focus,
+.aegis-light-ContentList .aegis-light-ContentListRowDisabled_Focus > TD {
+  background-color: #eeeeee !important;
+  color: #808080 !important;
+}
+.aegis-light-ContentListRowDisabled,
+.aegis-light-ContentListRowDisabled > TD,
+.aegis-light-ContentListRowDisabled_Focus,
+.aegis-light-ContentListRowDisabled_Focus > TD,
+.aegis-light-ContentListRowDisabled .aegis-light-ContentListText,
+.aegis-light-ContentListRowDisabled > TD .aegis-light-ContentListText,
+.aegis-light-ContentListRowDisabled_Focus .aegis-light-ContentListText,
+.aegis-light-ContentListRowDisabled_Focus > TD .aegis-light-ContentListText {
+  cursor: default;
+}
+.aegis-light-ContentList .aegis-light-ContentListFixedH {
+  white-space: nowrap;
+}
+.aegis-light-ContentList .highlight {
+  background-color: #94c469 !important;
+  color: #111111 !important;
+}
+/* ContentPanel, ContentFrame, ContentGrid, ContentWrapper ********************/
+.aegis-light-ContentPanel > .ControlsPanel,
+.aegis-light-ContentFrame > .ControlsPanel,
+.aegis-light-ContentGrid > .ControlsPanel,
+.aegis-light-ContentWrapper > .ControlsPanel {
+  background-color: #768d87;
+  color: #111111;
+}
+.aegis-light-ContentPanel[D='1'] > .ControlsPanel,
+.aegis-light-ContentFrame[D='1'] > .ControlsPanel,
+.aegis-light-ContentGrid[D='1'] > .ControlsPanel,
+.aegis-light-ContentWrapper[D='1'] > .ControlsPanel {
+  background-color: #768d87;
+  color: #404040;
+}
+/* InputFrame *****************************************************************/
+.aegis-light-InputFrame > .ControlsPanel {
+  background-color: #eeeeee;
+  color: #111111;
+}
+.aegis-light-InputFrame[D='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+  color: #808080;
+}
+/* PanelButton, ContentButton *************************************************/
+/* LargeContentButton, ContentFlatButton, ContentInputButton ******************/
+.aegis-light-PanelButton,
+.aegis-light-ContentButton,
+.aegis-light-LargeContentButton,
+.aegis-light-ContentFlatButton,
+.aegis-light-ContentInputButton {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  font-size: 11px;
+}
+.aegis-light-PanelButton > div > .Text,
+.aegis-light-ContentButton > div > .Text,
+.aegis-light-LargeContentButton > div > .Text,
+.aegis-light-ContentFlatButton > div > .Text,
+.aegis-light-ContentInputButton > div > .Text {
+  margin: 7px 10px 7px 10px;
+}
+.aegis-light-LargeContentButton {
+  line-height: 18px;
+  font-size: 15px;
+}
+.aegis-light-LargeContentButton > div > .Text {
+  margin: 5px;
+}
+.aegis-light-PanelButton {
+  color: #111111;
+}
+.aegis-light-PanelButton > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-light-PanelButton[o='1'] {
+  color: #111111;
+}
+.aegis-light-PanelButton[o='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-light-PanelButton[S='1'] {
+  color: #111111;
+}
+.aegis-light-PanelButton[S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-light-PanelButton[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-light-PanelButton[o='1'][S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-light-PanelButton[D='1'] {
+  color: #404040;
+}
+.aegis-light-PanelButton[D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-light-PanelButton[o='1'][D='1'] {
+  color: #404040;
+}
+.aegis-light-PanelButton[o='1'][D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-light-ContentButton,
+.aegis-light-LargeContentButton {
+  color: #111111;
+}
+.aegis-light-ContentButton > .ControlsPanel,
+.aegis-light-LargeContentButton > .ControlsPanel {
+  background-color: #879a95;
+}
+.aegis-light-ContentButton[o='1'],
+.aegis-light-LargeContentButton[o='1'] {
+  color: #111111;
+}
+.aegis-light-ContentButton[o='1'] > .ControlsPanel,
+.aegis-light-LargeContentButton[o='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-light-ContentButton[S='1'],
+.aegis-light-LargeContentButton[S='1'] {
+  color: #111111;
+}
+.aegis-light-ContentButton[S='1'] > .ControlsPanel,
+.aegis-light-LargeContentButton[S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-light-ContentButton[o='1'][S='1'],
+.aegis-light-LargeContentButton[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-light-ContentButton[o='1'][S='1'] > .ControlsPanel,
+.aegis-light-LargeContentButton[o='1'][S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-light-ContentButton[D='1'],
+.aegis-light-LargeContentButton[D='1'] {
+  color: #404040;
+}
+.aegis-light-ContentButton[D='1'] > .ControlsPanel,
+.aegis-light-LargeContentButton[D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-light-ContentButton[o='1'][D='1'],
+.aegis-light-LargeContentButton[o='1'][D='1'] {
+  color: #404040;
+}
+.aegis-light-ContentButton[o='1'][D='1'] > .ControlsPanel,
+.aegis-light-LargeContentButton[o='1'][D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-light-ContentFlatButton {
+  color: #111111;
+}
+.aegis-light-ContentFlatButton > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-light-ContentFlatButton[o='1'] {
+  color: #111111;
+}
+.aegis-light-ContentFlatButton[o='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-light-ContentFlatButton[S='1'] {
+  color: #111111;
+}
+.aegis-light-ContentFlatButton[S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-light-ContentFlatButton[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-light-ContentFlatButton[o='1'][S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-light-ContentFlatButton[D='1'] {
+  color: #404040;
+}
+.aegis-light-ContentFlatButton[D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-light-ContentFlatButton[o='1'][D='1'] {
+  color: #404040;
+}
+.aegis-light-ContentFlatButton[o='1'][D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-light-ContentInputButton {
+  color: #111111;
+}
+.aegis-light-ContentInputButton > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-light-ContentInputButton[o='1'] {
+  color: #111111;
+}
+.aegis-light-ContentInputButton[o='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-light-ContentInputButton[S='1'] {
+  color: #111111;
+}
+.aegis-light-ContentInputButton[S='1'] > .ControlsPanel {
+  background-color: #eba428;
+}
+.aegis-light-ContentInputButton[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-light-ContentInputButton[o='1'][S='1'] > .ControlsPanel {
+  background-color: #eba428;
+}
+.aegis-light-ContentInputButton[I='1'] {
+  color: #111111;
+}
+.aegis-light-ContentInputButton[I='1'] > .ControlsPanel {
+  background-color: #eeb7b7;
+}
+.aegis-light-ContentInputButton[o='1'][I='1'] {
+  color: #111111;
+}
+.aegis-light-ContentInputButton[o='1'][I='1'] > .ControlsPanel {
+  background-color: #eeb7b7;
+}
+.aegis-light-ContentInputButton[D='1'] {
+  color: #808080;
+}
+.aegis-light-ContentInputButton[D='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-light-ContentInputButton[o='1'][D='1'] {
+  color: #808080;
+}
+.aegis-light-ContentInputButton[o='1'][D='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
+/* ContentCheckBox, ContentRadioButton ****************************************/
+.aegis-light-ContentCheckBox,
+.aegis-light-ContentRadioButton {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  font-size: 11px;
+}
+.aegis-light-ContentCheckBox > div > .Text,
+.aegis-light-ContentRadioButton > div > .Text {
+  margin: 7px 10px 7px 10px;
+}
+.aegis-light-ContentCheckBox,
+.aegis-light-ContentRadioButton {
+  color: #111111;
+}
+.aegis-light-ContentCheckBox[o='1'],
+.aegis-light-ContentRadioButton[o='1'] {
+  color: #111111;
+}
+.aegis-light-ContentCheckBox[S='1'],
+.aegis-light-ContentRadioButton[S='1'] {
+  color: #111111;
+}
+.aegis-light-ContentCheckBox[o='1'][S='1'],
+.aegis-light-ContentRadioButton[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-light-ContentCheckBox[D='1'],
+.aegis-light-ContentRadioButton[D='1'] {
+  color: #404040;
+}
+.aegis-light-ContentCheckBox[o='1'][D='1'],
+.aegis-light-ContentRadioButton[o='1'][D='1'] {
+  color: #404040;
+}

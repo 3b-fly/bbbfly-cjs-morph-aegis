@@ -1,0 +1,281 @@
+/* App ************************************************************************/
+.ngApplication{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: @bApp;
+}
+
+* [unselectable='on']{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+::-ms-clear{
+  width: 0;
+  height: 0;
+}
+
+::-ms-reveal{
+  width: 0;
+  height: 0;
+}
+
+/* PopupMenu ******************************************************************/
+
+.@{tp}PopupMenu{
+  font-family: @fontInfer;
+  font-size: 11px;
+
+  outline: none;
+  -moz-outline: 0px;
+  -webkit-appearance: none;
+}
+
+.@{tp}PopupMenuText{
+  line-height: 20px;
+  padding: 2px 10px;
+}
+
+.@{tp}PopupMenuSubMenu{
+  position:absolute;
+  top: -2px;
+  right: -10px;
+}
+
+.@{tp}PopupMenuSeparator{
+  border-style: solid;
+  border-color: @cInfer;
+  border-width: 1px 0px 0px 0px;
+  margin: 5px;
+}
+
+.@{tp}PopupMenuBack{
+  padding: 5px 0px 5px 0px;
+  background-color: @bInfer;
+  color: @tInfer;
+}
+
+.@{tp}PopupMenuRow,
+.@{tp}PopupMenuRow > TD{
+  background-color: @bInferItem;
+  color: @tInferItem;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuRow_Focus,
+.@{tp}PopupMenuRow_Focus > TD{
+  background-color: @bInferItem_o;
+  color: @tInferItem_o;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuRowChecked,
+.@{tp}PopupMenuRowChecked > TD{
+  background-color: @bInferItem_S;
+  color: @tInferItem_S;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuRowChecked_Focus,
+.@{tp}PopupMenuRowChecked_Focus > TD{
+  background-color: @bInferItem_oS;
+  color: @tInferItem_oS;
+  cursor: pointer;
+}
+
+.@{tp}PopupMenuRowDisabled,
+.@{tp}PopupMenuRowDisabled > TD{
+  background-color: @bInferItem_oD;
+  color: @tInferItem_oD;
+}
+
+.@{tp}PopupMenuRowDisabled_Focus,
+.@{tp}PopupMenuRowDisabled_Focus > TD{
+  background-color: @bInferItem_D;
+  color: @tInferItem_D;
+}
+
+/* ContentList ****************************************************************/
+
+.@{tp}ContentList,
+.@{tp}ContentList table{
+  font-family: @fontInput;
+  font-size: 11px;
+}
+
+.@{tp}ContentList{
+  padding: 2px;
+  -moz-outline: 0px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.@{tp}ContentListText{
+  padding: 0px 10px 0px 10px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.@{tp}ContentList .@{tp}ContentListBack{
+  background-color: @bInput;
+  color: @tInput;
+}
+
+.@{tp}ContentListInvalid .@{tp}ContentListBack{
+  background-color: @bInput_I;
+  color: @tInput_I;
+}
+
+.@{tp}ContentListDisabled .@{tp}ContentListBack{
+  background-color: @bInput_D;
+  color: @tInput_D;
+}
+
+.@{tp}ContentList .@{tp}ContentListCaption{
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+
+  border-style: solid;
+  border-color: @bInput;
+  border-width: 1px 0px 0px 0px;
+}
+
+.@{tp}ContentList TD:first-child .@{tp}ContentListCaption{
+  border-left-width: 1px;
+}
+
+.@{tp}ContentList TD:last-child .@{tp}ContentListCaption{
+  border-right-width: 1px;
+}
+
+.@{tp}ContentList .@{tp}ContentListCaption{
+  background-color: @bInputCaption !important;
+  color: @tInputCaption !important;
+}
+
+.@{tp}ContentListInvalid .@{tp}ContentListCaption{
+  background-color: @bInputCaption_I !important;
+  border-color: @bInput_I !important;
+  color: @tInputCaption_I !important;
+}
+
+.@{tp}ContentListDisabled .@{tp}ContentListCaption{
+  background-color: @bInputCaption_D !important;
+  border-color: @bInput_D !important;
+  color: @tInputCaption_D !important;
+}
+
+.@{tp}ContentListRow,
+.@{tp}ContentListRow > TD{
+  cursor: pointer;
+  padding: 2px 0px 2px 0px;
+
+  border-style: solid;
+  border-color: @bInput;
+  border-width: 1px 0px 1px 0px;
+}
+
+.@{tp}ContentListRow{
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.@{tp}ContentListRow > TD:first-child{
+  border-left-width: 1px;
+}
+
+.@{tp}ContentListRow > TD:last-child{
+  border-right-width: 1px;
+}
+
+.@{tp}ContentListInvalid .@{tp}ContentListRow,
+.@{tp}ContentListInvalid .@{tp}ContentListRow > TD{
+  border-color: @bInput_I;
+}
+
+.@{tp}ContentListDisabled .@{tp}ContentListRow,
+.@{tp}ContentListDisabled .@{tp}ContentListRow > TD{
+  border-color: @bInput_D;
+}
+
+.@{tp}ContentListRow,
+.@{tp}ContentListRow > TD,
+.@{tp}ContentListRowChecked,
+.@{tp}ContentListRowChecked > TD{
+  background-color: @bInputItem;
+  color: @tInputItem;
+}
+
+.@{tp}ContentListInvalid .@{tp}ContentListRow,
+.@{tp}ContentListInvalid .@{tp}ContentListRow > TD,
+.@{tp}ContentListInvalid .@{tp}ContentListRowChecked,
+.@{tp}ContentListInvalid .@{tp}ContentListRowChecked > TD{
+  background-color: @bInputItem_I;
+  color: @tInputItem_I;
+}
+
+.@{tp}ContentListRow_Focus,
+.@{tp}ContentListRow_Focus > TD,
+.@{tp}ContentListRowChecked_Focus,
+.@{tp}ContentListRowChecked_Focus > TD{
+  background-color: @bInputItem_o !important;
+  color: @tInputItem_o !important;
+}
+
+.@{tp}ContentList .@{tp}ContentListStatic{
+  background-color: @bInputItem_G !important;
+  color: @tInputItem_G !important;
+}
+
+.@{tp}ContentListInvalid .@{tp}ContentListStatic{
+  background-color: @bInputItem_IG !important;
+  color: @tInputItem_IG !important;
+}
+
+.@{tp}ContentListDisabled .@{tp}ContentListStatic{
+  background-color: @bInputItem_DG !important;
+  color: @tInputItem_DG !important;
+}
+
+.@{tp}ContentList .@{tp}ContentListSelected,
+.@{tp}ContentListInvalid .@{tp}ContentListSelected{
+  background-color: @bInputItem_S !important;
+  color: @tInputItem_S !important;
+}
+
+.@{tp}ContentList .@{tp}ContentListRowDisabled,
+.@{tp}ContentList .@{tp}ContentListRowDisabled > TD,
+.@{tp}ContentList .@{tp}ContentListRowDisabled_Focus,
+.@{tp}ContentList .@{tp}ContentListRowDisabled_Focus > TD{
+  background-color: @bInputItem_D !important;
+  color: @tInputItem_D !important;
+}
+
+.@{tp}ContentListRowDisabled,
+.@{tp}ContentListRowDisabled > TD,
+.@{tp}ContentListRowDisabled_Focus,
+.@{tp}ContentListRowDisabled_Focus > TD,
+
+.@{tp}ContentListRowDisabled .@{tp}ContentListText,
+.@{tp}ContentListRowDisabled > TD .@{tp}ContentListText,
+.@{tp}ContentListRowDisabled_Focus .@{tp}ContentListText,
+.@{tp}ContentListRowDisabled_Focus > TD .@{tp}ContentListText{
+  cursor: default;
+}
+
+.@{tp}ContentList .@{tp}ContentListFixedH{
+  white-space: nowrap;
+}
+
+.@{tp}ContentList .highlight{
+  background-color: @bInputItem_H !important;
+  color: @tInputItem_H !important;
+}
