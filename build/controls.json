@@ -4,32 +4,41 @@
   "Name": "3b-fly's 'bbbfly-cjs-morph' skin theme",
   "Copyright": "Jan Nejedly",
   "RequiredLibraries": {
-    "bbbfly-cjs": "2.0.0",
     "bbbfly-cjs-morph": "1.0.0"
   },
   "Packages": {
-    "medium": {
+    "medium-light": {
       "DebugFiles": [
-        "debug/medium/morph-medium.js",
-        "debug/medium/morph-medium-img.js",
-        "debug/medium/css/morph-medium.css",
-        "debug/medium/css/morph-medium_ng.css"
+        "debug/medium/light/morph-theme.js",
+        "debug/medium/light/morph-theme.css"
       ],
       "ReleaseFiles": [
-        "release/medium/morph-medium.js",
-        "release/medium/morph-medium-img.js",
-        "release/medium/css/morph-medium.css",
-        "release/medium/css/morph-medium_ng.css"
+        "release/medium/light/morph-theme.js",
+        "release/medium/light/morph-theme.css"
       ],
       "Libraries": {
-        "bbbfly-cjs": {
-          "Packages": [
-            "crossbrowser"
-          ]
-        },
         "bbbfly-cjs-morph": {
           "Packages": [
-            "core"
+            "core",
+            "theme-frame-medium"
+          ]
+        }
+      }
+    },
+    "medium-dark": {
+      "DebugFiles": [
+        "debug/medium/dark/morph-theme.js",
+        "debug/medium/dark/morph-theme.css"
+      ],
+      "ReleaseFiles": [
+        "release/medium/dark/morph-theme.js",
+        "release/medium/dark/morph-theme.css"
+      ],
+      "Libraries": {
+        "bbbfly-cjs-morph": {
+          "Packages": [
+            "core",
+            "theme-frame-medium"
           ]
         }
       }

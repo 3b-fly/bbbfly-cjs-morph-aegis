@@ -1,0 +1,213 @@
+/* ContentPanel, ContentFrame, ContentGrid, ContentWrapper ********************/
+.@{tp}ContentPanel,
+.@{tp}ContentFrame,
+.@{tp}ContentGrid,
+.@{tp}ContentWrapper{
+
+  > .ControlsPanel{
+    background-color: @bInfer;
+    color: @tInfer;
+  }
+
+  &[D='1'] > .ControlsPanel{
+    background-color: @bInfer_D;
+    color: @tInfer_D;
+  }
+}
+
+/* InputFrame *****************************************************************/
+.@{tp}InputFrame{
+
+  > .ControlsPanel{
+    background-color: @bInput;
+    color: @tInput;
+  }
+
+  &[D='1'] > .ControlsPanel{
+    background-color: @bInput_D;
+    color: @tInput_D;
+  }
+}
+
+/* PanelButton, ContentButton *************************************************/
+/* LargeContentButton, ContentFlatButton, ContentInputButton ******************/
+.@{tp}PanelButton,
+.@{tp}ContentButton,
+.@{tp}LargeContentButton,
+.@{tp}ContentFlatButton,
+.@{tp}ContentInputButton{
+  font-family: @fontInfer;
+  line-height: 14px;
+  font-size: 11px;
+
+  > div > .Text{
+    margin: 7px 10px 7px 10px;
+  }
+}
+
+.@{tp}LargeContentButton{
+  line-height: 18px;
+  font-size: 15px;
+
+  > div > .Text{
+    margin: 5px;
+  }
+}
+
+.@{tp}PanelButton{
+
+  color: @tInfer;
+  > .ControlsPanel{ background-color: @bInfer; }
+
+  &[o='1']{
+    color: @tInfer_o;
+    > .ControlsPanel{ background-color: @bInfer_o; }
+  }
+
+  &[S='1']{
+    color: @tInfer_S;
+    > .ControlsPanel{ background-color: @bInfer_S; }
+  }
+
+  &[o='1'][S='1']{
+    color: @tInfer_oS;
+    > .ControlsPanel{ background-color: @bInfer_oS; }
+  }
+
+  &[D='1']{
+    color: @tInfer_D;
+    > .ControlsPanel{ background-color: @bInfer_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tInfer_oD;
+    > .ControlsPanel{ background-color: @bInfer_oD; }
+  }
+}
+
+.@{tp}ContentButton,
+.@{tp}LargeContentButton{
+
+  color: @tBtn;
+  > .ControlsPanel{ background-color: @bBtn; }
+
+  &[o='1']{
+    color: @tBtn_o;
+    > .ControlsPanel{ background-color: @bBtn_o; }
+  }
+
+  &[S='1']{
+    color: @tBtn_S;
+    > .ControlsPanel{ background-color: @bBtn_S; }
+  }
+
+  &[o='1'][S='1']{
+    color: @tBtn_oS;
+    > .ControlsPanel{ background-color: @bBtn_oS; }
+  }
+
+  &[D='1']{
+    color: @tBtn_D;
+    > .ControlsPanel{ background-color: @bBtn_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tBtn_oD;
+    > .ControlsPanel{ background-color: @bBtn_oD; }
+  }
+}
+
+.@{tp}ContentFlatButton{
+
+  color: @tFlat;
+  > .ControlsPanel{ background-color: @bFlat; }
+
+  &[o='1']{
+    color: @tFlat_o;
+    > .ControlsPanel{ background-color: @bFlat_o; }
+  }
+
+  &[S='1']{
+    color: @tFlat_S;
+    > .ControlsPanel{ background-color: @bFlat_S; }
+  }
+
+  &[o='1'][S='1']{
+    color: @tFlat_oS;
+    > .ControlsPanel{ background-color: @bFlat_oS; }
+  }
+
+  &[D='1']{
+    color: @tFlat_D;
+    > .ControlsPanel{ background-color: @bFlat_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tFlat_oD;
+    > .ControlsPanel{ background-color: @bFlat_oD; }
+  }
+}
+
+.@{tp}ContentInputButton{
+
+  color: @tInput;
+  > .ControlsPanel{ background-color: @bInput; }
+
+  &[o='1']{
+    color: @tInput_o;
+    > .ControlsPanel{ background-color: @bInput_o; }
+  }
+
+  &[S='1']{
+    color: @tInput_S;
+    > .ControlsPanel{ background-color: @bInput_S; }
+  }
+
+  &[o='1'][S='1']{
+    color: @tInput_oS;
+    > .ControlsPanel{ background-color: @bInput_oS; }
+  }
+
+  &[I='1']{
+    color: @tInput_I;
+    > .ControlsPanel{ background-color: @bInput_I; }
+  }
+
+  &[o='1'][I='1']{
+    color: @tInput_oI;
+    > .ControlsPanel{ background-color: @bInput_oI; }
+  }
+
+  &[D='1']{
+    color: @tInput_D;
+    > .ControlsPanel{ background-color: @bInput_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tInput_oD;
+    > .ControlsPanel{ background-color: @bInput_oD; }
+  }
+}
+
+/* ContentCheckBox, ContentRadioButton ****************************************/
+.@{tp}ContentCheckBox,
+.@{tp}ContentRadioButton{
+  font-family: @fontInfer;
+  line-height: 14px;
+  font-size: 11px;
+
+  > div > .Text{
+    margin: 7px 10px 7px 10px;
+  }
+}
+
+.@{tp}ContentCheckBox,
+.@{tp}ContentRadioButton{
+  color: @tBtn;
+
+  &[o='1']{ color: @tBtn_o; }
+  &[S='1']{ color: @tBtn_S; }
+  &[o='1'][S='1']{ color: @tBtn_oS; }
+  &[D='1']{ color: @tBtn_D; }
+  &[o='1'][D='1']{ color: @tBtn_oD; }
+}
