@@ -6,42 +6,23 @@
  * @inpackage medium-light
  */
 
-/** @ignore */
-var bbbfly = bbbfly || {};
-/** @ignore */
-bbbfly.morph = bbbfly.morph || {};
-/** @ignore */
-bbbfly.morph.aegis = bbbfly.morph.aegis || {};
-/** @ignore */
-bbbfly.morph.aegis.medium = bbbfly.morph.aegis.medium || {};
+if(bbbfly.Morph){
+  bbbfly.Morph.RegisterTheme({
+    ID: 'morph-aegis-light',
+    Lib: 'bbbfly-cjs-morph-aegis',
+    ImgDir: 'medium/light/png/',
+    Prefix: 'aegis-light-',
 
-/** @ignore */
-bbbfly.morph.aegis.medium._onInit = function(){
-  if(bbbfly.morph.theme.frame.medium.Images){
-    this.Sources = bbbfly.morph.theme.frame.medium.Images.Sources;
-    this.Images = bbbfly.morph.theme.frame.medium.Images.Images();
-  }
-};
+    Sources: null,
+    Images: null,
 
-/** @ignore */
-bbbfly.morph.aegis.medium._onCreateControl = function(def){
-  bbbfly.morph.theme.frame.medium.controls.SkinControl(def,this.Images);
-};
+    OnInit: function(){
+      this.Sources = bbbfly.morph.theme.frame.medium.Images.Sources();
+      this.Images = bbbfly.morph.theme.frame.medium.Images.Images();
+    },
 
-/** @ignore */
-bbbfly.morph.aegis.medium.Light = {
-  ID: 'morph-aegis-light',
-  Lib: 'bbbfly-cjs-morph-aegis',
-  ImgDir: 'medium/light/png/',
-  Prefix: 'aegis-light-',
-
-  Sources: null,
-  Images: null,
-
-  OnInit: bbbfly.morph.aegis.medium._onInit,
-  OnCreateControl: bbbfly.morph.aegis.medium._onCreateControl
-};
-
-if(bbbfly.Morph && Function.isFunction(bbbfly.Morph.RegisterTheme)){
-  bbbfly.Morph.RegisterTheme(bbbfly.morph.aegis.medium.Light);
+    OnCreateControl: function(def){
+      bbbfly.morph.theme.frame.medium.controls.SkinControl(def,this.Images);
+    }
+  });
 }

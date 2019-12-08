@@ -5,32 +5,24 @@
  * @license see license in 'LICENSE' file
 */
 
-var bbbfly = bbbfly || {};
-bbbfly.morph = bbbfly.morph || {};
-bbbfly.morph.aegis = bbbfly.morph.aegis || {};
-bbbfly.morph.aegis.medium = bbbfly.morph.aegis.medium || {};
-bbbfly.morph.aegis.medium._onInit = function(){
-  if(bbbfly.morph.theme.frame.medium.Images){
-    this.Sources = bbbfly.morph.theme.frame.medium.Images.Sources;
-    this.Images = bbbfly.morph.theme.frame.medium.Images.Images();
-  }
-};
-bbbfly.morph.aegis.medium._onCreateControl = function(def){
-  bbbfly.morph.theme.frame.medium.controls.SkinControl(def,this.Images);
-};
-bbbfly.morph.aegis.medium.Dark = {
-  ID: 'morph-aegis-dark',
-  Lib: 'bbbfly-cjs-morph-aegis',
-  ImgDir: 'medium/dark/png/',
-  Prefix: 'aegis-dark-',
 
-  Sources: null,
-  Images: null,
+if(bbbfly.Morph){
+  bbbfly.Morph.RegisterTheme({
+    ID: 'morph-aegis-dark',
+    Lib: 'bbbfly-cjs-morph-aegis',
+    ImgDir: 'medium/dark/png/',
+    Prefix: 'aegis-dark-',
 
-  OnInit: bbbfly.morph.aegis.medium._onInit,
-  OnCreateControl: bbbfly.morph.aegis.medium._onCreateControl
-};
+    Sources: null,
+    Images: null,
 
-if(bbbfly.Morph && Function.isFunction(bbbfly.Morph.RegisterTheme)){
-  bbbfly.Morph.RegisterTheme(bbbfly.morph.aegis.medium.Dark);
+    OnInit: function(){
+      this.Sources = bbbfly.morph.theme.frame.medium.Images.Sources();
+      this.Images = bbbfly.morph.theme.frame.medium.Images.Images();
+    },
+
+    OnCreateControl: function(def){
+      bbbfly.morph.theme.frame.medium.controls.SkinControl(def,this.Images);
+    }
+  });
 }
