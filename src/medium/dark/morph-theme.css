@@ -24,6 +24,53 @@
   width: 0;
   height: 0;
 }
+/* TextHint *******************************************************************/
+.aegis-dark-TextHint {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+.aegis-dark-TextHint > .ControlsPanel > .Hint > .HintText {
+  padding: 3px 15px;
+}
+.aegis-dark-TextHint[type='warn'] > .ControlsPanel {
+  background-color: #d5af1c;
+  color: #333333;
+}
+.aegis-dark-TextHint[type='error'] > .ControlsPanel {
+  background-color: #cb2026;
+  color: #ffffff;
+}
+.aegis-dark-TextHint[type='submit'] > .ControlsPanel {
+  background-color: #72a159;
+  color: #333333;
+}
+.aegis-dark-TextHint[type='info'] > .ControlsPanel {
+  background-color: #298ac2;
+  color: #ffffff;
+}
+.aegis-dark-TextHintDisabled {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+.aegis-dark-TextHintDisabled > .ControlsPanel > .Hint > .HintText {
+  padding: 3px 15px;
+}
+.aegis-dark-TextHintDisabled[type='warn'] > .ControlsPanel {
+  background-color: #ead78e;
+  color: #999999;
+}
+.aegis-dark-TextHintDisabled[type='error'] > .ControlsPanel {
+  background-color: #e59093;
+  color: #ffffff;
+}
+.aegis-dark-TextHintDisabled[type='submit'] > .ControlsPanel {
+  background-color: #b9d0ac;
+  color: #999999;
+}
+.aegis-dark-TextHintDisabled[type='info'] > .ControlsPanel {
+  background-color: #cae2f0;
+  color: #ffffff;
+}
 /* PopupMenu ******************************************************************/
 .aegis-dark-PopupMenu {
   font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;

@@ -28,6 +28,74 @@
   height: 0;
 }
 
+/* TextHint *******************************************************************/
+
+.@{tp}TextHint{
+  font-family: @fontInfer;
+  font-size:11px;
+
+  > .ControlsPanel{
+    > .Hint{
+      > .HintText{
+        padding: 3px 15px;
+      }
+    }
+  }
+
+  &[type='warn'] > .ControlsPanel{
+    background-color: @bWarn;
+    color: @tWarn;
+  }
+
+  &[type='error'] > .ControlsPanel{
+    background-color: @bError;
+    color: @tError;
+  }
+
+  &[type='submit'] > .ControlsPanel{
+    background-color: @bSubmit;
+    color: @tSubmit;
+  }
+
+  &[type='info'] > .ControlsPanel{
+    background-color: @bInfo;
+    color: @tInfo;
+  }
+}
+
+.@{tp}TextHintDisabled{
+  font-family: @fontInfer;
+  font-size:11px;
+
+  > .ControlsPanel{
+    > .Hint{
+      > .HintText{
+        padding: 3px 15px;
+      }
+    }
+  }
+
+  &[type='warn'] > .ControlsPanel{
+    background-color: @bWarn_D;
+    color: @tWarn_D;
+  }
+
+  &[type='error'] > .ControlsPanel{
+    background-color: @bError_D;
+    color: @tError_D;
+  }
+
+  &[type='submit'] > .ControlsPanel{
+    background-color: @bSubmit_D;
+    color: @tSubmit_D;
+  }
+
+  &[type='info'] > .ControlsPanel{
+    background-color: @bInfo_D;
+    color: @tInfo_D;
+  }
+}
+
 /* PopupMenu ******************************************************************/
 
 .@{tp}PopupMenu{
