@@ -30,7 +30,7 @@
   font-size: 11px;
 }
 .aegis-light-TextHint > .ControlsPanel > .Hint > .HintText {
-  padding: 3px 15px;
+  padding: 3px 5px;
 }
 .aegis-light-TextHint[type='warn'] > .ControlsPanel {
   background-color: #d5af1c;
@@ -249,7 +249,9 @@
   color: #808080 !important;
 }
 .aegis-light-ContentList .aegis-light-ContentListSelected,
-.aegis-light-ContentListInvalid .aegis-light-ContentListSelected {
+.aegis-light-ContentList .aegis-light-ContentListSelected > TD,
+.aegis-light-ContentListInvalid .aegis-light-ContentListSelected,
+.aegis-light-ContentListInvalid .aegis-light-ContentListSelected > TD {
   background-color: #eba428 !important;
   color: #111111 !important;
 }

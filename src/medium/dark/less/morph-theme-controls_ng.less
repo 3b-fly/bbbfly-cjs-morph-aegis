@@ -37,7 +37,7 @@
   > .ControlsPanel{
     > .Hint{
       > .HintText{
-        padding: 3px 15px;
+        padding: 3px 5px;
       }
     }
   }
@@ -314,7 +314,9 @@
 }
 
 .@{tp}ContentList .@{tp}ContentListSelected,
-.@{tp}ContentListInvalid .@{tp}ContentListSelected{
+.@{tp}ContentList .@{tp}ContentListSelected > TD,
+.@{tp}ContentListInvalid .@{tp}ContentListSelected,
+.@{tp}ContentListInvalid .@{tp}ContentListSelected > TD{
   background-color: @bInputItem_S !important;
   color: @tInputItem_S !important;
 }
