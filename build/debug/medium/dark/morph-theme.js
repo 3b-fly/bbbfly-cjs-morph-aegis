@@ -10,7 +10,7 @@ if(bbbfly.Morph){
   bbbfly.Morph.RegisterTheme({
     ID: 'morph-aegis-dark',
     Lib: 'bbbfly-cjs-morph-aegis',
-    ImgDir: 'medium/dark/png/',
+    ImgDir: 'medium/dark/imgs/',
     Prefix: 'aegis-dark-',
 
     Sources: null,

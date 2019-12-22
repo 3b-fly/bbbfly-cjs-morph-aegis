@@ -5,4 +5,4 @@
  * @license see license in 'LICENSE' file
 */
 
-bbbfly.Morph&&bbbfly.Morph.RegisterTheme({ID:"morph-aegis-light",Lib:"bbbfly-cjs-morph-aegis",ImgDir:"medium/light/png/",Prefix:"aegis-light-",Sources:null,Images:null,OnInit:function(){this.Sources=bbbfly.morph.theme.frame.medium.Images.Sources();this.Images=bbbfly.morph.theme.frame.medium.Images.Images()},OnCreateControl:function(a){bbbfly.morph.theme.frame.medium.controls.SkinControl(a,this.Images)}});
+bbbfly.Morph&&bbbfly.Morph.RegisterTheme({ID:"morph-aegis-light",Lib:"bbbfly-cjs-morph-aegis",ImgDir:"medium/light/imgs/",Prefix:"aegis-light-",Sources:null,Images:null,OnInit:function(){this.Sources=bbbfly.morph.theme.frame.medium.Images.Sources();this.Images=bbbfly.morph.theme.frame.medium.Images.Images()},OnCreateControl:function(a){bbbfly.morph.theme.frame.medium.controls.SkinControl(a,this.Images)}});
