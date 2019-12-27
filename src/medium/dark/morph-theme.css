@@ -279,15 +279,22 @@
   background-color: #94c469 !important;
   color: #111111 !important;
 }
-/* ContentPanel, ContentFrame, ContentGrid, ContentWrapper ********************/
-.aegis-dark-ContentPanel > .ControlsPanel,
+/* ContentPanel ***************************************************************/
+.aegis-dark-ContentPanel {
+  background-color: #566662;
+  color: #dddddd;
+}
+.aegis-dark-ContentPanel[D='1'] {
+  background-color: #566662;
+  color: #a8a8a8;
+}
+/* ContentFrame, ContentGrid, ContentWrapper **********************************/
 .aegis-dark-ContentFrame > .ControlsPanel,
 .aegis-dark-ContentGrid > .ControlsPanel,
 .aegis-dark-ContentWrapper > .ControlsPanel {
   background-color: #566662;
   color: #dddddd;
 }
-.aegis-dark-ContentPanel[D='1'] > .ControlsPanel,
 .aegis-dark-ContentFrame[D='1'] > .ControlsPanel,
 .aegis-dark-ContentGrid[D='1'] > .ControlsPanel,
 .aegis-dark-ContentWrapper[D='1'] > .ControlsPanel {
@@ -530,4 +537,11 @@
 .aegis-dark-ContentCheckBox[o='1'][D='1'],
 .aegis-dark-ContentRadioButton[o='1'][D='1'] {
   color: #a8a8a8;
+}
+/* ProgressBar ****************************************************************/
+.aegis-dark-ProgressBar > .ControlsPanel {
+  background-color: #36423e;
+}
+.aegis-dark-ProgressBar > .ControlsPanel .Indicator {
+  background-color: #b7b8b7 !important;
 }

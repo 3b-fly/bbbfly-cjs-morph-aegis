@@ -1,5 +1,15 @@
-/* ContentPanel, ContentFrame, ContentGrid, ContentWrapper ********************/
-.@{tp}ContentPanel,
+/* ContentPanel ***************************************************************/
+.@{tp}ContentPanel{
+    background-color: @bInfer;
+    color: @tInfer;
+
+  &[D='1'] {
+    background-color: @bInfer_D;
+    color: @tInfer_D;
+  }
+}
+
+/* ContentFrame, ContentGrid, ContentWrapper **********************************/
 .@{tp}ContentFrame,
 .@{tp}ContentGrid,
 .@{tp}ContentWrapper{
@@ -210,4 +220,16 @@
   &[o='1'][S='1']{ color: @tBtn_oS; }
   &[D='1']{ color: @tBtn_D; }
   &[o='1'][D='1']{ color: @tBtn_oD; }
+}
+
+/* ProgressBar ****************************************************************/
+.@{tp}ProgressBar{
+  
+  > .ControlsPanel{
+    background-color: @bProgress;
+
+    .Indicator{
+      background-color: @iProgress !important;
+    }
+  }
 }

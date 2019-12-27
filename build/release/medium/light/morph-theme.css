@@ -279,15 +279,22 @@
   background-color: #94c469 !important;
   color: #111111 !important;
 }
-/* ContentPanel, ContentFrame, ContentGrid, ContentWrapper ********************/
-.aegis-light-ContentPanel > .ControlsPanel,
+/* ContentPanel ***************************************************************/
+.aegis-light-ContentPanel {
+  background-color: #768d87;
+  color: #111111;
+}
+.aegis-light-ContentPanel[D='1'] {
+  background-color: #768d87;
+  color: #404040;
+}
+/* ContentFrame, ContentGrid, ContentWrapper **********************************/
 .aegis-light-ContentFrame > .ControlsPanel,
 .aegis-light-ContentGrid > .ControlsPanel,
 .aegis-light-ContentWrapper > .ControlsPanel {
   background-color: #768d87;
   color: #111111;
 }
-.aegis-light-ContentPanel[D='1'] > .ControlsPanel,
 .aegis-light-ContentFrame[D='1'] > .ControlsPanel,
 .aegis-light-ContentGrid[D='1'] > .ControlsPanel,
 .aegis-light-ContentWrapper[D='1'] > .ControlsPanel {
@@ -530,4 +537,11 @@
 .aegis-light-ContentCheckBox[o='1'][D='1'],
 .aegis-light-ContentRadioButton[o='1'][D='1'] {
   color: #404040;
+}
+/* ProgressBar ****************************************************************/
+.aegis-light-ProgressBar > .ControlsPanel {
+  background-color: #566963;
+}
+.aegis-light-ProgressBar > .ControlsPanel .Indicator {
+  background-color: #eeeeee !important;
 }
