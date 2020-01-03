@@ -222,9 +222,37 @@
   &[o='1'][D='1']{ color: @tBtn_oD; }
 }
 
+/* Text, Label, Title *********************************************************/
+.@{tp}Text,
+.@{tp}Label,
+.@{tp}Title{
+  font-family: @fontInfer;
+  color: @tInfer;
+
+  &[D='1']{ color: @tInfer_D; }
+  a{ color: inherit; }
+}
+
+.@{tp}Text{
+  line-height: 20px;
+  font-size: 11px;
+}
+
+.@{tp}Label{
+  line-height: 28px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.@{tp}Title{
+  line-height: 28px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 /* ProgressBar ****************************************************************/
 .@{tp}ProgressBar{
-  
+
   > .ControlsPanel{
     background-color: @bProgress;
 
