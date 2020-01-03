@@ -97,7 +97,7 @@
 .aegis-dark-PopupMenuBack {
   padding: 5px 0px 5px 0px;
   background-color: #566662;
-  color: #dddddd;
+  color: #eeeeee;
 }
 .aegis-dark-PopupMenuRow,
 .aegis-dark-PopupMenuRow > TD {
@@ -282,7 +282,7 @@
 /* ContentPanel ***************************************************************/
 .aegis-dark-ContentPanel {
   background-color: #566662;
-  color: #dddddd;
+  color: #eeeeee;
 }
 .aegis-dark-ContentPanel[D='1'] {
   background-color: #566662;
@@ -293,7 +293,7 @@
 .aegis-dark-ContentGrid > .ControlsPanel,
 .aegis-dark-ContentWrapper > .ControlsPanel {
   background-color: #566662;
-  color: #dddddd;
+  color: #eeeeee;
 }
 .aegis-dark-ContentFrame[D='1'] > .ControlsPanel,
 .aegis-dark-ContentGrid[D='1'] > .ControlsPanel,
@@ -336,13 +336,13 @@
   margin: 5px;
 }
 .aegis-dark-PanelButton {
-  color: #dddddd;
+  color: #eeeeee;
 }
 .aegis-dark-PanelButton > .ControlsPanel {
   background-color: #566662;
 }
 .aegis-dark-PanelButton[o='1'] {
-  color: #dddddd;
+  color: #eeeeee;
 }
 .aegis-dark-PanelButton[o='1'] > .ControlsPanel {
   background-color: #788a84;
@@ -537,6 +537,37 @@
 .aegis-dark-ContentCheckBox[o='1'][D='1'],
 .aegis-dark-ContentRadioButton[o='1'][D='1'] {
   color: #a8a8a8;
+}
+/* Text, Label, Title *********************************************************/
+.aegis-dark-Text,
+.aegis-dark-Label,
+.aegis-dark-Title {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  color: #eeeeee;
+}
+.aegis-dark-Text[D='1'],
+.aegis-dark-Label[D='1'],
+.aegis-dark-Title[D='1'] {
+  color: #a8a8a8;
+}
+.aegis-dark-Text a,
+.aegis-dark-Label a,
+.aegis-dark-Title a {
+  color: inherit;
+}
+.aegis-dark-Text {
+  line-height: 20px;
+  font-size: 11px;
+}
+.aegis-dark-Label {
+  line-height: 28px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.aegis-dark-Title {
+  line-height: 28px;
+  font-size: 15px;
+  font-weight: bold;
 }
 /* ProgressBar ****************************************************************/
 .aegis-dark-ProgressBar > .ControlsPanel {

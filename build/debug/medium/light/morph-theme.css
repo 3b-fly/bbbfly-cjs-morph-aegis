@@ -538,6 +538,37 @@
 .aegis-light-ContentRadioButton[o='1'][D='1'] {
   color: #404040;
 }
+/* Text, Label, Title *********************************************************/
+.aegis-light-Text,
+.aegis-light-Label,
+.aegis-light-Title {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  color: #111111;
+}
+.aegis-light-Text[D='1'],
+.aegis-light-Label[D='1'],
+.aegis-light-Title[D='1'] {
+  color: #404040;
+}
+.aegis-light-Text a,
+.aegis-light-Label a,
+.aegis-light-Title a {
+  color: inherit;
+}
+.aegis-light-Text {
+  line-height: 20px;
+  font-size: 11px;
+}
+.aegis-light-Label {
+  line-height: 28px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.aegis-light-Title {
+  line-height: 28px;
+  font-size: 15px;
+  font-weight: bold;
+}
 /* ProgressBar ****************************************************************/
 .aegis-light-ProgressBar > .ControlsPanel {
   background-color: #566963;
