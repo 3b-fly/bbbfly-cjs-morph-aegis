@@ -6,7 +6,7 @@
 /**
  * @package medium-light
  *
- * @version 1.0.0
+ * @version 1.0.1
  *
  * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:core|bbbfly-cjs-morph (1.0.0): core}
  * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:theme-frame-medium|bbbfly-cjs-morph (1.0.0): theme-frame-medium}
@@ -15,7 +15,7 @@
 /**
  * @package medium-dark
  *
- * @version 1.0.0
+ * @version 1.0.1
  *
  * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:core|bbbfly-cjs-morph (1.0.0): core}
  * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:theme-frame-medium|bbbfly-cjs-morph (1.0.0): theme-frame-medium}
