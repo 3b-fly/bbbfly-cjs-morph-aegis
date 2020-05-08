@@ -310,9 +310,10 @@
   background-color: #eeeeee;
   color: #808080;
 }
-/* PanelButton, ContentButton *************************************************/
+/* PanelButton, InverseButton, ContentButton **********************************/
 /* LargeContentButton, ContentFlatButton, ContentInputButton ******************/
 .aegis-dark-PanelButton,
+.aegis-dark-InverseButton,
 .aegis-dark-ContentButton,
 .aegis-dark-LargeContentButton,
 .aegis-dark-ContentFlatButton,
@@ -322,6 +323,7 @@
   font-size: 11px;
 }
 .aegis-dark-PanelButton > div > .Text,
+.aegis-dark-InverseButton > div > .Text,
 .aegis-dark-ContentButton > div > .Text,
 .aegis-dark-LargeContentButton > div > .Text,
 .aegis-dark-ContentFlatButton > div > .Text,
@@ -370,6 +372,42 @@
 }
 .aegis-dark-PanelButton[o='1'][D='1'] > .ControlsPanel {
   background-color: #566662;
+}
+.aegis-dark-InverseButton {
+  color: #eeeeee;
+}
+.aegis-dark-InverseButton > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-dark-InverseButton[o='1'] {
+  color: #eeeeee;
+}
+.aegis-dark-InverseButton[o='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-dark-InverseButton[S='1'] {
+  color: #111111;
+}
+.aegis-dark-InverseButton[S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-dark-InverseButton[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-dark-InverseButton[o='1'][S='1'] > .ControlsPanel {
+  background-color: #97ada7;
+}
+.aegis-dark-InverseButton[D='1'] {
+  color: #a8a8a8;
+}
+.aegis-dark-InverseButton[D='1'] > .ControlsPanel {
+  background-color: #768d87;
+}
+.aegis-dark-InverseButton[o='1'][D='1'] {
+  color: #a8a8a8;
+}
+.aegis-dark-InverseButton[o='1'][D='1'] > .ControlsPanel {
+  background-color: #768d87;
 }
 .aegis-dark-ContentButton,
 .aegis-dark-LargeContentButton {

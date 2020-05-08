@@ -310,9 +310,10 @@
   background-color: #eeeeee;
   color: #808080;
 }
-/* PanelButton, ContentButton *************************************************/
+/* PanelButton, InverseButton, ContentButton **********************************/
 /* LargeContentButton, ContentFlatButton, ContentInputButton ******************/
 .aegis-light-PanelButton,
+.aegis-light-InverseButton,
 .aegis-light-ContentButton,
 .aegis-light-LargeContentButton,
 .aegis-light-ContentFlatButton,
@@ -322,6 +323,7 @@
   font-size: 11px;
 }
 .aegis-light-PanelButton > div > .Text,
+.aegis-light-InverseButton > div > .Text,
 .aegis-light-ContentButton > div > .Text,
 .aegis-light-LargeContentButton > div > .Text,
 .aegis-light-ContentFlatButton > div > .Text,
@@ -370,6 +372,42 @@
 }
 .aegis-light-PanelButton[o='1'][D='1'] > .ControlsPanel {
   background-color: #768d87;
+}
+.aegis-light-InverseButton {
+  color: #111111;
+}
+.aegis-light-InverseButton > .ControlsPanel {
+  background-color: #566662;
+}
+.aegis-light-InverseButton[o='1'] {
+  color: #111111;
+}
+.aegis-light-InverseButton[o='1'] > .ControlsPanel {
+  background-color: #788a84;
+}
+.aegis-light-InverseButton[S='1'] {
+  color: #111111;
+}
+.aegis-light-InverseButton[S='1'] > .ControlsPanel {
+  background-color: #788a84;
+}
+.aegis-light-InverseButton[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-light-InverseButton[o='1'][S='1'] > .ControlsPanel {
+  background-color: #788a84;
+}
+.aegis-light-InverseButton[D='1'] {
+  color: #404040;
+}
+.aegis-light-InverseButton[D='1'] > .ControlsPanel {
+  background-color: #566662;
+}
+.aegis-light-InverseButton[o='1'][D='1'] {
+  color: #404040;
+}
+.aegis-light-InverseButton[o='1'][D='1'] > .ControlsPanel {
+  background-color: #566662;
 }
 .aegis-light-ContentButton,
 .aegis-light-LargeContentButton {

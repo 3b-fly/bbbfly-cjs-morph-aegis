@@ -39,9 +39,10 @@
   }
 }
 
-/* PanelButton, ContentButton *************************************************/
+/* PanelButton, InverseButton, ContentButton **********************************/
 /* LargeContentButton, ContentFlatButton, ContentInputButton ******************/
 .@{tp}PanelButton,
+.@{tp}InverseButton,
 .@{tp}ContentButton,
 .@{tp}LargeContentButton,
 .@{tp}ContentFlatButton,
@@ -92,6 +93,37 @@
   &[o='1'][D='1']{
     color: @tInfer_oD;
     > .ControlsPanel{ background-color: @bInfer_oD; }
+  }
+}
+
+.@{tp}InverseButton{
+
+  color: @tInfer;
+  > .ControlsPanel{ background-color: @bInverse; }
+
+  &[o='1']{
+    color: @tInfer_o;
+    > .ControlsPanel{ background-color: @bInverse_o; }
+  }
+
+  &[S='1']{
+    color: @tInfer_S;
+    > .ControlsPanel{ background-color: @bInverse_S; }
+  }
+
+  &[o='1'][S='1']{
+    color: @tInfer_oS;
+    > .ControlsPanel{ background-color: @bInverse_oS; }
+  }
+
+  &[D='1']{
+    color: @tInfer_D;
+    > .ControlsPanel{ background-color: @bInverse_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tInfer_oD;
+    > .ControlsPanel{ background-color: @bInverse_oD; }
   }
 }
 
