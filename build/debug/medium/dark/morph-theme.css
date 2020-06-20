@@ -322,19 +322,19 @@
   line-height: 14px;
   font-size: 11px;
 }
-.aegis-dark-PanelButton > div > .Text,
-.aegis-dark-InverseButton > div > .Text,
-.aegis-dark-ContentButton > div > .Text,
-.aegis-dark-LargeContentButton > div > .Text,
-.aegis-dark-ContentFlatButton > div > .Text,
-.aegis-dark-ContentInputButton > div > .Text {
+.aegis-dark-PanelButton > div > div > .Text,
+.aegis-dark-InverseButton > div > div > .Text,
+.aegis-dark-ContentButton > div > div > .Text,
+.aegis-dark-LargeContentButton > div > div > .Text,
+.aegis-dark-ContentFlatButton > div > div > .Text,
+.aegis-dark-ContentInputButton > div > div > .Text {
   margin: 7px 10px 7px 10px;
 }
 .aegis-dark-LargeContentButton {
   line-height: 18px;
   font-size: 15px;
 }
-.aegis-dark-LargeContentButton > div > .Text {
+.aegis-dark-LargeContentButton > div > div > .Text {
   margin: 5px;
 }
 .aegis-dark-PanelButton {
@@ -548,8 +548,8 @@
   line-height: 14px;
   font-size: 11px;
 }
-.aegis-dark-ContentCheckBox > div > .Text,
-.aegis-dark-ContentRadioButton > div > .Text {
+.aegis-dark-ContentCheckBox > div > div > .Text,
+.aegis-dark-ContentRadioButton > div > div > .Text {
   margin: 7px 10px 7px 10px;
 }
 .aegis-dark-ContentCheckBox,

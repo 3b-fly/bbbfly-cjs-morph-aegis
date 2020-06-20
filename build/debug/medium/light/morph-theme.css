@@ -322,19 +322,19 @@
   line-height: 14px;
   font-size: 11px;
 }
-.aegis-light-PanelButton > div > .Text,
-.aegis-light-InverseButton > div > .Text,
-.aegis-light-ContentButton > div > .Text,
-.aegis-light-LargeContentButton > div > .Text,
-.aegis-light-ContentFlatButton > div > .Text,
-.aegis-light-ContentInputButton > div > .Text {
+.aegis-light-PanelButton > div > div > .Text,
+.aegis-light-InverseButton > div > div > .Text,
+.aegis-light-ContentButton > div > div > .Text,
+.aegis-light-LargeContentButton > div > div > .Text,
+.aegis-light-ContentFlatButton > div > div > .Text,
+.aegis-light-ContentInputButton > div > div > .Text {
   margin: 7px 10px 7px 10px;
 }
 .aegis-light-LargeContentButton {
   line-height: 18px;
   font-size: 15px;
 }
-.aegis-light-LargeContentButton > div > .Text {
+.aegis-light-LargeContentButton > div > div > .Text {
   margin: 5px;
 }
 .aegis-light-PanelButton {
@@ -548,8 +548,8 @@
   line-height: 14px;
   font-size: 11px;
 }
-.aegis-light-ContentCheckBox > div > .Text,
-.aegis-light-ContentRadioButton > div > .Text {
+.aegis-light-ContentCheckBox > div > div > .Text,
+.aegis-light-ContentRadioButton > div > div > .Text {
   margin: 7px 10px 7px 10px;
 }
 .aegis-light-ContentCheckBox,
