@@ -1,22 +1,22 @@
 {
   "source": {
     "include": [
-      "../README.md",
-      "../package.json",
-      "../src/controls.jsdoc"
+      "README.md",
+      "package.json",
+      "src/controls.jsdoc"
     ]
   },
   "plugins": [
-    "../../controlsjs-jsdoc/plugins/controlsjs"
+    "../controlsjs-jsdoc/plugins/controlsjs"
   ],
   "opts": {
-    "template": "../../controlsjs-jsdoc",
-    "destination": "./"
+    "template": "../controlsjs-jsdoc",
+    "destination": "docs/"
   },
   "templates": {
     "applicationName": "bbbfly-cjs-morph-aegis",
     "sourceLinks": {
-      "../src/": "https://github.com/3b-fly/bbbfly-cjs-morph-aegis/blob/master/src/%path%#L%lineno%"
+      "src/": "https://github.com/3b-fly/bbbfly-cjs-morph-aegis/blob/master/src/%path%#L%lineno%"
     },
     "socialLinks": {
       "Email": "mailto:support@3b-fly.eu",
