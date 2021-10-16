@@ -1,17 +1,9 @@
 {
-  "source": {
-    "include": [
-      "README.md",
-      "package.json",
-      "src/controls.jsdoc"
-    ]
-  },
   "plugins": [
     "../controlsjs-jsdoc/plugins/controlsjs"
   ],
   "opts": {
-    "template": "../controlsjs-jsdoc",
-    "destination": "docs/"
+    "template": "../controlsjs-jsdoc"
   },
   "templates": {
     "applicationName": "bbbfly-cjs-morph-aegis",
