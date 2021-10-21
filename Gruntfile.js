@@ -45,19 +45,6 @@ module.exports = function(grunt) {
           expand: true
         }]
       },
-      css_release: {
-        options: {
-          process: function(content){
-            return normalizeLinebreak(content);
-          }
-        },
-        files: [{
-          cwd: srcPath,
-          src: ['**/*.css','!**/libs/**'],
-          dest: buildPath+'/release',
-          expand: true
-        }]
-      },
       imgs_debug: {
         files: [{
           cwd: srcPath,
@@ -133,6 +120,21 @@ module.exports = function(grunt) {
         }]
       }
     },
+    cssmin: {
+      css_release: {
+        // options: {
+        //   process: function(content){
+        //     return normalizeLinebreak(content);
+        //   }
+        // },
+        files: [{
+          cwd: srcPath,
+          src: ['**/*.css','!**/libs/**'],
+          dest: buildPath+'/release',
+          expand: true
+        }]
+      }
+    },
     comments: {
       options: {
         keepSpecialComments: false
@@ -140,7 +142,7 @@ module.exports = function(grunt) {
       remove: {
         files: [{
           cwd: buildPath,
-          src: '**/*.js',
+          src: ['**/*.js','**/*.css'],
           dest: buildPath,
           expand: true
         }]
@@ -157,7 +159,7 @@ module.exports = function(grunt) {
       },
       files: {
         cwd: buildPath,
-        src: '**/*.js',
+        src: ['**/*.js','**/*.css'],
         dest: buildPath,
         expand: true
       }
@@ -221,8 +223,8 @@ module.exports = function(grunt) {
   grunt.registerTask('build',[
     'clean',
     'copy:debug','closureCompiler:release',
+    'copy:css_debug','cssmin:css_release',
     'comments:remove','usebanner',
-    'copy:css_debug','copy:css_release',
     'copy:imgs_debug','copy:imgs_release',
     'copy:libs_debug','copy:libs_release',
     'exportJSON',
@@ -237,6 +239,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-closure-tools');
   grunt.loadNpmTasks('grunt-stripcomments');
   grunt.loadNpmTasks('grunt-text-replace');

@@ -1,4 +1,10 @@
-/* App ************************************************************************/
+/*!
+ * @author Jan Nejedly support@3b-fly.eu
+ * @copyright Jan Nejedly
+ * @version 1.0.1
+ * @license see license in 'LICENSE' file
+*/
+
 .ngApplication {
   position: absolute;
   left: 0%;
@@ -24,7 +30,6 @@
   width: 0;
   height: 0;
 }
-/* TextHint *******************************************************************/
 .aegis-light-TextHint {
   font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
   font-size: 11px;
@@ -71,7 +76,6 @@
   background-color: #cae2f0;
   color: #ffffff;
 }
-/* PopupMenu ******************************************************************/
 .aegis-light-PopupMenu {
   font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
   font-size: 11px;
@@ -133,7 +137,6 @@
   background-color: transparent;
   color: #404040;
 }
-/* ContentList ****************************************************************/
 .aegis-light-ContentList,
 .aegis-light-ContentList table {
   font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
@@ -279,7 +282,6 @@
   background-color: #94c469 !important;
   color: #111111 !important;
 }
-/* ContentPanel ***************************************************************/
 .aegis-light-ContentPanel {
   background-color: #768d87;
   color: #111111;
@@ -288,7 +290,6 @@
   background-color: #768d87;
   color: #404040;
 }
-/* ContentFrame, ContentGrid, ContentWrapper **********************************/
 .aegis-light-ContentFrame > .ControlsPanel,
 .aegis-light-ContentGrid > .ControlsPanel,
 .aegis-light-ContentWrapper > .ControlsPanel {
@@ -301,7 +302,6 @@
   background-color: #768d87;
   color: #404040;
 }
-/* InputFrame *****************************************************************/
 .aegis-light-InputFrame > .ControlsPanel {
   background-color: #eeeeee;
   color: #111111;
@@ -310,8 +310,6 @@
   background-color: #eeeeee;
   color: #808080;
 }
-/* PanelButton, InverseButton, ContentButton **********************************/
-/* LargeContentButton, ContentFlatButton, ContentInputButton ******************/
 .aegis-light-PanelButton,
 .aegis-light-InverseButton,
 .aegis-light-ContentButton,
@@ -541,7 +539,6 @@
 .aegis-light-ContentInputButton[o='1'][D='1'] > .ControlsPanel {
   background-color: #eeeeee;
 }
-/* ContentCheckBox, ContentRadioButton ****************************************/
 .aegis-light-ContentCheckBox,
 .aegis-light-ContentRadioButton {
   font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
@@ -576,7 +573,6 @@
 .aegis-light-ContentRadioButton[o='1'][D='1'] {
   color: #404040;
 }
-/* Text, Label, Title *********************************************************/
 .aegis-light-Text,
 .aegis-light-Label,
 .aegis-light-Title {
@@ -607,14 +603,12 @@
   font-size: 15px;
   font-weight: bold;
 }
-/* ProgressBar ****************************************************************/
 .aegis-light-ProgressBar > .ControlsPanel {
   background-color: #566963;
 }
 .aegis-light-ProgressBar > .ControlsPanel .Indicator {
   background-color: #eeeeee !important;
 }
-/* Slider *********************************************************************/
 .aegis-light-SliderRail > .ControlsPanel {
   background-color: #566662;
 }
@@ -624,7 +618,6 @@
 .aegis-light-SliderRail[D='1'] > .ControlsPanel {
   background-color: #566662;
 }
-/* MapBox *********************************************************************/
 .aegis-light-MapBox .leaflet-right .leaflet-control {
   margin-right: -1px !important;
 }
