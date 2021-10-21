@@ -122,11 +122,6 @@ module.exports = function(grunt) {
     },
     cssmin: {
       css_release: {
-        // options: {
-        //   process: function(content){
-        //     return normalizeLinebreak(content);
-        //   }
-        // },
         files: [{
           cwd: srcPath,
           src: ['**/*.css','!**/libs/**'],
