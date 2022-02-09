@@ -302,11 +302,13 @@
   background-color: #768d87;
   color: #404040;
 }
-.aegis-light-InputFrame > .ControlsPanel {
+.aegis-light-InputFrame > .ControlsPanel,
+.aegis-light-ContentInputBar > .ControlsPanel {
   background-color: #eeeeee;
   color: #111111;
 }
-.aegis-light-InputFrame[D='1'] > .ControlsPanel {
+.aegis-light-InputFrame[D='1'] > .ControlsPanel,
+.aegis-light-ContentInputBar[D='1'] > .ControlsPanel {
   background-color: #eeeeee;
   color: #808080;
 }
