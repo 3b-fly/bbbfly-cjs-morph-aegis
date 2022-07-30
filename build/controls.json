@@ -42,6 +42,24 @@
           ]
         }
       }
+    },
+    "style-map": {
+      "DebugFiles": [
+        "debug/style/map/morph-style.js",
+        "debug/style/map/morph-style.css"
+      ],
+      "ReleaseFiles": [
+        "release/style/map/morph-style.js",
+        "release/style/map/morph-style.css"
+      ],
+      "Libraries": {
+        "bbbfly-cjs-morph": {
+          "Packages": [
+            "core",
+            "style-map"
+          ]
+        }
+      }
     }
   }
 }
