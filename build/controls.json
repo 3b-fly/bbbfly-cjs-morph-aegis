@@ -7,14 +7,14 @@
     "bbbfly-cjs-morph": "1.0.1"
   },
   "Packages": {
-    "medium-light": {
+    "theme-medium-light": {
       "DebugFiles": [
-        "debug/medium/light/morph-theme.js",
-        "debug/medium/light/morph-theme.css"
+        "debug/theme/medium/light/morph-theme.js",
+        "debug/theme/medium/light/morph-theme.css"
       ],
       "ReleaseFiles": [
-        "release/medium/light/morph-theme.js",
-        "release/medium/light/morph-theme.css"
+        "release/theme/medium/light/morph-theme.js",
+        "release/theme/medium/light/morph-theme.css"
       ],
       "Libraries": {
         "bbbfly-cjs-morph": {
@@ -25,14 +25,14 @@
         }
       }
     },
-    "medium-dark": {
+    "theme-medium-dark": {
       "DebugFiles": [
-        "debug/medium/dark/morph-theme.js",
-        "debug/medium/dark/morph-theme.css"
+        "debug/theme/medium/dark/morph-theme.js",
+        "debug/theme/medium/dark/morph-theme.css"
       ],
       "ReleaseFiles": [
-        "release/medium/dark/morph-theme.js",
-        "release/medium/dark/morph-theme.css"
+        "release/theme/medium/dark/morph-theme.js",
+        "release/theme/medium/dark/morph-theme.css"
       ],
       "Libraries": {
         "bbbfly-cjs-morph": {

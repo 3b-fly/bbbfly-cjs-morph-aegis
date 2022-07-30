@@ -9,14 +9,14 @@
   },
 
   "Packages": {
-    "medium-light": {
+    "theme-medium-light": {
       "DebugFiles": [
-        "medium/light/morph-theme.js",
-        "medium/light/morph-theme.css"
+        "theme/medium/light/morph-theme.js",
+        "theme/medium/light/morph-theme.css"
       ],
       "ReleaseFiles": [
-        "medium/light/morph-theme.js",
-        "medium/light/morph-theme.css"
+        "theme/medium/light/morph-theme.js",
+        "theme/medium/light/morph-theme.css"
       ],
       "Libraries": {
         "bbbfly-cjs-morph": {
@@ -24,14 +24,14 @@
         }
       }
     },
-    "medium-dark": {
+    "theme-medium-dark": {
       "DebugFiles": [
-        "medium/dark/morph-theme.js",
-        "medium/dark/morph-theme.css"
+        "theme/medium/dark/morph-theme.js",
+        "theme/medium/dark/morph-theme.css"
       ],
       "ReleaseFiles": [
-        "medium/dark/morph-theme.js",
-        "medium/dark/morph-theme.css"
+        "theme/medium/dark/morph-theme.js",
+        "theme/medium/dark/morph-theme.css"
       ],
       "Libraries": {
         "bbbfly-cjs-morph": {
