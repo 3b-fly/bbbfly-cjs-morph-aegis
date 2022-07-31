@@ -22,10 +22,10 @@
  */
 
 /**
- * @package style-map
+ * @package theme-map-drawing
  *
  * @version 1.0.2
  *
  * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:core|bbbfly-cjs-morph (1.0.2): core}
- * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:style-map|bbbfly-cjs-morph (1.0.2): style-map}
+ * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:theme-map-drawing|bbbfly-cjs-morph (1.0.2): theme-map-drawing}
  */

@@ -11,12 +11,12 @@
   "Packages": {
     "theme-medium-light": {
       "DebugFiles": [
-        "theme/medium/light/morph-theme.js",
-        "theme/medium/light/morph-theme.css"
+        "theme/controls/medium/light/morph-theme.js",
+        "theme/controls/medium/light/morph-theme.css"
       ],
       "ReleaseFiles": [
-        "theme/medium/light/morph-theme.js",
-        "theme/medium/light/morph-theme.css"
+        "theme/controls/medium/light/morph-theme.js",
+        "theme/controls/medium/light/morph-theme.css"
       ],
       "Libraries": {
         "bbbfly-cjs-morph": {
@@ -26,12 +26,12 @@
     },
     "theme-medium-dark": {
       "DebugFiles": [
-        "theme/medium/dark/morph-theme.js",
-        "theme/medium/dark/morph-theme.css"
+        "theme/controls/medium/dark/morph-theme.js",
+        "theme/controls/medium/dark/morph-theme.css"
       ],
       "ReleaseFiles": [
-        "theme/medium/dark/morph-theme.js",
-        "theme/medium/dark/morph-theme.css"
+        "theme/controls/medium/dark/morph-theme.js",
+        "theme/controls/medium/dark/morph-theme.css"
       ],
       "Libraries": {
         "bbbfly-cjs-morph": {
@@ -39,18 +39,18 @@
         }
       }
     },
-    "style-map": {
+    "theme-map-drawing": {
       "DebugFiles": [
-        "style/map/morph-style.js",
-        "style/map/morph-style.css"
+        "theme/map/drawing/morph-theme.js",
+        "theme/map/drawing/morph-theme.css"
       ],
       "ReleaseFiles": [
-        "style/map/morph-style.js",
-        "style/map/morph-style.css"
+        "theme/map/drawing/morph-theme.js",
+        "theme/map/drawing/morph-theme.css"
       ],
       "Libraries": {
         "bbbfly-cjs-morph": {
-          "Packages": ["core","style-map"]
+          "Packages": ["core","theme-map-drawing"]
         }
       }
     }

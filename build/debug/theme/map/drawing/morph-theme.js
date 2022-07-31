@@ -7,18 +7,22 @@
 
 
 if(bbbfly.Morph){
-  bbbfly.Morph.RegisterStyle({
+  bbbfly.Morph.RegisterTheme({
     ID: 'morph-aegis-map',
     Lib: 'bbbfly-cjs-morph-aegis',
-    ImgDir: 'style/map/imgs/',
+    ImgDir: 'theme/map/drawing/imgs/',
     Prefix: 'aegis-map-',
 
     Sources: null,
     Images: null,
 
     OnInit: function(){
-      this.Sources = bbbfly.morph.style.map.Images.Sources();
-      this.Images = bbbfly.morph.style.map.Images.Images();
+      this.Sources = bbbfly.morph.theme.map.drawing.Images.Sources();
+      this.Images = bbbfly.morph.theme.map.drawing.Images.Images();
+    },
+
+    OnCreateObject: function(obj){
+
     }
   });
 }
