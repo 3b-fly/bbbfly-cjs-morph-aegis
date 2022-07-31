@@ -1,17 +1,17 @@
-/*!
- * @author Jan Nejedly support@3b-fly.eu
+﻿/**
+ * @file
+ * @author Jan Nejedly [support@3b-fly.eu]
  * @copyright Jan Nejedly
- * @version 1.0.2
- * @license see license in 'LICENSE' file
-*/
-
+ *
+ * @inpackage theme-medium-light
+ */
 
 if(bbbfly.Morph){
   bbbfly.Morph.RegisterTheme({
-    ID: 'morph-aegis-dark',
+    ID: 'morph-aegis-light',
     Lib: 'bbbfly-cjs-morph-aegis',
-    ImgDir: 'theme/medium/dark/imgs/',
-    Prefix: 'aegis-dark-',
+    ImgDir: 'theme/controls/medium/light/imgs/',
+    Prefix: 'aegis-light-',
 
     Sources: null,
     Images: null,

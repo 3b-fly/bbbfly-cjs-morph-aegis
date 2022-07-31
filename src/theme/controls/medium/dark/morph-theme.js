@@ -3,15 +3,15 @@
  * @author Jan Nejedly [support@3b-fly.eu]
  * @copyright Jan Nejedly
  *
- * @inpackage theme-medium-light
+ * @inpackage theme-medium-dark
  */
 
 if(bbbfly.Morph){
   bbbfly.Morph.RegisterTheme({
-    ID: 'morph-aegis-light',
+    ID: 'morph-aegis-dark',
     Lib: 'bbbfly-cjs-morph-aegis',
-    ImgDir: 'theme/medium/light/imgs/',
-    Prefix: 'aegis-light-',
+    ImgDir: 'theme/controls/medium/dark/imgs/',
+    Prefix: 'aegis-dark-',
 
     Sources: null,
     Images: null,
