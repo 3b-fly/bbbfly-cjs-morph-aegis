@@ -50,7 +50,7 @@
       ],
       "Libraries": {
         "bbbfly-cjs-morph": {
-          "Packages": ["core","theme-map-drawing"]
+          "Packages": ["core","map_drawing","theme-map-drawing"]
         }
       }
     }

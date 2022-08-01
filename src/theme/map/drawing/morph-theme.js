@@ -1,10 +1,10 @@
-/*!
- * @author Jan Nejedly support@3b-fly.eu
+﻿/**
+ * @file
+ * @author Jan Nejedly [support@3b-fly.eu]
  * @copyright Jan Nejedly
- * @version 1.0.2
- * @license see license in 'LICENSE' file
-*/
-
+ *
+ * @inpackage theme-map-drawing
+ */
 
 if(bbbfly.Morph){
   bbbfly.Morph.RegisterTheme({
