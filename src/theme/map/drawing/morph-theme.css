@@ -1,0 +1,91 @@
+/* Icon ***************************************************************/
+.aegis-map-MapIcon > .MapIconText {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  padding: 0px;
+  margin: 0px;
+}
+.aegis-map-MapIcon_gray > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_blue > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_orange > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_green > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_red > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_magenta > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_cyan > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_brown > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_violet > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_pine > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_yellow > .MapIconText {
+  color: #ffffff;
+}
+.aegis-map-MapIcon_small_cluster > .MapIconText {
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  font-size: 8px;
+  line-height: 16px;
+}
+.aegis-map-MapIcon_medium_cluster > .MapIconText {
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  font-size: 12px;
+  line-height: 22px;
+}
+.aegis-map-MapIcon_large_cluster > .MapIconText {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  font-size: 15px;
+  line-height: 30px;
+}
+.aegis-map-MapIcon_small_disc > .MapIconText,
+.aegis-map-MapIcon_small_circle > .MapIconText,
+.aegis-map-MapIcon_small_ghost > .MapIconText {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  font-size: 10px;
+  line-height: 20px;
+}
+.aegis-map-MapIcon_medium_disc > .MapIconText,
+.aegis-map-MapIcon_medium_circle > .MapIconText,
+.aegis-map-MapIcon_medium_ghost > .MapIconText {
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  font-size: 12px;
+  line-height: 22px;
+}
+.aegis-map-MapIcon_large_disc > .MapIconText,
+.aegis-map-MapIcon_large_circle > .MapIconText,
+.aegis-map-MapIcon_large_ghost > .MapIconText {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  font-size: 15px;
+  line-height: 30px;
+}
