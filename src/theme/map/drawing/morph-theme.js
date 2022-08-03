@@ -34,7 +34,7 @@ if(bbbfly.Morph){
 
     OnInit: function(){
       this.Sources = bbbfly.morph.theme.map.drawing.Images.Sources();
-      this.Images = bbbfly.morph.theme.map.drawing.Images.Images();
+      this.Images = bbbfly.morph.theme.map.drawing.Images.Images(this.Colors);
     },
 
     OnCreateObject: function(obj){
