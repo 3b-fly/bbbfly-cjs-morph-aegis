@@ -706,3 +706,12 @@
 .aegis-dark-MapBox .leaflet-tooltip-right::before {
   display: none;
 }
+/* HTMLContent ****************************************************************/
+.aegis-dark-HTMLContentPanel {
+  background-color: #eeeeee;
+  color: #111111;
+}
+.aegis-dark-HTMLContentPanel[D='1'] {
+  background-color: #eeeeee;
+  color: #808080;
+}

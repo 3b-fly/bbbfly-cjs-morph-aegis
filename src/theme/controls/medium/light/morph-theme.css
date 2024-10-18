@@ -706,3 +706,12 @@
 .aegis-light-MapBox .leaflet-tooltip-right::before {
   display: none;
 }
+/* HTMLContent ****************************************************************/
+.aegis-light-HTMLContentPanel {
+  background-color: #eeeeee;
+  color: #111111;
+}
+.aegis-light-HTMLContentPanel[D='1'] {
+  background-color: #eeeeee;
+  color: #808080;
+}
