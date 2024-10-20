@@ -707,11 +707,192 @@
   display: none;
 }
 /* HTMLContent ****************************************************************/
-.aegis-light-HTMLContentPanel {
+.aegis-light-HTMLContentFrame {
   background-color: #eeeeee;
   color: #111111;
 }
-.aegis-light-HTMLContentPanel[D='1'] {
+.aegis-light-HTMLContentFrame[D='1'] {
   background-color: #eeeeee;
   color: #808080;
+}
+.aegis-light-HTMLContentFrame article {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 18px;
+  font-size: 16px;
+  padding: 20px;
+}
+.aegis-light-HTMLContentFrame section {
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame h1 {
+  line-height: 36px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 32px 0px 32px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame h2 {
+  line-height: 28px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin: 26px 0px 26px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame h3 {
+  line-height: 22px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame h4 {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin: 16px 0px 16px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame h5 {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin: 16px 0px 16px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame h6 {
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin: 14px 0px 14px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame p {
+  line-height: 18px;
+  font-size: 16px;
+  text-align: left;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 20px 0px 20px;
+}
+.aegis-light-HTMLContentFrame p figure {
+  margin: 20px 0px 20px 0px;
+}
+.aegis-light-HTMLContentFrame a {
+  text-decoration: none;
+  color: #0000ff;
+}
+.aegis-light-HTMLContentFrame img {
+  border: 0;
+}
+.aegis-light-HTMLContentFrame menu {
+  /*margin, padding, +*/
+  list-style-type: none;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 20px;
+}
+.aegis-light-HTMLContentFrame menu menu {
+  margin: 0px;
+}
+.aegis-light-HTMLContentFrame em {
+  font-style: normal;
+  color: #ff0000;
+}
+.aegis-light-HTMLContentFrame mark {
+  font-weight: bold;
+  font-style: italic;
+  background-color: transparent;
+  color: #008000;
+}
+.aegis-light-HTMLContentFrame strong {
+  font-weight: bold;
+}
+.aegis-light-HTMLContentFrame blockquote {
+  line-height: 16px;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  color: #a0a0a0;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame blockquote a {
+  color: #5656f9;
+}
+.aegis-light-HTMLContentFrame blockquote em {
+  color: #ff5757;
+}
+.aegis-light-HTMLContentFrame blockquote mark {
+  color: #42a542;
+}
+.aegis-light-HTMLContentFrame figure {
+  margin: 20px 20px 20px 20px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame figcaption {
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+  color: #4f81bd;
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame code,
+.aegis-light-HTMLContentFrame pre {
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+  white-space: nowrap;
+  color: #606060;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+}
+.aegis-light-HTMLContentFrame pre {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  white-space: wrap;
+  word-wrap: break-word;
+}
+.aegis-light-HTMLContentFrame ul {
+  margin: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 20px;
+}
+.aegis-light-HTMLContentFrame ul p {
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame ul figure {
+  margin: 20px 0px 20px 0px;
+}
+.aegis-light-HTMLContentFrame ul code,
+.aegis-light-HTMLContentFrame ul pre {
+  margin: 10px 0px 10px 0px;
+}
+.aegis-light-HTMLContentFrame ul ul,
+.aegis-light-HTMLContentFrame ul ol {
+  margin: 0px;
+}
+.aegis-light-HTMLContentFrame ol {
+  margin: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 20px;
+}
+.aegis-light-HTMLContentFrame ol p {
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+}
+.aegis-light-HTMLContentFrame ol figure {
+  margin: 20px 0px 20px 0px;
+}
+.aegis-light-HTMLContentFrame ol code,
+.aegis-light-HTMLContentFrame ol pre {
+  margin: 10px 0px 10px 0px;
+}
+.aegis-light-HTMLContentFrame ol ul,
+.aegis-light-HTMLContentFrame ol ol {
+  margin: 0px;
 }

@@ -699,11 +699,191 @@
 .aegis-dark-MapBox .leaflet-tooltip-right::before {
   display: none;
 }
-.aegis-dark-HTMLContentPanel {
+.aegis-dark-HTMLContentFrame {
   background-color: #eeeeee;
   color: #111111;
 }
-.aegis-dark-HTMLContentPanel[D='1'] {
+.aegis-dark-HTMLContentFrame[D='1'] {
   background-color: #eeeeee;
   color: #808080;
+}
+.aegis-dark-HTMLContentFrame article {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 18px;
+  font-size: 16px;
+  padding: 20px;
+}
+.aegis-dark-HTMLContentFrame section {
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame h1 {
+  line-height: 36px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 32px 0px 32px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame h2 {
+  line-height: 28px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin: 26px 0px 26px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame h3 {
+  line-height: 22px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame h4 {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin: 16px 0px 16px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame h5 {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin: 16px 0px 16px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame h6 {
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin: 14px 0px 14px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame p {
+  line-height: 18px;
+  font-size: 16px;
+  text-align: left;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 20px 0px 20px;
+}
+.aegis-dark-HTMLContentFrame p figure {
+  margin: 20px 0px 20px 0px;
+}
+.aegis-dark-HTMLContentFrame a {
+  text-decoration: none;
+  color: #0000ff;
+}
+.aegis-dark-HTMLContentFrame img {
+  border: 0;
+}
+.aegis-dark-HTMLContentFrame menu {
+  list-style-type: none;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 20px;
+}
+.aegis-dark-HTMLContentFrame menu menu {
+  margin: 0px;
+}
+.aegis-dark-HTMLContentFrame em {
+  font-style: normal;
+  color: #ff0000;
+}
+.aegis-dark-HTMLContentFrame mark {
+  font-weight: bold;
+  font-style: italic;
+  background-color: transparent;
+  color: #008000;
+}
+.aegis-dark-HTMLContentFrame strong {
+  font-weight: bold;
+}
+.aegis-dark-HTMLContentFrame blockquote {
+  line-height: 16px;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  color: #a0a0a0;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame blockquote a {
+  color: #5656f9;
+}
+.aegis-dark-HTMLContentFrame blockquote em {
+  color: #ff5757;
+}
+.aegis-dark-HTMLContentFrame blockquote mark {
+  color: #42a542;
+}
+.aegis-dark-HTMLContentFrame figure {
+  margin: 20px 20px 20px 20px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame figcaption {
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+  color: #4f81bd;
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame code,
+.aegis-dark-HTMLContentFrame pre {
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+  white-space: nowrap;
+  color: #606060;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+}
+.aegis-dark-HTMLContentFrame pre {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  white-space: wrap;
+  word-wrap: break-word;
+}
+.aegis-dark-HTMLContentFrame ul {
+  margin: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 20px;
+}
+.aegis-dark-HTMLContentFrame ul p {
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame ul figure {
+  margin: 20px 0px 20px 0px;
+}
+.aegis-dark-HTMLContentFrame ul code,
+.aegis-dark-HTMLContentFrame ul pre {
+  margin: 10px 0px 10px 0px;
+}
+.aegis-dark-HTMLContentFrame ul ul,
+.aegis-dark-HTMLContentFrame ul ol {
+  margin: 0px;
+}
+.aegis-dark-HTMLContentFrame ol {
+  margin: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 20px;
+}
+.aegis-dark-HTMLContentFrame ol p {
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+}
+.aegis-dark-HTMLContentFrame ol figure {
+  margin: 20px 0px 20px 0px;
+}
+.aegis-dark-HTMLContentFrame ol code,
+.aegis-dark-HTMLContentFrame ol pre {
+  margin: 10px 0px 10px 0px;
+}
+.aegis-dark-HTMLContentFrame ol ul,
+.aegis-dark-HTMLContentFrame ol ol {
+  margin: 0px;
 }

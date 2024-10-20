@@ -404,12 +404,223 @@
 }
 
 /* HTMLContent ****************************************************************/
-.@{tp}HTMLContentPanel{
+.@{tp}HTMLContentFrame{
   background-color: @bInput;
   color: @tInput;
 
   &[D='1']{
     background-color: @bInput_D;
     color: @tInput_D;
+  }
+
+  article{
+    font-family: @fontInfer;
+    line-height: 18px;
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  section{
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+  }
+
+  h1{
+    line-height: 36px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 32px 0px 32px 0px;
+    padding: 0px;
+  }
+  
+  h2{
+    line-height: 28px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin: 26px 0px 26px 0px;
+    padding: 0px;
+  }
+  
+  h3{
+    line-height: 22px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+  }
+
+  h4{
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 16px 0px 16px 0px;
+    padding: 0px;
+  }
+  
+  h5{
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 16px 0px 16px 0px;
+    padding: 0px;
+  }
+  
+  h6{
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin: 14px 0px 14px 0px;
+    padding: 0px;
+  }
+
+  p{
+    line-height: 18px;
+    font-size: 16px;
+    text-align: left;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 20px 0px 20px;
+
+    figure{
+      margin: 20px 0px 20px 0px;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: #0000ff;
+  }
+
+  img{
+    border:0;
+  }
+
+  menu{ /*margin, padding, +*/
+    list-style-type: none;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 20px;
+
+    menu{
+      margin: 0px;
+    }
+  }
+
+  em{
+    font-style: normal;
+    color: #ff0000;
+  }
+
+  mark{
+    font-weight: bold;
+    font-style: italic;
+    background-color: transparent;
+    color: #008000;
+  }
+
+  strong{
+    font-weight: bold;
+  }
+
+  blockquote{
+    line-height: 16px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+    color: #a0a0a0;
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+
+    a{
+      color: #5656f9;
+    }
+
+    em{
+      color: #ff5757;
+    }
+
+    mark{
+      color: #42a542;
+    }
+  }
+
+  figure{
+    margin: 20px 20px 20px 20px;
+    padding: 0px;
+  }
+
+  figcaption{
+    line-height: 16px;
+    font-size: 14px;
+    text-align: left;
+    color: #4f81bd;
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+  }
+
+  code,pre{
+    line-height: 16px;
+    line-height: 16px;
+    font-size: 14px;
+    text-align: left;
+    white-space: nowrap;
+    color: #606060;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+  }
+
+  pre{
+    font-family: @fontInfer;
+    white-space: wrap;
+    word-wrap: break-word;
+  }
+
+  ul{
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 20px;
+
+    p{
+      margin: 10px 0px 10px 0px;
+      padding: 0px;
+    }
+
+    figure{
+      margin: 20px 0px 20px 0px;
+    }
+
+    code,pre{
+      margin: 10px 0px 10px 0px;
+    }
+
+    ul,ol{
+      margin: 0px;
+    }
+  }
+
+  ol{
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 20px;
+
+    p{
+      margin: 10px 0px 10px 0px;
+      padding: 0px;
+    }
+
+    figure{
+      margin: 20px 0px 20px 0px;
+    }
+
+    code,pre{
+      margin: 10px 0px 10px 0px;
+    }
+
+    ul,ol{
+      margin: 0px;
+    }
   }
 }
