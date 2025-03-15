@@ -1,10 +1,10 @@
 {
   "Lib": "bbbfly-cjs-morph-aegis",
-  "Version": "1.0.2",
+  "Version": "1.0.3",
   "Name": "3b-fly's 'bbbfly-cjs-morph' skin theme",
   "Copyright": "Jan Nejedly",
   "RequiredLibraries": {
-    "bbbfly-cjs-morph": "1.0.2"
+    "bbbfly-cjs-morph": "1.0.3"
   },
   "Packages": {
     "theme-medium-light": {

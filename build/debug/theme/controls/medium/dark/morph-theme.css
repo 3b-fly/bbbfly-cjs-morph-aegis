@@ -1,7 +1,7 @@
 /*!
  * @author Jan Nejedly support@3b-fly.eu
  * @copyright Jan Nejedly
- * @version 1.0.2
+ * @version 1.0.3
  * @license see license in 'LICENSE' file
 */
 
@@ -574,6 +574,57 @@
 .aegis-dark-ContentCheckBox[o='1'][D='1'],
 .aegis-dark-ContentRadioButton[o='1'][D='1'] {
   color: #a8a8a8;
+}
+.aegis-dark-EditBox {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  font-size: 11px;
+  color: #111111;
+}
+.aegis-dark-EditBox > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-dark-EditBox[o='1'] {
+  color: #111111;
+}
+.aegis-dark-EditBox[o='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-dark-EditBox[S='1'] {
+  color: #111111;
+}
+.aegis-dark-EditBox[S='1'] > .ControlsPanel {
+  background-color: #eba428;
+}
+.aegis-dark-EditBox[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-dark-EditBox[o='1'][S='1'] > .ControlsPanel {
+  background-color: #eba428;
+}
+.aegis-dark-EditBox[I='1'] {
+  color: #111111;
+}
+.aegis-dark-EditBox[I='1'] > .ControlsPanel {
+  background-color: #eeb7b7;
+}
+.aegis-dark-EditBox[o='1'][I='1'] {
+  color: #111111;
+}
+.aegis-dark-EditBox[o='1'][I='1'] > .ControlsPanel {
+  background-color: #eeb7b7;
+}
+.aegis-dark-EditBox[D='1'] {
+  color: #808080;
+}
+.aegis-dark-EditBox[D='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-dark-EditBox[o='1'][D='1'] {
+  color: #808080;
+}
+.aegis-dark-EditBox[o='1'][D='1'] > .ControlsPanel {
+  background-color: #eeeeee;
 }
 .aegis-dark-Text,
 .aegis-dark-Label,
