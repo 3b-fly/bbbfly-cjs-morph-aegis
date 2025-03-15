@@ -6,26 +6,26 @@
 /**
  * @package theme-medium-light
  *
- * @version 1.0.2
+ * @version 1.0.3
  *
- * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:core|bbbfly-cjs-morph (1.0.2): core}
- * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:theme-frame-medium|bbbfly-cjs-morph (1.0.2): theme-frame-medium}
+ * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:core|bbbfly-cjs-morph (1.0.3): core}
+ * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:theme-frame-medium|bbbfly-cjs-morph (1.0.3): theme-frame-medium}
  */
 
 /**
  * @package theme-medium-dark
  *
- * @version 1.0.2
+ * @version 1.0.3
  *
- * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:core|bbbfly-cjs-morph (1.0.2): core}
- * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:theme-frame-medium|bbbfly-cjs-morph (1.0.2): theme-frame-medium}
+ * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:core|bbbfly-cjs-morph (1.0.3): core}
+ * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:theme-frame-medium|bbbfly-cjs-morph (1.0.3): theme-frame-medium}
  */
 
 /**
  * @package theme-map-drawing
  *
- * @version 1.0.2
+ * @version 1.0.3
  *
- * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:core|bbbfly-cjs-morph (1.0.2): core}
- * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:theme-map-drawing|bbbfly-cjs-morph (1.0.2): theme-map-drawing}
+ * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:core|bbbfly-cjs-morph (1.0.3): core}
+ * @requires {@link https://3b-fly.github.io/bbbfly-cjs-morph/packages.html#package:theme-map-drawing|bbbfly-cjs-morph (1.0.3): theme-map-drawing}
  */

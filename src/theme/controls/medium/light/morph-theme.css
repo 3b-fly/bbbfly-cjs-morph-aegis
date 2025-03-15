@@ -578,6 +578,58 @@
 .aegis-light-ContentRadioButton[o='1'][D='1'] {
   color: #404040;
 }
+/* EditBox ********************************************************************/
+.aegis-light-EditBox {
+  font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  font-size: 11px;
+  color: #111111;
+}
+.aegis-light-EditBox > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-light-EditBox[o='1'] {
+  color: #111111;
+}
+.aegis-light-EditBox[o='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-light-EditBox[S='1'] {
+  color: #111111;
+}
+.aegis-light-EditBox[S='1'] > .ControlsPanel {
+  background-color: #eba428;
+}
+.aegis-light-EditBox[o='1'][S='1'] {
+  color: #111111;
+}
+.aegis-light-EditBox[o='1'][S='1'] > .ControlsPanel {
+  background-color: #eba428;
+}
+.aegis-light-EditBox[I='1'] {
+  color: #111111;
+}
+.aegis-light-EditBox[I='1'] > .ControlsPanel {
+  background-color: #eeb7b7;
+}
+.aegis-light-EditBox[o='1'][I='1'] {
+  color: #111111;
+}
+.aegis-light-EditBox[o='1'][I='1'] > .ControlsPanel {
+  background-color: #eeb7b7;
+}
+.aegis-light-EditBox[D='1'] {
+  color: #808080;
+}
+.aegis-light-EditBox[D='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
+.aegis-light-EditBox[o='1'][D='1'] {
+  color: #808080;
+}
+.aegis-light-EditBox[o='1'][D='1'] > .ControlsPanel {
+  background-color: #eeeeee;
+}
 /* Text, Label, Title *********************************************************/
 .aegis-light-Text,
 .aegis-light-Label,

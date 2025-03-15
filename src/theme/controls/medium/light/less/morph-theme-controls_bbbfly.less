@@ -255,6 +255,51 @@
   &[o='1'][D='1']{ color: @tBtn_oD; }
 }
 
+/* EditBox ********************************************************************/
+.@{tp}EditBox{
+  font-family: @fontInfer;
+  line-height: 14px;
+  font-size: 11px;
+
+  color: @tInput;
+  > .ControlsPanel{ background-color: @bInput; }
+
+  &[o='1']{
+    color: @tInput_o;
+    > .ControlsPanel{ background-color: @bInput_o; }
+  }
+
+  &[S='1']{
+    color: @tInput_S;
+    > .ControlsPanel{ background-color: @bInput_S; }
+  }
+
+  &[o='1'][S='1']{
+    color: @tInput_oS;
+    > .ControlsPanel{ background-color: @bInput_oS; }
+  }
+
+  &[I='1']{
+    color: @tInput_I;
+    > .ControlsPanel{ background-color: @bInput_I; }
+  }
+
+  &[o='1'][I='1']{
+    color: @tInput_oI;
+    > .ControlsPanel{ background-color: @bInput_oI; }
+  }
+
+  &[D='1']{
+    color: @tInput_D;
+    > .ControlsPanel{ background-color: @bInput_D; }
+  }
+
+  &[o='1'][D='1']{
+    color: @tInput_oD;
+    > .ControlsPanel{ background-color: @bInput_oD; }
+  }
+}
+
 /* Text, Label, Title *********************************************************/
 .@{tp}Text,
 .@{tp}Label,
