@@ -575,56 +575,69 @@
 .aegis-light-ContentRadioButton[o='1'][D='1'] {
   color: #404040;
 }
-.aegis-light-EditBox {
+.aegis-light-EditBox .InputPanel .Input {
   font-family: Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
   line-height: 14px;
   font-size: 11px;
   color: #111111;
+  background-color: #eeeeee;
+  outline: none;
+  -moz-outline: 0px;
+  border-width: 0px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
 }
 .aegis-light-EditBox > .ControlsPanel {
   background-color: #eeeeee;
 }
-.aegis-light-EditBox[o='1'] {
+.aegis-light-EditBox[o='1'] .InputPanel .Input {
   color: #111111;
+  background-color: #eeeeee;
 }
 .aegis-light-EditBox[o='1'] > .ControlsPanel {
   background-color: #eeeeee;
 }
-.aegis-light-EditBox[S='1'] {
+.aegis-light-EditBox[S='1'] .InputPanel .Input {
   color: #111111;
+  background-color: #eba428;
 }
 .aegis-light-EditBox[S='1'] > .ControlsPanel {
   background-color: #eba428;
 }
-.aegis-light-EditBox[o='1'][S='1'] {
+.aegis-light-EditBox[o='1'][S='1'] .InputPanel .Input {
   color: #111111;
+  background-color: #eba428;
 }
 .aegis-light-EditBox[o='1'][S='1'] > .ControlsPanel {
   background-color: #eba428;
 }
-.aegis-light-EditBox[I='1'] {
+.aegis-light-EditBox[I='1'] .InputPanel .Input {
   color: #111111;
+  background-color: #eeb7b7;
 }
 .aegis-light-EditBox[I='1'] > .ControlsPanel {
   background-color: #eeb7b7;
 }
-.aegis-light-EditBox[o='1'][I='1'] {
+.aegis-light-EditBox[o='1'][I='1'] .InputPanel .Input {
   color: #111111;
+  background-color: #eeb7b7;
 }
 .aegis-light-EditBox[o='1'][I='1'] > .ControlsPanel {
   background-color: #eeb7b7;
 }
-.aegis-light-EditBox[D='1'] {
-  color: #808080;
+.aegis-light-EditBox[D='1'] .InputPanel .Input {
+  color: #111111;
+  background-color: #768d87;
 }
 .aegis-light-EditBox[D='1'] > .ControlsPanel {
-  background-color: #eeeeee;
+  background-color: #768d87;
 }
-.aegis-light-EditBox[o='1'][D='1'] {
-  color: #808080;
+.aegis-light-EditBox[o='1'][D='1'] .InputPanel .Input {
+  color: #111111;
+  background-color: #97ada7;
 }
 .aegis-light-EditBox[o='1'][D='1'] > .ControlsPanel {
-  background-color: #eeeeee;
+  background-color: #97ada7;
 }
 .aegis-light-Text,
 .aegis-light-Label,

@@ -257,46 +257,85 @@
 
 /* EditBox ********************************************************************/
 .@{tp}EditBox{
-  font-family: @fontInfer;
-  line-height: 14px;
-  font-size: 11px;
 
-  color: @tInput;
+  .InputPanel .Input{
+    font-family: @fontInfer;
+    line-height: 14px;
+    font-size: 11px;
+
+    color: @tInput;
+    background-color: @bInput;
+    
+    outline: none;
+    -moz-outline: 0px;
+    border-width: 0px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+  }
+
   > .ControlsPanel{ background-color: @bInput; }
 
   &[o='1']{
-    color: @tInput_o;
+    .InputPanel .Input{
+      color: @tInput_o;
+      background-color: @bInput_o;
+    }
+
     > .ControlsPanel{ background-color: @bInput_o; }
   }
 
   &[S='1']{
-    color: @tInput_S;
+    .InputPanel .Input{
+      color: @tInput_S;
+      background-color: @bInput_S;
+    }
+
     > .ControlsPanel{ background-color: @bInput_S; }
   }
 
   &[o='1'][S='1']{
-    color: @tInput_oS;
+    .InputPanel .Input{
+      color: @tInput_oS;
+      background-color: @bInput_oS;
+    }
+
     > .ControlsPanel{ background-color: @bInput_oS; }
   }
 
   &[I='1']{
-    color: @tInput_I;
+    .InputPanel .Input{
+      color: @tInput_I;
+      background-color: @bInput_I;
+    }
+
     > .ControlsPanel{ background-color: @bInput_I; }
   }
 
   &[o='1'][I='1']{
-    color: @tInput_oI;
+    .InputPanel .Input{
+      color: @tInput_oI;
+      background-color: @bInput_oI;
+    }
+
     > .ControlsPanel{ background-color: @bInput_oI; }
   }
 
   &[D='1']{
-    color: @tInput_D;
-    > .ControlsPanel{ background-color: @bInput_D; }
+    .InputPanel .Input{
+      color: @tInfer;
+      background-color: @bInfer;
+    }
+
+    > .ControlsPanel{ background-color: @bInfer; }
   }
 
   &[o='1'][D='1']{
-    color: @tInput_oD;
-    > .ControlsPanel{ background-color: @bInput_oD; }
+    .InputPanel .Input{
+      color: @tInfer_o;
+      background-color: @bInfer_o;
+    }
+
+    > .ControlsPanel{ background-color: @bInfer_o; }
   }
 }
 
