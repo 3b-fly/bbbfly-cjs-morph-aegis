@@ -591,12 +591,18 @@
   border-radius: 0px;
   -webkit-border-radius: 0px;
 }
+.aegis-light-EditBox .InputPanel .Input[alttext='1'] {
+  color: #444444;
+}
 .aegis-light-EditBox > .ControlsPanel {
   background-color: #eeeeee;
 }
 .aegis-light-EditBox[o='1'] .InputPanel .Input {
   color: #111111;
   background-color: #eeeeee;
+}
+.aegis-light-EditBox[o='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
 }
 .aegis-light-EditBox[o='1'] > .ControlsPanel {
   background-color: #eeeeee;
@@ -605,12 +611,18 @@
   color: #111111;
   background-color: #eba428;
 }
+.aegis-light-EditBox[S='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
+}
 .aegis-light-EditBox[S='1'] > .ControlsPanel {
   background-color: #eba428;
 }
 .aegis-light-EditBox[o='1'][S='1'] .InputPanel .Input {
   color: #111111;
   background-color: #eba428;
+}
+.aegis-light-EditBox[o='1'][S='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
 }
 .aegis-light-EditBox[o='1'][S='1'] > .ControlsPanel {
   background-color: #eba428;
@@ -619,12 +631,18 @@
   color: #111111;
   background-color: #eeb7b7;
 }
+.aegis-light-EditBox[I='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
+}
 .aegis-light-EditBox[I='1'] > .ControlsPanel {
   background-color: #eeb7b7;
 }
 .aegis-light-EditBox[o='1'][I='1'] .InputPanel .Input {
   color: #111111;
   background-color: #eeb7b7;
+}
+.aegis-light-EditBox[o='1'][I='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
 }
 .aegis-light-EditBox[o='1'][I='1'] > .ControlsPanel {
   background-color: #eeb7b7;
@@ -633,12 +651,18 @@
   color: #111111;
   background-color: #768d87;
 }
+.aegis-light-EditBox[D='1'] .InputPanel .Input[alttext='1'] {
+  color: #404040;
+}
 .aegis-light-EditBox[D='1'] > .ControlsPanel {
   background-color: #768d87;
 }
 .aegis-light-EditBox[o='1'][D='1'] .InputPanel .Input {
   color: #111111;
   background-color: #97ada7;
+}
+.aegis-light-EditBox[o='1'][D='1'] .InputPanel .Input[alttext='1'] {
+  color: #404040;
 }
 .aegis-light-EditBox[o='1'][D='1'] > .ControlsPanel {
   background-color: #97ada7;

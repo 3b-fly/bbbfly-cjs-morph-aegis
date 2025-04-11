@@ -587,12 +587,18 @@
   border-radius: 0px;
   -webkit-border-radius: 0px;
 }
+.aegis-dark-EditBox .InputPanel .Input[alttext='1'] {
+  color: #444444;
+}
 .aegis-dark-EditBox > .ControlsPanel {
   background-color: #eeeeee;
 }
 .aegis-dark-EditBox[o='1'] .InputPanel .Input {
   color: #111111;
   background-color: #eeeeee;
+}
+.aegis-dark-EditBox[o='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
 }
 .aegis-dark-EditBox[o='1'] > .ControlsPanel {
   background-color: #eeeeee;
@@ -601,12 +607,18 @@
   color: #111111;
   background-color: #eba428;
 }
+.aegis-dark-EditBox[S='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
+}
 .aegis-dark-EditBox[S='1'] > .ControlsPanel {
   background-color: #eba428;
 }
 .aegis-dark-EditBox[o='1'][S='1'] .InputPanel .Input {
   color: #111111;
   background-color: #eba428;
+}
+.aegis-dark-EditBox[o='1'][S='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
 }
 .aegis-dark-EditBox[o='1'][S='1'] > .ControlsPanel {
   background-color: #eba428;
@@ -615,12 +627,18 @@
   color: #111111;
   background-color: #eeb7b7;
 }
+.aegis-dark-EditBox[I='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
+}
 .aegis-dark-EditBox[I='1'] > .ControlsPanel {
   background-color: #eeb7b7;
 }
 .aegis-dark-EditBox[o='1'][I='1'] .InputPanel .Input {
   color: #111111;
   background-color: #eeb7b7;
+}
+.aegis-dark-EditBox[o='1'][I='1'] .InputPanel .Input[alttext='1'] {
+  color: #444444;
 }
 .aegis-dark-EditBox[o='1'][I='1'] > .ControlsPanel {
   background-color: #eeb7b7;
@@ -629,12 +647,18 @@
   color: #eeeeee;
   background-color: #566662;
 }
+.aegis-dark-EditBox[D='1'] .InputPanel .Input[alttext='1'] {
+  color: #a8a8a8;
+}
 .aegis-dark-EditBox[D='1'] > .ControlsPanel {
   background-color: #566662;
 }
 .aegis-dark-EditBox[o='1'][D='1'] .InputPanel .Input {
   color: #eeeeee;
   background-color: #788a84;
+}
+.aegis-dark-EditBox[o='1'][D='1'] .InputPanel .Input[alttext='1'] {
+  color: #a8a8a8;
 }
 .aegis-dark-EditBox[o='1'][D='1'] > .ControlsPanel {
   background-color: #788a84;
