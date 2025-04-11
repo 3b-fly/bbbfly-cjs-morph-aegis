@@ -511,13 +511,13 @@
   color: #111111;
 }
 .aegis-dark-ContentInputButton[S='1'] > .ControlsPanel {
-  background-color: #eba428;
+  background-color: #eeeeee;
 }
 .aegis-dark-ContentInputButton[o='1'][S='1'] {
   color: #111111;
 }
 .aegis-dark-ContentInputButton[o='1'][S='1'] > .ControlsPanel {
-  background-color: #eba428;
+  background-color: #eeeeee;
 }
 .aegis-dark-ContentInputButton[I='1'] {
   color: #111111;
@@ -609,23 +609,23 @@
 }
 .aegis-dark-EditBox[S='1'] .InputPanel .Input {
   color: #111111;
-  background-color: #eba428;
+  background-color: #eeeeee;
 }
 .aegis-dark-EditBox[S='1'] .InputPanel .Input[alttext='1'] {
   color: #444444;
 }
 .aegis-dark-EditBox[S='1'] > .ControlsPanel {
-  background-color: #eba428;
+  background-color: #eeeeee;
 }
 .aegis-dark-EditBox[o='1'][S='1'] .InputPanel .Input {
   color: #111111;
-  background-color: #eba428;
+  background-color: #eeeeee;
 }
 .aegis-dark-EditBox[o='1'][S='1'] .InputPanel .Input[alttext='1'] {
   color: #444444;
 }
 .aegis-dark-EditBox[o='1'][S='1'] > .ControlsPanel {
-  background-color: #eba428;
+  background-color: #eeeeee;
 }
 .aegis-dark-EditBox[I='1'] .InputPanel .Input {
   color: #111111;
