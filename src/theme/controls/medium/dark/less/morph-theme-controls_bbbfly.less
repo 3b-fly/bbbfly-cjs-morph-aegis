@@ -255,8 +255,9 @@
   &[o='1'][D='1']{ color: @tBtn_oD; }
 }
 
-/* EditBox ********************************************************************/
-.@{tp}EditBox{
+/* EditBox, DropDownBox *******************************************************/
+.@{tp}EditBox,
+.@{tp}DropDownBox{
 
   .InputPanel .Input{
     font-family: @fontInfer;
@@ -275,6 +276,10 @@
     &[alttext='1']{
       color: @aInput;
     }
+  }
+
+  > .DropDownPanel{ 
+    > .ControlsPanel{ background-color: @bInverse; }
   }
 
   > .ControlsPanel{ background-color: @bInput; }
