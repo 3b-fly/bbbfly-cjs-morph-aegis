@@ -278,10 +278,6 @@
     }
   }
 
-  > .DropDownPanel{ 
-    > .ControlsPanel{ background-color: @bInverse; }
-  }
-
   > .ControlsPanel{ background-color: @bInput; }
 
   &[o='1']{
@@ -374,6 +370,10 @@
 
     > .ControlsPanel{ background-color: @bInfer_o; }
   }
+}
+
+.@{tp}DropDownBox_DropDown{
+  > .ControlsPanel{ background-color: @bInverse; }
 }
 
 /* Text, Label, Title *********************************************************/

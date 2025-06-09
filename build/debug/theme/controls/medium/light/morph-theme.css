@@ -592,10 +592,6 @@
 .aegis-light-DropDownBox .InputPanel .Input[alttext='1'] {
   color: #444444;
 }
-.aegis-light-EditBox > .DropDownPanel > .ControlsPanel,
-.aegis-light-DropDownBox > .DropDownPanel > .ControlsPanel {
-  background-color: #566662;
-}
 .aegis-light-EditBox > .ControlsPanel,
 .aegis-light-DropDownBox > .ControlsPanel {
   background-color: #eeeeee;
@@ -690,6 +686,9 @@
 .aegis-light-EditBox[o='1'][D='1'] > .ControlsPanel,
 .aegis-light-DropDownBox[o='1'][D='1'] > .ControlsPanel {
   background-color: #97ada7;
+}
+.aegis-light-DropDownBox_DropDown > .ControlsPanel {
+  background-color: #566662;
 }
 .aegis-light-Text,
 .aegis-light-Label,
